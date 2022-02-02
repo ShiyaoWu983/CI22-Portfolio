@@ -16,4 +16,3 @@ This letter appears at the end of the entire book, seemingly to a character in t
 This letter says that life is a blank piece of paper and we can all write our own lives.
 I thought this passage was perfect for this assignment, as if I were creating something random on a blank piece of paper.
 
-
