@@ -4,15 +4,517 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Homepage.css" />
+   
+  <style> 
+    .container{
+      font-family: 'Sora', sans-serif;
+      height:100vh;
+      display: flex;
+      margin: 0;
+      position: relative;
+      top: 0;
+      left: 0;
+      background-color: white;
+  }
+  
+  .text1{
+      position:relative;
+      margin-top:300px;
+      margin-left:600px;
+  }
+  
+  .text2{
+      position:relative;
+      margin-top:450px;
+      margin-left:120px;
+      font-size:100px;
+  }
+  
+  .centertext {
+      position: relative;
+      margin-top: 348px;
+      margin-left:-507px;
+      font-size:19px;
+      color:white;
+      width:353px;
+    }
+  
+  a{
+      font-size:19px;
+      color:white;
+      font-weight: bold;
+  }
+  
+  .sentence{   position:absolute;
+      font-size:20px;
+      margin: 0;
+      top: 150px;
+      left: 400px;
+      opacity: 0.1;
+      
+  
+  }
+  
+  .food1{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 0;
+      opacity:0;
+  }
+  
+  .food1:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 0;
+      opacity: 1;
+  }
+  
+  .food2{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 70px;
+      left: 400px;
+      opacity:0;
+  }
+  
+  .food2:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 70px;
+      left: 400px;
+      opacity:1;
+  }
+  
+  .food3{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 150px;
+      left: 900px;
+      opacity:0;
+  }
+  
+  .food3:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 150px;
+      left: 900px;
+      opacity:1;
+  }
+  
+  
+  .food4{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 200px;
+      opacity: 0;
+  }
+  .food4:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 200px;
+      opacity: 1;
+  }
+  
+  .food5{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 300px;
+      left: 1200px;
+      opacity:0;
+  }
+  
+  .food5:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 300px;
+      left: 1200px;
+      opacity:1;
+  }
+  
+  
+  .food6{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 200px;
+      left: 500px;
+      opacity: 0;
+  }
+  .food6:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 200px;
+      left: 500px;
+      opacity: 1;
+  }
+  
+  .food7{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 300px;
+      left: 0;
+      opacity: 0;
+  }
+  .food7:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 300px;
+      left: 0;
+      opacity: 1;
+  }
+  
+  .food8{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 1100px;
+      opacity: 0;
+  }
+  .food8:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 1100px;
+      opacity: 1;
+  }
+  
+  .food9{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 430px;
+      left: 550px;
+      opacity: 0;
+  }
+  
+  .food9:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 430px;
+      left: 550px;
+      opacity: 1;
+  }
+  
+  .food10{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 700px;
+      opacity: 0;
+  }
+  .food10:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 700px;
+      opacity: 1;
+  }
+  
+  .food11{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 150px;
+      left: 150px;
+      opacity: 0;
+  }
+  .food11:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 150px;
+      left: 150px;
+      opacity: 1;
+  }
+  
+  .food12{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 250px;
+      left: 280px;
+      opacity: 0;
+  }
+  .food12:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 250px;
+      left: 280px;
+      opacity: 1;
+  }
+  
+  .food13{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 100px;
+      left: 1280px;
+      opacity: 0;
+  }
+  .food13:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 100px;
+      left: 1280px;
+      opacity: 1;
+  }
+  
+  .food14{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 200px;
+      opacity: 0;
+  }
+  
+  .food14:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0;
+      left: 200px;
+      opacity: 1;
+  }
+  .food15{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 550px;
+      left: 800px;
+      opacity: 0;
+  }
+  
+  .food15:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 550px;
+      left: 800px;
+      opacity:1;
+  }
+  
+  
+  .food16{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 380px;
+      left:350px;
+      opacity: 0;
+  }
+  
+  .food16:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 380px;
+      left:350px;
+      opacity:1;
+  }
+  
+  .food17{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 550px;
+      left: 0;
+      opacity: 0;
+  }
+  .food17:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 550px;
+      left: 0;
+      opacity: 1;
+  }
+  
+  .food18{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 180px;
+      left: 700px;
+      opacity: 0;
+  }
+  
+  .food18:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 180px;
+      left: 700px;
+      opacity: 1;
+  }
+  .food19{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 1250px;
+      opacity:    0;
+  }
+  
+  .food19:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 1250px;
+      opacity:1;
+  }
+  .food20{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 520px;
+      left: 400px;
+      opacity: 0;
+  }
+  .food20:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 520px;
+      left: 400px;
+      opacity: 1;
+  }
+  
+  .food21{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 350px;
+      left: 150px;
+      opacity: 0;
+  }
+  
+  .food21:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 350px;
+      left: 150px;
+      opacity:1;
+  }
+  .food22{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 950px;
+      opacity: 0;
+  }
+  
+  .food22:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 500px;
+      left: 950px;
+      opacity: 1;
+  }
+  
+  .food23{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 10px;
+      left: 520px;
+      opacity: 0;
+  }
+  .food23:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 10px;
+      left: 520px;
+      opacity: 1;
+  }
+  
+  .food24{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0px;
+      left: 950px;
+      opacity: 0;
+  }
+  
+  .food24:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 0px;
+      left: 950px;
+      opacity: 1;
+  }
+  
+  
+  .food25{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 200px;
+      left: 1100px;
+      opacity: 0;
+  }
+  .food25:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 200px;
+      left: 1100px;
+      opacity: 1;
+  }
+  .food26{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 530px;
+      left: 660px;
+      opacity: 0;
+  }
+  .food26:hover{
+      position:absolute;
+      font-size:100px;
+      margin: 0;
+      top: 530px;
+      left: 660px;
+      opacity: 1;
+  }
+  
+  
+</style>  
     <title>Shiyao Wu P1</title>
   </head>
 
   <body>
-    
-
-      
-    
     <div class="container">
     <div class="text1"><img src="Bubble.jpg" width=140% alt="Text bubble"></div>
     <div class="text2">&#128555</div>
