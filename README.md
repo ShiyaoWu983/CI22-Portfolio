@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
 <meta charset="utf-8">
-<title>Shiyao Wu CI22 Portfolio</title>  
+
  </head>
 
  <body>
