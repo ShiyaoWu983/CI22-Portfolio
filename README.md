@@ -16,13 +16,9 @@
 
 <h1>Studio</h1>
 <ul>
-    <li>
-<a href="P1">P1</a>
-    </li>
+<li> <a href="P1">P1</a> </li>
 
-    <li>
-<a href="Screen_Time">Screen_Time</a>
-    </li>
+<li> <a href="Screen_Time">Screen_Time</a> </li>
 
 </ul>
 
