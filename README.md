@@ -9,7 +9,7 @@
     <h1>Lab</h1>
 <ul>
     <li>
-<a href="A1">A1</a>
+<a href="A1/A1.html">A1</a>
     </li>
 
 </ul>
