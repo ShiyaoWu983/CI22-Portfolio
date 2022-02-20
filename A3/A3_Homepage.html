@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+<style>
+body{
+    background-color: black;
+    height:98vh;
+   
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height:98vh;
+    display: flex;
+    position: relative;
+}
+
+/*moving text*/
+.top{
+   padding:0.3rem;
+   overflow: hidden;
+   text-transform:uppercase;
+}
+.top_text{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    display: inline-block;
+    font-size:30px;
+    font-weight:600;
+    color:white;
+    white-space: nowrap;
+    animation: marquee 60s linear infinite normal;
+}
+
+@keyframes marquee{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100vw);}
+}
+
+.top_text:hover{
+      color:black;
+      background-color: white;
+      font-family: Helvetica, sans-serif;
+    position:absolute;
+      font-size:30px;
+      font-weight:600;
+      text-transform:uppercase;
+      white-space: nowrap;
+
+
+}
+
+
+/*subway information*/
+.yellow{
+position:absolute;
+height:13px;
+width: 13px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:4%;
+top:75%;
+}
+.yellow_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    left:8%;
+    top:74.5%;
+}
+
+.line{
+    font-weight: 300;
+}
+
+.orange{
+position:absolute;
+height:13px;
+width: 13px;
+border-radius: 50%;
+background-color: #f48529;
+left:4%;
+top:79.5%;
+}
+.orange_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    left:8%;
+    top:79%;
+}
+.green{
+position:absolute;
+height:13px;
+width: 13px;
+border-radius: 50%;
+background-color:#02a856;
+left:4%;
+top:83.5%;
+}
+.green_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    left:8%;
+    top:83%;
+}
+.brown{
+position:absolute;
+height:13px;
+width: 13px;
+border-radius: 50%;
+background-color:#ab7103;
+left:4%;
+top:87.5%;
+}
+.brown_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    left:8%;
+    top:87%;
+}
+.grey{
+position:absolute;
+height:13px;
+width: 13px;
+border-radius: 50%;
+background-color:#aeaeae;
+left:4%;
+top:91.5%;
+}
+.grey_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:white;
+    left:8%;
+    top:91%;
+}
+
+
+
+/*center circle*/
+.orange_circle{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 260px;
+border-style:solid;
+border-color: transparent transparent #f48529;
+border-radius: 300px;
+filter:blur(40px);
+transform: rotate(225deg);
+top:15%;
+left:31%;
+}
+.green_circle{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 260px;
+border-style:solid;
+border-color: transparent transparent #02a856;
+border-radius: 300px;
+filter:blur(40px);
+transform: rotate(135deg);
+top:15%;
+left:33%;
+}
+.brown_circle{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 268px;
+border-style:solid;
+border-color: transparent transparent #ab7103;
+border-radius: 300px;
+filter:blur(30px);
+transform: rotate(45deg);
+top:9.5%;
+left:32%;
+}
+.yellow_circle{
+position:absolute;
+width:10px;
+height:10px;
+border-width: 255px;
+border-style:solid;
+border-color: transparent transparent #fad200;
+border-radius: 300px;
+filter:blur(40px);
+transform: rotate(-45deg);
+top:12%;
+left:31%;
+font-size:36px;
+color:white;
+font-family:Helvetica, sans-serif;
+}
+
+
+/*hover black back circle*/
+
+.yellow_circle_black{
+    position:absolute;
+    width:500px;
+    height: 240px;
+    top:55%;
+    left:55%;
+}
+.yellow_circle_black:hover{
+font-size:0;
+}
+.yellow_circle_black:hover:after{
+    content:attr(data-hover);
+    font-size:36px;
+    color:white;
+    position:absolute;
+    width:500px;
+    height: 240px;
+    font-size:48px;
+ line-height: 200px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.green_circle_black{
+    position:absolute;
+    width:500px;
+    height: 240px;
+    top:14%;
+    left:18%;
+}
+.green_circle_black:hover{
+font-size:0;
+}
+.green_circle_black:hover:after{
+    content:attr(data-hover);
+    font-size:36px;
+    color:white;
+    position:absolute;
+    width:500px;
+    height: 240px;
+    font-size:48px;
+ line-height: 200px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.orange_circle_black{
+    position:absolute;
+    width:500px;
+    height: 240px;
+    top:14%;
+    left:55%;
+}
+.orange_circle_black:hover{
+font-size:0;
+}
+.orange_circle_black:hover:after{
+    content:attr(data-hover);
+    font-size:36px;
+    color:white;
+    position:absolute;
+    width:500px;
+    height: 240px;
+    font-size:48px;
+ line-height: 200px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+/*phone size area*/
+@media screen and (max-width: 720px) {
+body{
+    background-color: white;
+}
+.container{
+    height: 100vh;
+    background-color: white;
+}
+.top_text{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    display: inline-block;
+    font-size:30px;
+    font-weight:600;
+    color:black;
+    white-space: nowrap;
+    animation: marquee 60s linear infinite normal;
+}
+
+@keyframes marquee{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(-100vw);}
+}
+
+/*center circle*/
+.yellow_circle{
+    position:absolute;
+width:10px;
+height:10px;
+border-width: 167px;
+border-style:solid;
+border-color: transparent transparent #fad200;
+border-radius: 200px;
+filter:blur(20px);
+transform: rotate(-45deg);
+top:18%;
+left:2%;
+
+}
+.brown_circle{
+    position:absolute;
+    width:10;
+    height: 10;
+    border-width: 177px;
+border-style:solid;
+border-color: transparent transparent #ab7103;
+border-radius: 200px;
+filter:blur(24px);
+transform: rotate(45deg);
+top:18%;
+left:7%;
+}
+.green_circle{
+    position:absolute;
+    width:20;
+    height:20;
+    border-width: 173px;
+border-style:solid;
+border-color: transparent transparent #02a856;
+border-radius: 200px;
+filter:blur(18px);
+transform: rotate(135deg);
+top:20%;
+left:9%;
+}
+.orange_circle{
+    position:absolute;
+    width:20;
+    height: 20;
+    border-width: 173px;
+border-style:solid;
+border-color: transparent transparent #f48529;
+border-radius: 200px;
+filter:blur(20px);
+transform: rotate(225deg);
+top:20%;
+left:2%;
+}
+
+/*subway information*/
+.yellow{
+position:absolute;
+height:16px;
+width: 16px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:4%;
+top:75.4%;
+}
+.yellow_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:black;
+    left:11%;
+    top:75%;
+}
+
+.line{
+    font-weight: 500;
+}
+
+.orange{
+position:absolute;
+height:16px;
+width: 16px;
+border-radius: 50%;
+background-color: #f48529;
+left:4%;
+top:79%;
+}
+.orange_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:black;
+    left:11%;
+    top:78.7%;
+}
+.green{
+position:absolute;
+height:16px;
+width: 16px;
+border-radius: 50%;
+background-color:#02a856;
+left:4%;
+top:83%;
+}
+.green_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:black;
+    left:11%;
+    top:82.8%;
+}
+.brown{
+position:absolute;
+height:16px;
+width: 16px;
+border-radius: 50%;
+background-color:#ab7103;
+left:4%;
+top:86.8%;
+}
+.brown_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:black;
+    left:11%;
+    top:86.6%;
+}
+.grey{
+position:absolute;
+height:16px;
+width: 16px;
+border-radius: 50%;
+background-color:#aeaeae;
+left:4%;
+top:90.8%;
+}
+.grey_information{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:18px;
+    color:black;
+    left:11%;
+    top:90.6%;
+}
+
+
+/*hover black back circle*/
+
+.yellow_circle_black{
+    position:absolute;
+    width:500px;
+    height: 240px;
+    top:38%;
+    left:6%;
+}
+.yellow_circle_black:hover{
+font-size:0;
+}
+.yellow_circle_black:hover:after{
+    content:attr(data-hover);
+    font-size:36px;
+    color:black;
+    position:absolute;
+    width:500px;
+    height: 240px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.green_circle_black{
+    position:absolute;
+    width:350px;
+    height: 240px;
+    top:20%;
+    left:10%;
+}
+.green_circle_black:hover{
+font-size:0;
+}
+.green_circle_black:hover:after{
+    content:attr(data-hover);
+    color:black;
+    position:absolute;
+    top:10%;
+    left:-2%;
+    width:300px;
+    height: 700px;
+    font-size:36px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+.orange_circle_black{
+    position:absolute;
+    width:100px;
+    height: 240px;
+    top:20%;
+    left:20%;
+}
+.orange_circle_black:hover{
+font-size:0;
+}
+.orange_circle_black:hover:after{
+    content:attr(data-hover);
+    color:black;
+    position:absolute;
+    width:200px;
+    height: 70px;
+    top:50px;
+    left:50px;
+    font-size:36px;
+ line-height: 200px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+}
+
+
+@media screen and (max-width: 992px) {
+
+    
+}
+</style>
+
+</head>
+
+
+
+<body>
+<div class="container">
+<!--moving text--> 
+<div class="top">
+    <div class="top_text">
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+        <span>MTA SUBWAY &nbsp&nbsp</span>
+
+
+    </div>
+</div>
+
+<!--center circle-->
+    <div id="mid_circle"> 
+<!--center color circle-->   
+        <div class="yellow_circle"></div> 
+        <div class="brown_circle"></div>
+        <div class="green_circle"></div>
+        <div class="orange_circle"></div>
+
+<!--hidden center cirlce -->
+<a href="14st.html">   
+    <div class="yellow_circle_black" data-hover="14St - Union Square"></div>
+</a>
+    <div class="brown_circle_black"></div>
+<a href="34st.html">
+    <div class="green_circle_black" data-hover="34St - Herald Sq"></div>
+</a>
+<a href="Canal_st.html">
+        <div class="orange_circle_black" data-hover="Canal St"></div>  
+</a>
+
+    </div>
+
+<!--subway information-->    
+<div class="information_mta">
+<div class="yellow"></div>
+<div class="orange"></div>
+<div class="green"></div>
+<div class="brown"></div>
+<div class="grey"></div>
+<!--information text-->
+<div class="yellow_information">N, Q, R, W &nbsp<span class="line">Line</span></div>
+<div class="orange_information">B, D, F, M &nbsp<span class="line">Line</span></div>
+<div class="green_information">4, 5, 6 &nbsp<span class="line">Line</span></div>
+<div class="brown_information">J, Z &nbsp<span class="line">Line</span></div>
+<div class="grey_information">L &nbsp<span class="line">Line</span></div>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+</html>

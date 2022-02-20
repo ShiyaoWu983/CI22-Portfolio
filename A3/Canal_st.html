@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+<style>
+body{
+    background-color: black;
+    height:98vh;
+   
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height:98vh;
+    display: flex;
+    position: relative;
+}
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 20px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 20px;
+filter:blur(5px);
+transform: rotate(225deg);
+top:90%;
+left:2%;
+}
+
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:80px;
+    color:white;
+    left:10%;
+    top:7%;
+}
+
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:18.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:26.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+/*brown ball*/
+.orange_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #ab7103 ;
+left:10.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #ab7103;
+left:18.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+.brown_line{
+    position:absolute;
+    height:695px;
+    width:15px;
+    background-color:#ab7103;
+    top:-1%;
+    left:61%;
+}
+
+.green_line{
+    position:absolute;
+    height:695px;
+    width:15px;
+    background-color:#02a856;
+    top:-1%;
+    left:60%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:500px;
+    width:15px;
+    background-color: #fad200;
+    top:-1%;
+    left: 45%;
+}
+
+.yellow_line_2{
+    position:absolute;
+    height:15px;
+    width:783px;
+    background-color: #fad200;
+    top:70%;
+    left:45%;
+}
+
+.transfer{
+    position:absolute;
+    height:35px;
+    width:60px;
+    background-color:white;
+    border: rgb(0, 0, 0) solid 7px;
+    border-radius: 35px;
+    top:67.5%;
+    left:58.5%;
+}
+
+
+/*phone size area*/
+@media screen and (max-width: 720px) {
+    body{
+    background-color: white;
+   
+   
+}
+
+.container{
+    height: 100vh;
+}
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 25px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 25px;
+filter:blur(8px);
+transform: rotate(225deg);
+top:91%;
+left:8%;
+}
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:48px;
+    color:black;
+    left:10%;
+    top:7%;
+}
+
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:20%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:24%;
+top:20%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:37.5%;
+top:20%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+/*brown ball*/
+.orange_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #ab7103 ;
+left:10.5%;
+top:28%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #ab7103;
+left:24%;
+top:28%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+
+.brown_line{
+    position:absolute;
+    height:852px;
+    width:13px;
+    background-color:#ab7103;
+    top:-1%;
+    left:85%;
+}
+.green_line{
+    position:absolute;
+    height:852px;
+    width:13px;
+    background-color:#02a856;
+    top:-1%;
+    left:81.7%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:550px;
+    width:13px;
+    background-color: #fad200;
+    top:-1%;
+    left: 71%;
+}
+.yellow_line_2{
+    position:absolute;
+    height:13px;
+    width:113px;
+    background-color: #fad200;
+    top:63%;
+    left:71%;
+}
+.transfer{
+    position:absolute;
+    height:28px;
+    width:50px;
+    background-color:white;
+    border: rgb(0, 0, 0) solid 6px;
+    border-radius: 35px;
+    top:61.3%;
+    left:77.5%;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+</style>
+</head>
+
+
+
+
+
+<body>
+<div class="contianer"></div>
+<div class="station_name_1">Canal St</div>
+
+    <!--decoration line-->
+    <div class="green_line"></div>
+    <div class="brown_line"></div>
+    
+    <div class="yellow_line_1"></div>
+    <div class="yellow_line_2"></div>
+
+
+
+
+    <!--subway yellow line ball-->
+    <div class="yellow_ball_1">N</div>
+    <div class="yellow_ball_2">Q</div>
+    <div class="yellow_ball_3">R</div>
+   
+
+        <!--subway brown line ball-->
+        <div class="orange_ball_1">J</div>
+        <div class="orange_ball_2">Z</div>
+       
+<div class="transfer"></div>
+
+<a href="A3_Homepage.html"><div class="logo"></div></a>
+</body>
+
+</html>

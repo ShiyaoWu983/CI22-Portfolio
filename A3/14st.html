@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+<style>
+body{
+    background-color: black;
+    height:98vh;
+   
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height:98vh;
+    display: flex;
+    position: relative;
+}
+
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:80px;
+    color:white;
+    left:10%;
+    top:7%;
+}
+
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 20px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 20px;
+filter:blur(5px);
+transform: rotate(225deg);
+top:90%;
+left:2%;
+}
+
+.green_line{
+    position:absolute;
+    height:690px;
+    width:15px;
+    background-color:#02a856;
+    top:-1%;
+    left:85%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:470px;
+    width:15px;
+    background-color:#fad200;
+    top:32%;
+    left:84%;
+}
+.yellow_line_2{
+    position:absolute;
+    height:285px;
+    width:15px;
+    background-color:#fad200;
+    top:-5.5%;
+    left:79.4%;
+    border-radius: 0 0 15px 0 ;
+    transform: rotate(-30deg);
+}
+.grey_line{
+    position:absolute;
+    height:15px;
+    width:1422px;
+    background-color:#aeaeae;
+    top:30%;
+    left:-0.5%;
+  
+}
+
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:43%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:18.5%;
+top:43%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:26.5%;
+top:43%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:34.5%;
+top:43%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+/*green ball*/
+.green_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856 ;
+left:10.5%;
+top:55%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.green_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856;
+left:18.5%;
+top:55%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.green_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856;
+left:26.5%;
+top:55%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+/*grey ball*/
+.grey_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#aeaeae ;
+left:10.5%;
+top:67%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+/*transfer point*/
+.transfer{
+    position:absolute;
+    height:35px;
+    width:60px;
+    background-color:white;
+    border: rgb(0, 0, 0) solid 7px;
+    border-radius: 35px;
+    top:27.6%;
+    left:82.5%;
+}
+
+/*phone size area*/
+@media screen and (max-width:720px) {
+    body{
+    background-color: white;
+    height:98vh;
+   
+}
+.container{
+    background-color: white;
+}
+
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 25px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 25px;
+filter:blur(8px);
+transform: rotate(225deg);
+top:91%;
+left:8%;
+}
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:48px;
+    color:black;
+    left:10%;
+    top:7%;
+    width:240px;
+}
+
+.green_line{
+    position:absolute;
+    height:844px;
+    width:13px;
+    background-color:#02a856;
+    top:-1%;
+    left:88%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:580px;
+    width:13px;
+    background-color:#fad200;
+    top:31%;
+    left:84.5%;
+}
+.yellow_line_2{
+    position:absolute;
+    height:285px;
+    width:13px;
+    background-color:#fad200;
+    top:-4%;
+    left:74%;
+    border-radius: 0 0 15px 0 ;
+    transform: rotate(-15deg);
+}
+.grey_line{
+    position:absolute;
+    height:13px;
+    width:393px;
+    background-color:#aeaeae;
+    top:30%;
+    left:-3%;
+  
+}
+/*transfer point*/
+.transfer{
+    position:absolute;
+    height:20px;
+    width:45px;
+    background-color:white;
+    border: rgb(0, 0, 0) solid 5px;
+    border-radius: 35px;
+    top:29%;
+    left:80.8%;
+}
+
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:40%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:26%;
+top:40%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:42%;
+top:40%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:58%;
+top:40%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+/*green ball*/
+.green_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856 ;
+left:10.5%;
+top:48%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.green_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856;
+left:26%;
+top:48%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.green_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#02a856;
+left:42%;
+top:48%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+/*grey ball*/
+.grey_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#aeaeae ;
+left:10.5%;
+top:56%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+
+
+
+
+
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+
+
+
+<body>
+<div class="container">
+    <div class="station_name_1">14St - Union Sq</div>
+
+    <!--decoration line-->
+    <div class="green_line"></div>
+    <div class="yellow_line_1"></div>
+    <div class="yellow_line_2"></div>
+    <div class="grey_line"></div>
+
+    <!--subway yellow line ball-->
+    <div class="yellow_ball_1">N</div>
+    <div class="yellow_ball_2">Q</div>
+    <div class="yellow_ball_3">R</div>
+    <div class="yellow_ball_4">W</div>
+
+    <!--subway green line ball-->
+    <div class="green_ball_1">4</div>
+    <div class="green_ball_2">5</div>
+    <div class="green_ball_3">6</div>
+
+  <!--subway grey line ball-->
+  <div class="grey_ball_1">L</div>
+
+<!--transfer point-->
+<div class="transfer"></div>
+
+
+
+
+
+    <a href="A3_Homepage.html"><div class="logo"></div></a>
+
+
+
+
+
+</div>
+</body>
+
+</html>

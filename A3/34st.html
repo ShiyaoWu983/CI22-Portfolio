@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+
+<style>
+body{
+    background-color: black;
+    height:98vh;
+   
+}
+
+.container{
+    background-color: rgb(0, 0, 0);
+    height:98vh;
+    display: flex;
+    position: relative;
+}
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 20px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 20px;
+filter:blur(5px);
+transform: rotate(225deg);
+top:90%;
+left:2%;
+}
+
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:80px;
+    color:white;
+    left:10%;
+    top:7%;
+}
+/*orange line*/
+
+.orange_line_1{
+    position:absolute;
+    height:697px;
+    width:15px;
+    background-color:#f48529;
+    top:-1%;
+    left:85%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:845px;
+    width:15px;
+    background-color: #fad200;
+    top:-20%;
+    left:87%;
+    transform: rotate(-15deg);
+}
+
+.transfer{
+    position:absolute;
+    height:35px;
+    width:35px;
+    background-color:white;
+ 
+    border-radius: 35px;
+    top:21.5%;
+    left:84.3%;
+}
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:18.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:26.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:34.5%;
+top:29%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+/*green ball*/
+.orange_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529 ;
+left:10.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529;
+left:18.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529;
+left:34.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529;
+left:26.5%;
+top:41%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+
+/*phone size area*/
+@media screen and (max-width: 720px) {
+    body{
+    background-color: white;
+    height:98vh;
+   
+}
+
+
+.logo{
+    position:absolute;
+    width:0;
+    height: 0;
+    border-width: 25px;
+border-style:solid;
+border-color:  #fad200#02a856#ab7103#f48529;
+border-radius: 25px;
+filter:blur(8px);
+transform: rotate(225deg);
+top:91%;
+left:8%;
+}
+.station_name_1{
+    font-family: Helvetica, sans-serif;
+    position:absolute;
+    font-weight:800;
+    font-size:48px;
+    color:black;
+    left:10%;
+    top:7%;
+    width:240px;
+}
+
+/*yellow ball area*/
+.yellow_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:10.5%;
+top:25%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:24%;
+top:25%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:37.5%;
+top:25%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+.yellow_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#fad200 ;
+left:51%;
+top:25%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+}
+
+.orange_ball_1{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #f48529 ;
+left:10.5%;
+top:33%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_2{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color: #f48529;
+left:24%;
+top:33%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_4{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529;
+left:37.5%;
+top:33%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+.orange_ball_3{
+position:absolute;
+height:30px;
+width: 30px;
+border-radius: 50%;
+background-color:#f48529;
+left:51%;
+top:33%;
+font-family:  Helvetica, sans-serif;
+font-size:23px;
+text-align: center;
+font-weight: 700;
+line-height: 30px;
+color:white;
+}
+
+
+.orange_line_1{
+    position:absolute;
+    height:860px;
+    width:13px;
+    background-color:#f48529;
+    top:-1%;
+    left:85%;
+}
+.yellow_line_1{
+    position:absolute;
+    height:845px;
+    width:13px;
+    background-color: #fad200;
+    top:-20%;
+    left:87%;
+    transform: rotate(-10deg);
+}
+
+.transfer{
+    position:absolute;
+    height:25px;
+    width:25px;
+    background-color:white;
+    border:black solid 4px;
+    border-radius: 35px;
+    top:22%;
+    left:82.5%;
+}
+
+
+
+}
+
+
+
+</style>
+</head>
+
+
+
+
+
+<body>
+<div class="contianer"></div>
+<div class="station_name_1">34St - Herald Sq</div>
+
+<!--orange line area-->
+<div class="orange_line_1"></div>
+<!--yellow line area-->
+<div class="yellow_line_1"></div>
+
+<div class="transfer"></div>
+
+    <!--subway yellow line ball-->
+    <div class="yellow_ball_1">N</div>
+    <div class="yellow_ball_2">Q</div>
+    <div class="yellow_ball_3">R</div>
+    <div class="yellow_ball_4">W</div>
+
+        <!--subway orange line ball-->
+        <div class="orange_ball_1">B</div>
+        <div class="orange_ball_2">D</div>
+        <div class="orange_ball_3">F</div>
+        <div class="orange_ball_4">M</div>
+
+
+<a href="A3_Homepage.html"><div class="logo"></div></a>
+</body>
+
+</html>
