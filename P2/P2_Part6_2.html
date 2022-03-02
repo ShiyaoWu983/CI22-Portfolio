@@ -1,0 +1,2720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<title>P2 Part6 Interaction2</title>
+<style>
+/*------------------------new typeface----------------*/
+@font-face {
+    font-family: 'CosiAzure-Bold';
+    src: url('CosiAzure-Bold.ttf') format('truetype')
+    }
+
+body{
+background-image: linear-gradient( #252621,#191a16,#252621,#3f4137,#7b7e6d);
+scroll-behavior: smooth;
+display: grid;
+  grid-template-columns: auto 0px; 
+}
+
+.container1{
+height:6250px;
+display: flex;
+position: relative;
+}
+
+/*letter animation area*/
+
+.letter1{
+    position: absolute;
+    top:20px;
+    left:100px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter2{
+    position: absolute;
+    top:40px;
+    left:400px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter3{
+    position: absolute;
+    top:200px;
+    left:50px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter4{
+    position: absolute;
+    top:400px;
+    left:200px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter5{
+    position: absolute;
+    top:500px;
+    left:80px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter6{
+    position: absolute;
+    top:420px;
+    left:480px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter7{
+    position: absolute;
+    top:80px;
+    left:700px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter8{
+    position: absolute;
+    top:400px;
+    left:800px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:80px;
+    }
+}
+.letter9{
+    position: absolute;
+    top:30px;
+    left:1000px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter10{
+    position: absolute;
+    top:550px;
+    left:20px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter11{
+    position: absolute;
+    top:10px;
+    left:1200px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:70px;
+    }
+}
+
+.letter12{
+    position: absolute;
+    top:80px;
+    left:1350px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter13{
+    position: absolute;
+    top:480px;
+    left:1250px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:70px;
+    }
+}
+
+.letter14{
+    position: absolute;
+    top:480px;
+    left:1360px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter16{
+    position: absolute;
+    top:520px;
+    left:280px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter17{
+    position: absolute;
+    top:520px;
+    left:780px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter18{
+    position: absolute;
+    top:550px;
+    left:980px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter19{
+    position: absolute;
+    top:600px;
+    left:1080px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter20{
+    position: absolute;
+    top:650px;
+    left:1300px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter21{
+    position: absolute;
+    top:650px;
+    left:100px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter22{
+    position: absolute;
+    top:650px;
+    left:600px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter23{
+    position: absolute;
+    top:750px;
+    left:1200px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter24{
+    position: absolute;
+    top:750px;
+    left:300px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter25{
+    position: absolute;
+    top:10px;
+    left:520px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter26{
+    position: absolute;
+    top:30px;
+    left:820px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6.5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter27{
+    position: absolute;
+    top:300px;
+    left:5s20px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter28{
+    position: absolute;
+    top:300px;
+    left:1220px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter29{
+    position: absolute;
+    top:630px;
+    left:420px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter30{
+    position: absolute;
+    top:750px;
+    left:70px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter31{
+    position: absolute;
+    top:350px;
+    left:1020px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter32{
+    position: absolute;
+    top:830px;
+    left:1280px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter33{
+    position: absolute;
+    top:780px;
+    left:880px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+/*-----------------------menu area
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 200px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 20px 36px;
+  color: #191a16;
+  font-family: 'Noto Serif Display', serif;
+  font-size: 20px;
+  font-weight: 800;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+----------------------------------*/
+
+
+/*----------top area----------------*/
+/*------------https://www.freecodecamp.org/news/css-only-back-to-top-button/---------------------*/
+.container-top {
+  --offset: 100px;
+  --fade: 120px;
+  display: flex;
+  width: 60px;
+  justify-self: end;
+  justify-content: flex-end;
+  align-items: flex-end;
+  -webkit-mask:linear-gradient(#0000 calc(100vh + var(--offset)),#000 calc(100vh + var(--offset) + var(--fade)));
+}
+
+.top {
+  position: sticky;
+  bottom:20px;      
+  margin-right:20px; 
+  width:100%;
+  aspect-ratio:1;
+  border-radius:10px;
+}
+.top:before {
+  content:"";
+  position:absolute;
+  inset:30%;
+  transform:translateY(20%) rotate(-45deg);
+  border-top:5px solid  #d5c5aa;
+  border-right:5px solid  #d5c5aa;
+}
+
+/*---------------------------title area-----------------------------*/
+#title{
+    position:absolute;
+    top:3%;
+    width:1400px;
+    text-align: center;
+    font-family: 'CosiAzure-Bold';
+    font-weight: 900;
+    font-size: 72px;
+    color: #d5c5aa;
+    animation: fadeIn ease-in 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#author{
+    position:absolute;
+    width:1400px;
+    top:5.3%;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 500;
+    color:#d5c5aa;
+    font-size: 24px;
+    animation: fadeIn ease-in 5s;
+    text-align: center;
+ 
+}
+
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+
+.scroll{    
+  position:absolute;
+    top:10%;
+    left:45%;
+    font-family: 'Noto Serif Display', serif;
+    font-style:italic;
+    font-size: 18px;
+    color: #d5c5aa;
+    opacity: 0.5;
+    animation: blinker 6s ease-in-out infinite;
+
+}
+@keyframes blinker {
+  50% {opacity: 0;}
+}
+
+
+/*paragraph 1 area*/
+.paragraph_1{
+  position:absolute;
+  width: 810px;
+  text-align: justify;
+  top:16%;
+  left:22.2%;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size: 18px;
+  color:#292925;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  
+}
+.paragraph_1:hover{
+   color:#6e7160;
+   transition:all 3s ease-in;
+}
+
+
+
+/*paragraph 2area*/
+.paragraph_2{
+  position:absolute;
+  width:  810px;
+
+  top:23.5%;
+  left:22.2%;
+  font-size: 18px;
+  color:#292925;   
+text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.paragraph_2:hover{
+    color:#6e7160;
+   transition:all 3s ease-in;
+}
+
+/*paragraph 3 area*/
+.paragraph_3{
+  position:absolute;
+  width: 810px;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  top:31.5%;
+  left:22.2%;
+
+  font-size: 18px;
+  color:#292925;
+}
+.paragraph_3:hover{
+    color:#6e7160;
+   transition:all 3s ease-in;
+}
+/*paragraph 4 area*/
+.paragraph_4{
+  position:absolute;
+  width: 810px;
+  top:42.8%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color:#2c2c28;
+}
+.paragraph_4:hover{
+    color:#6e7160;
+   transition:all 3s ease-in;
+}
+
+.p1_change1{
+    color:#292925;
+  animation:  color-change 3s ease-in-out infinite;
+}
+@keyframes color-change {
+  0% { color:  #292925; }
+  40% { color:   #6e7160; }
+  100% { color: #292925; }
+}
+
+
+.p1_change2{
+  animation:  color-change 9s ease-in-out infinite;
+}
+@keyframes color-change {
+  0% { color:  #292925; }
+  50% { color:   #6e7160; }
+  100% { color: #292925; }
+}
+.p1_change3{
+  animation:  color-change3 15s ease-in-out infinite;
+}
+@keyframes color-change3 {
+  0% { color:  #32332d; }
+  50% { color:   #6e7160; }
+  100% { color: #32332d; }
+}
+.p1_change4{
+  animation:  color-change4 21s ease-in-out infinite;
+}
+@keyframes color-change4 {
+  0% { color:  #32332d; }
+  50% { color:   #6e7160; }
+  100% { color: #32332d; }
+}
+/*start with P5-P8, first new color area*/
+.p1_change11{
+  animation:  color-change11 3s ease-in-out infinite;
+}
+@keyframes color-change11 {
+  0% { color:  #515346; }
+  40% { color:   #767a64; }
+  100% { color: #515346; }
+}
+
+.p1_change12{
+  animation:  color-change12 7s ease-in-out infinite;
+}
+@keyframes color-change12 {
+  0% { color:  #515346; }
+  50% { color:   #c0c4ad; }
+  100% { color: #515346; }
+}
+.p1_change13{
+  animation:  color-change13 10s ease-in-out infinite;
+}
+@keyframes color-change13 {
+  0% { color:  #47493e; }
+  50% { color:   #b4b8a0cb; }
+  100% { color: #47493e; }
+}
+.p1_change14{
+  animation:  color-change14 15s ease-in-out infinite;
+}
+@keyframes color-change14 {
+  0% { color:  #47493e; }
+  50% { color:   #b5b99dcb; }
+  100% { color: #47493e; }
+}
+
+/*paragraph 5 area*/
+.paragraph_5{
+  position:absolute;
+  width: 810px;
+  top:49.3%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color:#494b404b;
+}
+.paragraph_5:hover{
+    color:#6e7160;
+   transition:all 3s ease-in;
+}
+/*paragraph 6 area*/
+.paragraph_6{
+  position:absolute;
+  width:810px;
+
+  top:54.4%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color:#494b4063;
+}
+.paragraph_6:hover{
+    color:#767a64;
+   transition:all 3s ease-in;
+}
+/*paragraph 7 area*/
+.paragraph_7{
+  position:absolute;
+  width:810px;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  top:57.6%;
+  left:22.5%;
+
+  font-size: 18px;
+  color:#494b407e;
+}
+.paragraph_7:hover{
+    color:#b4b8a0cb;
+   transition:all 3s ease-in;
+}
+/*paragraph 8 area*/
+.paragraph_8{
+  position:absolute;
+  width: 800px;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  top:65.2%;
+  left:22.2%;
+
+  font-size: 18px;
+  color:#47493e;
+}
+.paragraph_8:hover{
+    color:#b5b99dcb;
+   transition:all 3s ease-in;
+}
+
+/*2nd new color*/
+.p1_change15{
+  animation:  color-change15 3s ease-in-out infinite;
+}
+@keyframes color-change15 {
+  0% { color:  #5a5a4f; }
+  50% { color:   #9ea08b; }
+  100% { color: #5a5a4f; }
+}
+.p1_change16{
+  animation:  color-change16 5s ease-in-out infinite;
+}
+@keyframes color-change16 {
+  0% { color:  #5a5a4f; }
+  50% { color:   #c1c4ad; }
+  100% { color: #5a5a4f; }
+}
+.p1_change17{
+  animation:  color-change17 9s ease-in-out infinite;
+  
+}
+@keyframes color-change17 {
+  0% { color:  #5a5a4f; }
+  50% { color:   #a3a588; }
+  100% { color: #5a5a4f; }
+}
+
+
+/*paragraph 9 area*/
+.paragraph_9{
+  position:absolute;
+  width:810px;
+  top:70.4%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #535348;
+}
+.paragraph_9:hover{
+    color:#a7aa93;
+   transition:all 3s ease-in;
+}
+/*paragraph 10 area*/
+.paragraph_10{
+  position:absolute;
+  width:820px;
+
+  top:76.2%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #68685b;
+}
+.paragraph_10:hover{
+    color:#a7aa93;
+   transition:all 3s ease-in;
+}
+
+/*3rd color change*/
+.p1_change18{
+  animation:  color-change18 3s ease-in-out infinite;
+  
+}
+@keyframes color-change18 {
+  0% { color:  #6e6e5f; }
+  50% { color:   #f3ecdf9f; }
+  100% { color: #6e6e5f; }
+}
+
+.p1_change19{
+  animation:  color-change19 5s ease-in-out infinite;
+  
+}
+@keyframes color-change19 {
+  0% { color:  #6e6e5f; }
+  50% { color:   #d3d2b1; }
+  100% { color: #6e6e5f; }
+}
+
+.p1_change20{
+  animation:  color-change20 6s ease-in-out infinite;
+  
+}
+@keyframes color-change20 {
+  0% { color:  #6e6e5f; }
+  50% { color:   #f3ecdf; }
+  100% { color: #6e6e5f; }
+}
+/*paragraph 11 area*/
+.paragraph_11{
+  position:absolute;
+  width:810px;
+  top:83.8%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+ color: #797969;
+
+}
+.paragraph_11:hover{
+    color:#f3ecdf;
+   transition:all 3s ease-in;
+}
+
+/*4th color change P12 line 1-3*/
+.p1_change21{
+  animation:  color-change21 3s ease-in-out infinite;
+  
+}
+@keyframes color-change21 {
+  0% { color:  #797969; }
+  50% { color:   #f3ecdf; }
+  100% { color: #797969; }
+}
+
+.p1_change22{
+  animation:  color-change22 5s ease-in-out infinite;
+  
+}
+@keyframes color-change22 {
+  0% { color:  #797969; }
+  50% { color:  #f3ecdf ; }
+  100% { color: #797969; }
+}
+/*5th color change line 3*/
+.p1_change23{
+  animation:  color-change23 7s ease-in-out infinite;
+  
+}
+@keyframes color-change23 {
+  0% { color:  #797969; }
+  50% { color:   #f3ecdf; }
+  100% { color: #797969; }
+}
+/*animation flying*/
+.p1_change24{
+  animation:  color-change24 9s ease-in-out infinite;
+  
+}
+@keyframes color-change24 {
+  0% { color:  #797969; }
+  50% { color:   #f3ecdf; }
+  100% { color: #797969; }
+}
+
+
+/*paragraph 12 area*/
+.paragraph_12{
+  position:absolute;
+  width:810px;
+
+  top:90%;
+  left:22.2%;
+  text-align: justify;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 400;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  font-size: 18px;
+  color: #7e7e6b;
+}
+.paragraph_12:hover{
+    color:#f3ecdf;
+   transition:all 3s ease-in;
+}
+.design{
+  position:absolute;
+  width:810px;
+  text-align: center;
+  align-items: center;
+  top:98%;
+  left:22.2%;
+  font-family: 'Noto Serif Display', serif;
+font-weight: 600;
+  font-size:18px;
+  color: #f3ecdf;
+  font-style: italic;
+}
+
+/*-------------------------------------- phone size --------------------------------*/
+@media screen and (max-width: 425px){
+
+body{
+   background-image: linear-gradient( #252621,#191a16,#252621,#3f4137,#7b7e6d);
+    }
+
+.container1{
+    width:425px;
+    height:9200px;
+    position: relative;
+}
+
+.design{
+  position:absolute;
+  width:175px;
+  text-align: center;
+  align-items: center;
+  top:9050px;
+  left:120px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 800;
+  color: #f3ecdf;
+  font-size: 14px;
+  font-style: normal;
+}
+  /*-------------------title area--------------------*/
+#title{
+    position:absolute;
+    top:200px;
+    width:400px;
+   left:10px;
+   font-family: 'CosiAzure-Bold';
+    font-weight: 900;
+    font-size: 50px;
+    color: #d5c5aa;
+    animation: fadeIn ease-in 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+#author{
+    position:absolute;
+    width:400px;
+    top:350px;
+    left:10px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 500;
+    color:#d5c5aa;
+    font-size: 20px;
+    font-style:italic;
+
+    animation: fadeIn ease-in 5s;
+    text-align: center;
+ 
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.scroll{    
+  position:absolute;
+  top:450px;
+    width:240px;
+   left:80px;
+    font-family: 'Noto Serif Display', serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 10px;
+    color: #d5c5aa;
+    opacity: 0;
+    animation: blinker 6s ease-in-out infinite;
+
+}
+
+/*-------------------paragraph area--------------------*/
+/*paragraph 1 area*/
+.paragraph_1{
+  position:absolute;
+  left:55px;
+  width: 300px;
+  text-align: center;
+  align-items: center;
+  top:650px;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 400;
+  font-size:14px;
+  color:#2e2e29;
+  line-height: 23px;
+}
+
+.paragraph_2{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:1420px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color:#31312d;
+  line-height: 23px;
+}
+
+/*paragraph 3 area*/
+.paragraph_3{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:2275px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  line-height: 23px;
+  color:#363632;
+}
+
+/*paragraph 4 area*/
+.paragraph_4{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:3480px;
+  line-height: 23px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color:#3f3f39;
+
+}
+
+/*paragraph 5 area*/
+.paragraph_5{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:4130px;
+  line-height: 23px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color:#535549;
+
+}
+
+/*paragraph 6 area*/
+.paragraph_6{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:4610px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color:#444639;
+  line-height: 23px;
+
+}
+
+/*paragraph 7 area*/
+.paragraph_7{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:4930px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+ color:#494b40a2;
+ line-height: 23px;
+
+}
+
+/*paragraph 8 area*/
+.paragraph_8{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:5900px;
+  line-height: 23px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color:#5e6151;
+
+}
+
+/*paragraph 9 area*/
+.paragraph_9{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:6400px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color: #6e6e60;
+  line-height: 23px;
+
+}
+
+/*paragraph 10 area*/
+.paragraph_10{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:7000px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color: #747464;
+  line-height: 23px;
+}
+
+.paragraph_11{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:7760px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  line-height: 23px;
+ color: #797969;
+}
+
+/*paragraph 12 area*/
+.paragraph_12{
+  position:absolute;
+  width:300px;
+  left:55px;
+  text-align: center;
+  align-items: center;
+  top:8390px;
+  font-family: 'Noto Serif Display', serif;
+    font-weight: 400;
+  font-size:14px;
+  color: #7e7e6b;
+  line-height: 23px;
+
+}
+
+}
+
+
+
+</style>
+</head>
+
+
+
+
+<body>
+<div class="container1">
+
+<!--menu area-->
+<!--
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="P2_Part6_1.html">Home</a></li>
+
+    </ul>
+  </div>
+-->
+
+<!--animation letters area-->    
+ <div class="animation">
+    <p class="letter1">I</p>
+    <p class="letter2">n</p>
+    <p class="letter3">P</p>
+    <p class="letter4">r</p>
+    <p class="letter5">a</p>
+    <p class="letter6">i</p>
+    <p class="letter7">s</p>
+    <p class="letter8">e</p>
+    <p class="letter9">o</p>
+    <p class="letter10">f</p>
+    <p class="letter11">S</p>
+    <p class="letter12">h</p>
+    <p class="letter13">a</p>
+    <p class="letter14">d</p>
+    <p class="letter16">w</p>
+    <p class="letter17">s</p>
+    <p class="letter18">I</p>
+    <p class="letter19">n</p>
+    <p class="letter20">p</p>
+    <p class="letter21">r</p>
+    <p class="letter22">a</p>
+    <p class="letter23">i</p>
+    <p class="letter24">s</p>
+    <p class="letter25">e</p>
+    <p class="letter26">o</p>
+    <p class="letter27">f</p>
+    <p class="letter28">s</p>
+    <p class="letter29">h</p>
+    <p class="letter30">a</p>
+    <p class="letter31">d</p>
+    <p class="letter32">o</p>
+    <p class="letter33">w</p>
+
+
+ </div>
+<!--main title-->
+<div id="title"><p>In Praise of Shadows</p></div>
+<center><div id="author"><p>An Excerpt by Jun'ichiro Tanizaki</p></div></center>
+<!--<div class="scroll">Scroll Down</div>-->
+
+<!--main text-->
+<center><p class="paragraph_1">
+<span class="p1_change2">I</span> 
+poss<span class="p1_change1">e</span>ss no 
+sp<span class="p1_change1">e</span>cialized 
+knowledge of arch<span class="p1_change2">i</span>tecture, 
+but I understand that in the G<span class="p1_change1">o</span>thic 
+cathedral of the West,the r<span class="p1_change1">o</span>of 
+is thrust up and up so as to place its pinnacle 
+as high in the he<span class="p1_change2">a</span>vens 
+as possible-and 
+that herein <span id="p1_change1">i</span>s 
+thought to lie its special bea<span class="p1_change1">u</span>ty.
+ In the temples of
+Japan, on the other hand, 
+a  
+r<span class="p1_change1">o</span>of of heavy tiles 
+<span class="p1_change2">i</span>s
+first laid out, and in the deep, spacious 
+shadow<span class="p1_change1">s</span> 
+created by the eaves the 
+r<span class="p1_change2">e</span>st of the 
+struct<span class="p1_change1">u</span>re is 
+built. Nor is this true 
+only of temples; in the 
+palaces of the 
+nobility and the 
+h<span class="p1_change2">o</span>uses of the common 
+people, 
+what first 
+strikes t<span class="p1_change1">h</span>e eye is the massive roof
+of tile <span class="p1_change1">o</span>r thatch and 
+the heavy darkness that h<span class="p1_change2">a</span>ngs 
+beneath the eaves. 
+Even at midd<span class="p1_change1">a</span>y 
+cavernous darkness 
+spreads over all beneath
+ the roof's edg<span class="p1_change1">e</span>, making 
+entryway, doors, walls, 
+and pillars all but 
+<span class="p1_change2">i</span>nvisible. 
+The <span class="p1_change1">g</span>rand temples of 
+Kyoto-Chion'in, Honganji-and the 
+farmhouses 
+<span class="p1_change2">o</span>f the remote countryside 
+are alike <span class="p1_change2">i</span>n this 
+respect: l<span class="p1_change1">i</span>ke most buildings of 
+<span class="p1_change1">t</span>he 
+p<span class="p1_change1">a</span>st their roof<span class="p1_change1">s</span>
+give the impress<span class="p1_change2">i</span>on of possessing 
+f<span class="p1_change1">a</span>r greater weight, 
+height, and surface 
+th<span class="p1_change1">a</span>n all that stand<span class="p1_change1">s</span>
+ beneath the eaves. 
+</p></center>
+<br/><br/>
+
+<!--the rest paragraph-->
+<!--p2 area-->
+<center><p class="paragraph_2">
+  <span class="p1_change3">I</span>n making 
+  f<span class="p1_change2">o</span>r 
+  ourselv<span class="p1_change1">e</span>s a 
+  pl<span class="p1_change3">a</span>ce to liv<span class="p1_change1">e</span>, 
+we f<span class="p1_change1">i</span>rst spread 
+<span class="p1_change2">a</span> parasol 
+t<span class="p1_change3">o</span> throw 
+<span class="p1_change1">a</span> shadow
+ on the earth, and 
+ <span class="p1_change3">i</span>n the pale light 
+ <span class="p1_change2">o</span>f the 
+ shadow w<span class="p1_change3">e</span> put together a 
+ h<span class="p1_change2">o</span>use. There <span class="p1_change1">a</span>re 
+ of course ro<span class="p1_change1">o</span>fs on Western h<span class="p1_change1">o</span>uses too, 
+ <span class="p1_change3">b</span>ut
+  th<span class="p1_change1">e</span>y are 
+  l<span class="p1_change2">e</span>ss to 
+  ke<span class="p1_change3">e</span>p off the sun 
+  th<span class="p1_change1">a</span>n to 
+  keep 
+  <span class="p1_change2">o</span>ff the wind and 
+  t<span class="p1_change3">h</span>e dew;
+   even <span class="p1_change1">f</span>rom without 
+  it <span class="p1_change2">i</span>s apparent that
+   th<span class="p1_change3">e</span>y are built 
+   t<span class="p1_change1">o</span> create as 
+  f<span class="p1_change2">e</span>w shadows <span class="p1_change1">a</span>s possible and 
+  to exp<span class="p1_change3">o</span>se the 
+  <span class="p1_change1">i</span>nterior
+to <span class="p1_change3">a</span>s much 
+l<span class="p1_change3">i</span>ght as 
+<span class="p1_change1">p</span>ossible. If <span class="p1_change1">t</span>he roof 
+<span class="p1_change2">o</span>f a 
+ Japanese <span class="p1_change3">h</span>ouse is <span class="p1_change1">a</span> parasol, 
+ the roof <span class="p1_change1">o</span>f a Western
+  h<span class="p1_change2">o</span>use is 
+  n<span class="p1_change3">o</span> more than 
+  a c<span class="p1_change1">a</span>p, with as small <span class="p1_change1">a</span> visor
+  as <span class="p1_change2">p</span>ossible so 
+  <span class="p1_change3">a</span>s to allow <span class="p1_change1">t</span>he 
+  sunlight <span class="p1_change1">t</span>o penetrate
+  d<span class="p1_change2">i</span>rectly 
+  <span class="p1_change3">b</span>eneath 
+  <span class="p1_change1">t</span>he eaves. 
+  <span class="p1_change2">T</span>here 
+  ar<span class="p1_change3">e</span> no 
+  d<span class="p1_change1">o</span>ubt a<span class="p1_change1">l</span>l 
+  sort<span class="p1_change2">s</span> of r<span class="p1_change1">e</span>asons-<span class="p1_change1">c</span>limate,
+  <span class="p1_change3">b</span>uilding <span class="p1_change1">m</span>aterial<span class="p1_change1">s</span> 
+  for th<span class="p1_change1">e</span> 
+  <span class="p1_change2">d</span>eep <span class="p1_change1">J</span>apan<span class="p1_change1">e</span>se 
+  <span class="p1_change3">l</span>eaves. Th<span class="p1_change1">e</span> fact <span class="p1_change1">t</span>hat 
+  w<span class="p1_change2">e</span> did not 
+  <span class="p1_change3">u</span>se gla<span class="p1_change1">s</span>s, 
+  concr<span class="p1_change2">e</span>te, 
+  and br<span class="p1_change3">i</span>cks, 
+  for 
+  <span class="p1_change1">i</span>nstanc<span class="p1_change1">e</span>, made
+  <span class="p1_change2">a</span> low 
+  r<span class="p1_change3">o</span>of 
+  ne<span class="p1_change1">c</span>essary 
+  t<span class="p1_change3">o</span> keep 
+  o<span class="p1_change1">f</span>f the drivin<span class="p1_change1">g</span> 
+  <span class="p1_change3">w</span>ind 
+  a<span class="p1_change1">n</span>d 
+  rain. <span class="p1_change3">A</span> 
+  light r<span class="p1_change1">o</span>om 
+  wo<span class="p1_change3">u</span>ld 
+  no 
+  <span class="p1_change3">d</span>oubt
+   h<span class="p1_change1">a</span>ve been m<span class="p1_change1">o</span>re
+  co<span class="p1_change3">n</span>veni<span class="p1_change1">e</span>nt f<span class="p1_change1">o</span>r us, t<span class="p1_change1">o</span>o, 
+  th<span class="p1_change1">a</span>n a dark 
+  r<span class="p1_change3">o</span>om. The qua<span class="p1_change1">l</span>ity
+  t<span class="p1_change1">h</span>at we c<span class="p1_change1">a</span>ll 
+  <span class="p1_change3">b</span>eauty, howe<span class="p1_change1">v</span>er,
+   m<span class="p1_change3">u</span>st 
+   <span class="p1_change1">a</span>lways <span class="p1_change1">g</span>row <span class="p1_change1">f</span>rom 
+  t<span class="p1_change3">h</span>e reali<span class="p1_change1">t</span>ies of life, 
+  and <span class="p1_change1">o</span>ur ancesto<span class="p1_change1">r</span>s,
+   for<span class="p1_change3">c</span>ed to
+  liv<span class="p1_change1">e</span> 
+  i<span class="p1_change3">n</span> dark <span class="p1_change1">r</span>ooms,
+  <span class="p1_change1">p</span>resently 
+  cam<span class="p1_change3">e</span> to 
+  di<span class="p1_change1">s</span>cover beauty 
+  <span class="p1_change3">i</span>n shadow<span class="p1_change1">s</span>,
+   ultimat<span class="p1_change1">e</span>ly 
+   to <span class="p1_change1">g</span>uide 
+   <span class="p1_change1">s</span>hadows 
+   <span class="p1_change3">t</span>owards
+   <span class="p1_change1">b</span>eaut<span class="p1_change1">y</span>'s 
+   end<span class="p1_change3">s</span>.
+</p></center>
+<br/><br/>
+
+<!--p3 area-->
+<center><p class="paragraph_3">
+<span class="p1_change2">A</span>nd s<span class="p1_change1">o</span> 
+i<span class="p1_change3">t</span> h<span class="p1_change3">a</span>s 
+<span class="p1_change2">c</span>ome to be th<span class="p1_change1">a</span>t 
+th<span class="p1_change3">e</span> bea<span class="p1_change1">u</span>ty of a
+ J<span class="p1_change1">a</span>pan<span class="p1_change2">e</span>se 
+ <span class="p1_change3">r</span>oom
+  d<span class="p1_change2">e</span>pend<span class="p1_change1">s</span> on 
+  <span class="p1_change3">a</span> v<span class="p1_change1">a</span>riation 
+  <span class="p1_change1">o</span>f sh<span class="p1_change2">a</span>dows,
+  hea<span class="p1_change3">v</span>y shadow<span class="p1_change1">s</span> 
+  <span class="p1_change2">a</span>gain<span class="p1_change1">s</span>t 
+  l<span class="p1_change3">i</span>ght sh<span class="p1_change3">a</span>dows-
+  it <span class="p1_change2">h</span>as <span class="p1_change1">n</span>othing 
+  <span class="p1_change2">e</span>ls<span class="p1_change1">e</span>. 
+  <span class="p1_change3">W</span>est<span class="p1_change2">e</span>rners
+a<span class="p1_change1">r</span>e 
+a<span class="p1_change3">m</span>azed <span class="p1_change3">a</span>t 
+the <span class="p1_change2">s</span>im<span class="p1_change1">p</span>licity 
+of <span class="p1_change2">J</span>apan<span class="p1_change3">e</span>se r<span class="p1_change1">o</span>oms, 
+<span class="p1_change2">p</span>erc<span class="p1_change1">e</span>ivin<span class="p1_change1">g</span> 
+in t<span class="p1_change2">h</span>em <span class="p1_change1">n</span>o <span class="p1_change1">m</span>ore 
+<span class="p1_change2">t</span>han a<span class="p1_change3">s</span>hen 
+w<span class="p1_change1">a</span>lls <span class="p1_change1">b</span>ere<span class="p1_change1">f</span>t
+ of <span class="p1_change3">o</span>rname<span class="p1_change1">n</span>t. 
+ <span class="p1_change2">T</span>hei<span class="p1_change3">r</span> 
+r<span class="p1_change3">e</span>acti<span class="p1_change1">o</span>n is under<span class="p1_change1">s</span>tandable,
+ b<span class="p1_change2">u</span>t i<span class="p1_change1">t</span> 
+ b<span class="p1_change3">e</span>trays <span class="p1_change1">a</span>
+  f<span class="p1_change2">a</span>ilu<span class="p1_change1">r</span>e to 
+c<span class="p1_change3">o</span>mprehen<span class="p1_change1">d</span> the 
+m<span class="p1_change2">y</span>ster<span class="p1_change1">y</span> of shad<span class="p1_change1">o</span>ws. 
+O<span class="p1_change3">u</span>t be<span class="p1_change3">y</span>on<span class="p1_change1">d</span> 
+the s<span class="p1_change2">i</span>ttin<span class="p1_change1">g</span> 
+r<span class="p1_change3">o</span>om, <span class="p1_change1">w</span>hich the
+<span class="p1_change2">r</span>ay<span class="p1_change3">s</span> of
+<span class="p1_change3">t</span>h<span class="p1_change2">e</span> sun 
+can <span class="p1_change2">a</span>t b<span class="p1_change1">e</span>st but b<span class="p1_change1">a</span>rely 
+r<span class="p1_change2">e</span>ach, 
+w<span class="p1_change2">e</span> ext<span class="p1_change1">e</span>nd 
+the e<span class="p1_change2">a</span>ves or bui<span class="p1_change1">l</span>d on a 
+<span class="p1_change2">v</span>eran<span class="p1_change1">d</span>a, 
+pu<span class="p1_change2">t</span>ting t<span class="p1_change1">h</span>e sunli<span class="p1_change1">g</span>ht
+ at <span class="p1_change2">s</span>till <span class="p1_change1">g</span>reater <span class="p1_change1">a</span>
+  re<span class="p1_change2">m</span>ove. <span class="p1_change1">T</span>he ligh<span class="p1_change1">t</span> 
+fro<span class="p1_change2">m</span> the 
+ga<span class="p1_change2">r</span>den st<span class="p1_change1">e</span>als i<span class="p1_change1">n</span> 
+but dim<span class="p1_change2">l</span>y t<span class="p1_change1">h</span>rou<span class="p1_change1">g</span>h 
+paper-pane<span class="p1_change3">l</span>ed do<span class="p1_change1">o</span>rs, <span class="p1_change1">a</span>nd
+ it <span class="p1_change2">i</span>s <span class="p1_change1">p</span>rec<span class="p1_change1">i</span>sely 
+ <span class="p1_change2">t</span>his i<span class="p1_change1">n</span>direct 
+ <span class="p1_change3">l</span>ight t<span class="p1_change1">h</span>at m<span class="p1_change1">a</span>kes
+  f<span class="p1_change2">o</span>r <span class="p1_change2">u</span>s the charm of <span class="p1_change1">a</span> room.
+ W<span class="p1_change3">e</span> do o<span class="p1_change1">u</span>r <span class="p1_change1">w</span>all<span class="p1_change1">s</span> i<span class="p1_change1">n</span> 
+n<span class="p1_change2">e</span>utra<span class="p1_change1">l</span> c<span class="p1_change1">o</span>lors s<span class="p1_change1">o</span> 
+th<span class="p1_change3">a</span>t the sad<span class="p1_change1">,</span> f<span class="p1_change1">r</span>agile, <span class="p1_change1">d</span>ying 
+ra<span class="p1_change2">y</span>s can <span class="p1_change1">s</span>ink <span class="p1_change1">i</span>nto 
+abs<span class="p1_change3">o</span>lute repos<span class="p1_change1">e</span>. 
+Th<span class="p1_change2">e</span> sto<span class="p1_change1">r</span>ehouse, 
+<span class="p1_change3">k</span>itch<span class="p1_change1">e</span>n, ha<span class="p1_change1">l</span>lways,
+ and <span class="p1_change2">s</span>uch m<span class="p1_change1">a</span>y 
+ha<span class="p1_change2">v</span>e a <span class="p1_change3">g</span>loss<span class="p1_change3">y</span> f<span class="p1_change3">i</span>ni<span class="p1_change1">s</span>h, 
+b<span class="p1_change3">u</span>t th<span class="p1_change1">e</span> wall<span class="p1_change1">s</span> 
+of <span class="p1_change2">t</span>he s<span class="p1_change1">i</span>ttin<span class="p1_change1">g</span> 
+ro<span class="p1_change3">o</span>m w<span class="p1_change1">i</span>ll <span class="p1_change1">a</span>lmo<span class="p1_change3">s</span>t 
+<span class="p1_change3">a</span>lway<span class="p1_change3">s</span> be 
+of d<span class="p1_change2">a</span>y 
+t<span class="p1_change3">e</span>xtured 
+wi<span class="p1_change3">t</span>h f<span class="p1_change1">i</span>ne <span class="p1_change1">s</span>a<span class="p1_change1">n</span>d. 
+<span class="p1_change2">A</span> luster
+<span class="p1_change3">h</span>ere w<span class="p1_change1">o</span>uld destr<span class="p1_change1">o</span>y 
+t<span class="p1_change2">h</span>e s<span class="p1_change3">o</span>ft fr<span class="p1_change1">a</span>gile 
+bea<span class="p1_change3">u</span>ty
+ of th<span class="p1_change2">e</span> fee<span class="p1_change1">b</span>le ligh<span class="p1_change1">t</span>. 
+ We de<span class="p1_change3">l</span>ight <span class="p1_change3">i</span>n the 
+ m<span class="p1_change2">e</span>re 
+ <span class="p1_change3">s</span>ight <span class="p1_change1">o</span>f the 
+ <span class="p1_change2">d</span>elica<span class="p1_change3">t</span>e 
+ <span class="p1_change3">g</span>low of 
+ <span class="p1_change2">f</span>ading <span class="p1_change3">r</span>ays 
+ clinging t<span class="p1_change1">o</span> t<span class="p1_change1">h</span>e 
+ su<span class="p1_change2">r</span>face <span class="p1_change3">o</span>f 
+a d<span class="p1_change3">u</span>sky w<span class="p1_change1">a</span>ll, 
+<span class="p1_change2">t</span>here <span class="p1_change3">t</span>o liv<span class="p1_change1">e</span>
+ o<span class="p1_change3">u</span>t wh<span class="p1_change1">a</span>t 
+ l<span class="p1_change3">i</span>ttle <span class="p1_change3">l</span>ife remains 
+ to <span class="p1_change3">t</span>hem. 
+ <span class="p1_change2">w</span> neve<span class="p1_change1">r</span> tire 
+ o<span class="p1_change3">f</span> the s<span class="p1_change1">i</span>ght, 
+f<span class="p1_change3">o</span>r to us <span class="p1_change1">t</span>his pale 
+<span class="p1_change2">g</span>low 
+<span class="p1_change3">a</span>nd t<span class="p1_change3">h</span>ese 
+<span class="p1_change3">d</span>im 
+sh<span class="p1_change2">a</span>dows f<span class="p1_change1">a</span>r surp<span class="p1_change1">a</span>ss
+ a<span class="p1_change3">n</span>y <span class="p1_change3">o</span>rnamen<span class="p1_change1">t</span>. And
+  s<span class="p1_change3">o</span>, as w<span class="p1_change1">e</span> must if 
+  w<span class="p1_change2">e</span> are no<span class="p1_change3">t</span> 
+to <span class="p1_change3">d</span>isturb <span class="p1_change1">t</span>he gl<span class="p1_change1">o</span>w,
+ we f<span class="p1_change3">i</span>nis<span class="p1_change1">h</span> the
+ w<span class="p1_change1">a</span>lls <span class="p1_change3">w</span>ith 
+ san<span class="p1_change2">d</span> in a <span class="p1_change1">s</span>ingle 
+n<span class="p1_change3">e</span>utra<span class="p1_change3">l</span> col<span class="p1_change1">o</span>r. 
+T<span class="p1_change2">h</span>e hue <span class="p1_change1">m</span>ay 
+differ f<span class="p1_change3">r</span>om
+<span class="p1_change2">r</span>oom t<span class="p1_change1">o</span> room<span class="p1_change1">,</span> 
+bu<span class="p1_change3">t</span> the d<span class="p1_change3">e</span>gree 
+o<span class="p1_change2">f</span> dif<span class="p1_change1">f</span>erence <span class="p1_change1">w</span>ill 
+b<span class="p1_change3">e</span> ever <span class="p1_change3">s</span>o sl<span class="p1_change1">i</span>ght;
+<span class="p1_change2">n</span>ot <span class="p1_change1">s</span>o much a di<span class="p1_change1">f</span>fer<span class="p1_change1">e</span>nce 
+in colo<span class="p1_change3">r</span> as <span class="p1_change3">i</span>n sha<span class="p1_change1">d</span>e, a 
+di<span class="p1_change2">f</span>feren<span class="p1_change1">c</span>e th<span class="p1_change1">a</span>t 
+will <span class="p1_change3">s</span>eem t<span class="p1_change1">o</span> e<span class="p1_change1">x</span>ist 
+<span class="p1_change2">o</span>nly <span class="p1_change1">i</span>n 
+the mo<span class="p1_change3">o</span>d of the <span class="p1_change3">v</span>iewer. And 
+from t<span class="p1_change3">h</span>ese d<span class="p1_change1">e</span>licate 
+<span class="p1_change3">d</span>iffer<span class="p1_change1">e</span>nces 
+<span class="p1_change2">i</span>n th<span class="p1_change3">e</span> 
+hue of the wall<span class="p1_change1">s</span>, 
+the s<span class="p1_change2">h</span>adow<span class="p1_change1">s</span> in each 
+roo<span class="p1_change2">m</span> take <span class="p1_change3">o</span>n a tinge 
+<span class="p1_change3">p</span>ec<span class="p1_change1">u</span>liar<span class="p1_change1">l</span>y 
+the<span class="p1_change2">i</span>r ow<span class="p1_change3">n</span>.
+</p></center>
+<br/><br/>
+
+<!--p4 area-->
+<center><p class="paragraph_4">
+Of c<span class="p1_change2">o</span>ur<span class="p1_change1">s</span>e 
+<span class="p1_change3">t</span>h<span class="p1_change2">e</span> 
+J<span class="p1_change3">a</span>pan<span class="p1_change2">e</span>se 
+<span class="p1_change3">r</span>o<span class="p1_change2">o</span>m d<span class="p1_change1">o</span>e<span class="p1_change1">s</span>
+<span class="p1_change3">h</span>a<span class="p1_change2">v</span>e 
+<span class="p1_change3">i</span>t<span class="p1_change2">s</span> 
+p<span class="p1_change3">i</span>ct<span class="p1_change2">u</span>r<span class="p1_change1">e</span>
+ a<span class="p1_change3">l</span>c<span class="p1_change2">o</span>v<span class="p1_change1">e</span>,
+a<span class="p1_change3">n</span>d <span class="p1_change2">i</span>n <span class="p1_change1">i</span>t 
+a <span class="p1_change3">h</span>a<span class="p1_change2">n</span>gi<span class="p1_change1">n</span>g <span class="p1_change1">s</span>c<span class="p1_change1">r</span>ol<span class="p1_change1">l</span> 
+a<span class="p1_change3">n</span>d <span class="p1_change2">a</span> <span class="p1_change1">f</span>l<span class="p1_change1">o</span>wer 
+<span class="p1_change3">a</span>rr<span class="p1_change2">a</span>nge<span class="p1_change1">m</span>ent.
+<span class="p1_change3">b</span>ut <span class="p1_change2">t</span>he <span class="p1_change1">s</span>cro<span class="p1_change1">l</span>l 
+a<span class="p1_change3">n</span>d <span class="p1_change2">t</span>h<span class="p1_change1">e</span>
+<span class="p1_change3">f</span>lo<span class="p1_change2">w</span>er<span class="p1_change1">s</span>
+s<span class="p1_change3">e</span>r<span class="p1_change2">v</span>e 
+n<span class="p1_change3">o</span>t a<span class="p1_change2">s</span>
+o<span class="p1_change3">r</span>na<span class="p1_change2">m</span>en<span class="p1_change1">t</span> 
+<span class="p1_change3">b</span>u<span class="p1_change2">t</span> 
+r<span class="p1_change3">a</span>the<span class="p1_change2">r</span> t<span class="p1_change1">o</span>
+ g<span class="p1_change3">i</span>v<span class="p1_change2">e</span> 
+ de<span class="p1_change3">p</span>th <span class="p1_change2">t</span>o t<span class="p1_change1">h</span>e 
+s<span class="p1_change3">h</span>ad<span class="p1_change2">o</span>ws. <span class="p1_change1">W</span>e 
+va<span class="p1_change3">l</span>ue <span class="p1_change2">a</span> s<span class="p1_change1">c</span>roll 
+a<span class="p1_change3">b</span>ov<span class="p1_change2">e</span> a<span class="p1_change1">l</span>l 
+<span class="p1_change3">f</span>or th<span class="p1_change2">e</span> w<span class="p1_change1">a</span>y 
+it <span class="p1_change3">b</span>lend<span class="p1_change2">s</span> 
+w<span class="p1_change3">i</span>th t<span class="p1_change2">h</span>e 
+w<span class="p1_change3">a</span>ll<span class="p1_change2">s</span> 
+o<span class="p1_change3">f</span> t<span class="p1_change2">h</span>e 
+a<span class="p1_change3">l</span>co<span class="p1_change2">v</span>e, 
+<span class="p1_change3">a</span>n<span class="p1_change2">d</span> th<span class="p1_change1">u</span>s 
+w<span class="p1_change3">e</span> cons<span class="p1_change2">i</span>der 
+t<span class="p1_change3">h</span>e m<span class="p1_change2">o</span>un<span class="p1_change1">t</span>in<span class="p1_change1">g</span> 
+q<span class="p1_change3">u</span>it<span class="p1_change2">e</span> <span class="p1_change1">a</span>s 
+i<span class="p1_change3">m</span>por<span class="p1_change2">t</span>ant 
+a<span class="p1_change3">s</span> <span class="p1_change2">t</span>he 
+<span class="p1_change3">c</span>al<span class="p1_change2">l</span>ig<span class="p1_change1">r</span>ap<span class="p1_change1">h</span>y 
+o<span class="p1_change3">r</span> <span class="p1_change2">p</span>ain<span class="p1_change1">t</span>ing. 
+E<span class="p1_change3">v</span>e<span class="p1_change2">n</span> t<span class="p1_change1">h</span>e 
+g<span class="p1_change3">r</span>ea<span class="p1_change2">t</span>es<span class="p1_change1">t</span> 
+m<span class="p1_change3">a</span>st<span class="p1_change2">e</span>rpi<span class="p1_change1">e</span>ce 
+w<span class="p1_change3">i</span>ll <span class="p1_change2">l</span>o<span class="p1_change1">s</span>e 
+i<span class="p1_change3">t</span>s <span class="p1_change2">w</span>or<span class="p1_change1">t</span>h 
+as <span class="p1_change3">a</span> sc<span class="p1_change2">r</span>o<span class="p1_change1">l</span>l 
+i<span class="p1_change3">f</span> i<span class="p1_change2">t</span> f<span class="p1_change1">a</span>il<span class="p1_change1">s</span> 
+<span class="p1_change3">t</span>o b<span class="p1_change2">l</span>en<span class="p1_change1">d</span> w<span class="p1_change1">i</span>th <span class="p1_change4">t</span>he 
+<span class="p1_change3">a</span>lc<span class="p1_change2">o</span>ve<span class="p1_change1">,</span> w<span class="p1_change1">h</span>il<span class="p1_change4">e</span> a <span class="p1_change4">w</span>or<span class="p1_change1">k</span> 
+o<span class="p1_change3">f</span> n<span class="p1_change2">n</span> p<span class="p1_change1">a</span>rt<span class="p1_change1">i</span>cu<span class="p1_change4">l</span>a<span class="p1_change4">r</span> 
+d<span class="p1_change3">i</span>sti<span class="p1_change2">n</span>ct<span class="p1_change1">i</span>on 
+<span class="p1_change3">m</span>ay <span class="p1_change2">b</span>le<span class="p1_change1">n</span>d 
+<span class="p1_change3">b</span>ea<span class="p1_change2">u</span>tif<span class="p1_change1">u</span>lly
+<span class="p1_change3">w</span>i<span class="p1_change2">t</span>h t<span class="p1_change1">h</span>e
+<span class="p1_change3">r</span>oo<span class="p1_change2">m</span> <span class="p1_change1">a</span>n<span class="p1_change1">d</span> s<span class="p1_change4">e</span>t 
+<span class="p1_change3">o</span>ff <span class="p1_change2">t</span>o <span class="p1_change1">u</span>nex<span class="p1_change1">p</span>ect<span class="p1_change4">e</span>d 
+a<span class="p1_change3">d</span>van<span class="p1_change2">t</span>ag<span class="p1_change1">e</span> 
+b<span class="p1_change3">o</span>t<span class="p1_change2">h</span> <span class="p1_change1">i</span>tse<span class="p1_change1">l</span>f 
+a<span class="p1_change3">n</span>d <span class="p1_change2">i</span>ts <span class="p1_change1">s</span>ur<span class="p1_change1">r</span>oundi<span class="p1_change4">n</span>gs. 
+<span class="p1_change3">W</span>her<span class="p1_change2">e</span>in l<span class="p1_change1">i</span>es <span class="p1_change1">t</span>he <span class="p1_change4">p</span>owe<span class="p1_change4">r</span> o<span class="p1_change1">f</span> <span class="p1_change1">a</span>n 
+o<span class="p1_change3">t</span>he<span class="p1_change2">r</span>wis<span class="p1_change1">e</span> 
+<span class="p1_change3">o</span>rd<span class="p1_change2">i</span>nar<span class="p1_change1">y</span> 
+w<span class="p1_change3">o</span>r<span class="p1_change2">k</span> t<span class="p1_change1">o</span> 
+p<span class="p1_change3">r</span>od<span class="p1_change2">u</span>ce 
+s<span class="p1_change3">u</span>ch <span class="p1_change2">a</span>n 
+<span class="p1_change3">e</span>ff<span class="p1_change2">e</span>ct? 
+<span class="p1_change3">M</span>os<span class="p1_change2">t</span> 
+<span class="p1_change3">o</span>ft<span class="p1_change2">e</span>n 
+<span class="p1_change3">t</span>h<span class="p1_change2">e</span> 
+<span class="p1_change3">p</span>ap<span class="p1_change2">e</span>r, 
+<span class="p1_change3">t</span>h<span class="p1_change2">e</span> 
+<span class="p1_change3">i</span>nk<span class="p1_change2">,</span> 
+t<span class="p1_change3">h</span>e 
+<span class="p1_change3">f</span>ab<span class="p1_change2">r</span>ic 
+o<span class="p1_change3">f</span> <span class="p1_change2">t</span>h<span class="p1_change1">e</span> 
+m<span class="p1_change3">o</span>un<span class="p1_change2">t</span>in<span class="p1_change1">g</span> 
+<span class="p1_change3">w</span>il<span class="p1_change2">l</span> <span class="p1_change1">p</span>osse<span class="p1_change1">s</span>s 
+<span class="p1_change3">a</span> c<span class="p1_change2">e</span>rta<span class="p1_change1">i</span>n 
+l<span class="p1_change3">o</span>ok <span class="p1_change2">o</span>f <span class="p1_change1">a</span>nti<span class="p1_change1">q</span>ui<span class="p1_change4">t</span>y,
+a<span class="p1_change3">n</span>d <span class="p1_change2">t</span>hi<span class="p1_change1">s</span> 
+l<span class="p1_change3">o</span>o<span class="p1_change2">k</span> 
+o<span class="p1_change3">f</span> a<span class="p1_change2">n</span>ti<span class="p1_change1">q</span>ui<span class="p1_change1">t</span>y 
+w<span class="p1_change3">i</span>l<span class="p1_change2">l</span> s<span class="p1_change1">t</span>r<span class="p1_change1">i</span>ke 
+<span class="p1_change3">j</span>u<span class="p1_change2">s</span>t 
+t<span class="p1_change3">h</span>e <span class="p1_change2">r</span>ig<span class="p1_change1">h</span>t
+ b<span class="p1_change3">a</span>la<span class="p1_change2">n</span>ce <span class="p1_change1">w</span>i<span class="p1_change1">t</span>h
+ <span class="p1_change3">t</span>he <span class="p1_change2">d</span>ar<span class="p1_change1">k</span>nes<span class="p1_change1">s</span> 
+ o<span class="p1_change3">f</span> t<span class="p1_change2">h</span>e <span class="p1_change1">a</span>lco<span class="p1_change1">v</span>e a<span class="p1_change4">n</span>d 
+ <span class="p1_change3">r</span>oo<span class="p1_change2">m</span>.
+</p></center>
+<br/><br/>
+
+<!--p5 area-->
+<center><p class="paragraph_5">
+<span class="p1_change4">W</span>e <span class="p1_change2">h</span>a<span class="p1_change1">v</span>e 
+<span class="p1_change2">a</span>l<span class="p1_change2">l</span> <span class="p1_change1">h</span>a<span class="p1_change1">d</span> 
+<span class="p1_change4">t</span>h<span class="p1_change2">e</span> 
+<span class="p1_change2">e</span>xp<span class="p1_change3">e</span>rie<span class="p1_change1">n</span>ce, 
+<span class="p1_change4">o</span>n <span class="p1_change2">a</span> 
+v<span class="p1_change2">i</span>s<span class="p1_change3">i</span>t <span class="p1_change1">t</span>o 
+<span class="p1_change4">o</span>n<span class="p1_change2">e</span>
+<span class="p1_change2">o</span>f <span class="p1_change3">t</span>h<span class="p1_change1">e</span> 
+g<span class="p1_change4">r</span>ea<span class="p1_change2">t</span> 
+t<span class="p1_change2">e</span>mp<span class="p1_change2">l</span>e<span class="p1_change1">s</span> 
+o<span class="p1_change4">f</span> K<span class="p1_change2">y</span>ot<span class="p1_change1">o</span> 
+o<span class="p1_change2">r</span> N<span class="p1_change2">a</span>r<span class="p1_change1">a</span>, 
+o<span class="p1_change4">f</span> b<span class="p1_change2">e</span>i<span class="p1_change1">n</span>g
+<span class="p1_change2">s</span>h<span class="p1_change2">w</span>n <span class="p1_change1">a</span> 
+s<span class="p1_change4">c</span>ro<span class="p1_change2">l</span>l, <span class="p1_change1">o</span>n<span class="p1_change1">e</span> 
+o<span class="p1_change2">f</span> t<span class="p1_change3">h</span>e 
+t<span class="p1_change4">e</span>mp<span class="p1_change3">l</span>e'<span class="p1_change1">s</span> 
+t<span class="p1_change2">r</span>ea<span class="p1_change2">s</span>ur<span class="p1_change1">e</span>s, 
+h<span class="p1_change4">a</span>ng<span class="p1_change2">i</span>n<span class="p1_change1">g</span> i<span class="p1_change1">n</span> a 
+<span class="p1_change2">l</span>ar<span class="p1_change2">g</span>e, <span class="p1_change1">d</span>ee<span class="p1_change1">p</span>ly 
+<span class="p1_change4">r</span>ec<span class="p1_change3">e</span>ss<span class="p1_change1">e</span>d <span class="p1_change1">a</span>lco<span class="p1_change1">v</span>e. 
+S<span class="p1_change2">o</span> d<span class="p1_change2">a</span>rk <span class="p1_change1">a</span>re 
+<span class="p1_change4">t</span>h<span class="p1_change3">e</span>s<span class="p1_change1">e</span>
+a<span class="p1_change2">l</span>co<span class="p1_change2">v</span>es, <span class="p1_change1">e</span>ve<span class="p1_change1">n</span> 
+i<span class="p1_change4">n</span> b<span class="p1_change2">r</span>ig<span class="p1_change1">h</span>t 
+d<span class="p1_change2">a</span>yl<span class="p1_change2">i</span>gh<span class="p1_change1">t</span>, 
+t<span class="p1_change4">h</span>a<span class="p1_change3">t</span> w<span class="p1_change1">e</span> 
+c<span class="p1_change2">a</span>n h<span class="p1_change2">a</span>r<span class="p1_change1">d</span>ly <span class="p1_change1">d</span>is<span class="p1_change1">c</span>ern 
+t<span class="p1_change4">h</span>e o<span class="p1_change2">u</span>tl<span class="p1_change1">i</span>nes 
+<span class="p1_change2">o</span>f t<span class="p1_change2">h</span>e 
+<span class="p1_change4">w</span>or<span class="p1_change2">k</span>; 
+<span class="p1_change2">a</span>l<span class="p1_change2">l</span> 
+w<span class="p1_change4">e</span> c<span class="p1_change3">a</span>n <span class="p1_change1">d</span>o 
+<span class="p1_change2">i</span>s <span class="p1_change3">l</span>is<span class="p1_change1">t</span>en 
+<span class="p1_change4">t</span>o <span class="p1_change3">t</span>h<span class="p1_change1">e</span> 
+e<span class="p1_change2">x</span>pl<span class="p1_change2">a</span>nat<span class="p1_change1">i</span>on 
+<span class="p1_change4">o</span>f <span class="p1_change3">t</span>h<span class="p1_change1">e</span> 
+g<span class="p1_change4">u</span>id<span class="p1_change3">e</span>, f<span class="p1_change1">o</span>ll<span class="p1_change1">o</span>w 
+<span class="p1_change4">a</span>s b<span class="p1_change3">e</span>st <span class="p1_change1">w</span>e c<span class="p1_change1">a</span>n 
+<span class="p1_change2">t</span>h<span class="p1_change2">e</span> 
+a<span class="p1_change4">l</span>l-<span class="p1_change2">b</span>ut 
+<span class="p1_change4">i</span>nv<span class="p1_change3">i</span>sibl<span class="p1_change1">e</span> 
+b<span class="p1_change4">r</span>us<span class="p1_change3">h</span> st<span class="p1_change1">r</span>ok<span class="p1_change1">e</span>s, 
+<span class="p1_change4">a</span>n<span class="p1_change2">d</span> t<span class="p1_change1">e</span>ll
+<span class="p1_change4">o</span>ur<span class="p1_change2">s</span>elves <span class="p1_change1">h</span>ow 
+m<span class="p1_change4">a</span>gn<span class="p1_change3">i</span>fic<span class="p1_change1">e</span>nt 
+<span class="p1_change4">a</span> 
+p<span class="p1_change4">a</span>intin<span class="p1_change2">g</span> i<span class="p1_change1">t</span> 
+m<span class="p1_change4">u</span>st <span class="p1_change2">b</span>e. 
+<span class="p1_change4">Y</span>et <span class="p1_change2">t</span>h<span class="p1_change1">e</span> 
+c<span class="p1_change4">o</span>mbin<span class="p1_change3">a</span>tio<span class="p1_change1">n</span>
+o<span class="p1_change4">f</span> th<span class="p1_change3">a</span>t 
+<span class="p1_change4">b</span>lu<span class="p1_change3">r</span>red 
+<span class="p1_change4">o</span>l<span class="p1_change2">d</span> 
+<span class="p1_change4">p</span>ain<span class="p1_change3">t</span>ing 
+<span class="p1_change4">a</span>n<span class="p1_change3">d</span> 
+t<span class="p1_change4">h</span>e d<span class="p1_change2">a</span>r<span class="p1_change1">k</span> 
+a<span class="p1_change4">l</span>co<span class="p1_change3">v</span>e <span class="p1_change1">i</span>s
+<span class="p1_change4">o</span>n<span class="p1_change3">e</span> of 
+<span class="p1_change4">a</span>bs<span class="p1_change2">o</span>lut<span class="p1_change1">e</span> 
+h<span class="p1_change4">a</span>rmon<span class="p1_change3">y</span>. 
+T<span class="p1_change4">h</span>e <span class="p1_change2">l</span>a<span class="p1_change1">c</span>k 
+o<span class="p1_change4">f</span> cl<span class="p1_change3">a</span>rit<span class="p1_change1">y</span>, 
+f<span class="p1_change4">a</span>r <span class="p1_change3">f</span>ro<span class="p1_change1">m</span> 
+d<span class="p1_change4">i</span>stur<span class="p1_change2">b</span>ing <span class="p1_change1">u</span>s, 
+<span class="p1_change4">s</span>ee<span class="p1_change3">m</span>s 
+<span class="p1_change4">r</span>at<span class="p1_change3">h</span>er <span class="p1_change1">t</span>o
+<span class="p1_change4">s</span>ui<span class="p1_change2">t</span> 
+t<span class="p1_change4"></span>he p<span class="p1_change3">a</span>inti<span class="p1_change1">n</span>g 
+<span class="p1_change4">p</span>er<span class="p1_change3">f</span>ect<span class="p1_change1">l</span>y.
+</p></center>
+<br/><br/>
+
+<!--p6 area-->
+<center> <p class="paragraph_6">
+  <span class="p1_change12">F</span>o<span class="p1_change11">r</span> t<span class="p1_change13">h</span>e 
+  <span class="p1_change12">p</span>ai<span class="p1_change11">n</span>ti<span class="p1_change13">n</span>g
+  <span class="p1_change12">h</span>e<span class="p1_change11">r</span>e <span class="p1_change13">i</span>s 
+  <span class="p1_change12">n</span>o<span class="p1_change11">t</span>hi<span class="p1_change13">n</span>g 
+  <span class="p1_change12">m</span>o<span class="p1_change11">r</span>e <span class="p1_change13">t</span>h<span class="p1_change1">a</span>n 
+  <span class="p1_change12">a</span>no<span class="p1_change11">t</span>h<span class="p1_change13">e</span>r <span class="p1_change1">d</span>el<span class="p1_change1">i</span>ca<span class="p1_change1">t</span>e 
+  <span class="p1_change12">s</span>ur<span class="p1_change11">f</span>a<span class="p1_change13">c</span>e 
+  <span class="p1_change12">u</span>p<span class="p1_change11">o</span>n <span class="p1_change13">w</span>h<span class="p1_change11">i</span>c<span class="p1_change13">h</span> 
+  <span class="p1_change12">t</span>h<span class="p1_change11">e</span> <span class="p1_change13">f</span>ai<span class="p1_change11">n</span>t,
+  <span class="p1_change12">f</span>r<span class="p1_change11">a</span>i<span class="p1_change13">l</span> 
+  <span class="p1_change12">l</span>ig<span class="p1_change11">h</span>t <span class="p1_change13">c</span>a<span class="p1_change11">n</span> 
+  <span class="p1_change12">p</span>l<span class="p1_change11">a</span>y; <span class="p1_change13">i</span>t 
+  <span class="p1_change12">p</span>e<span class="p1_change11">r</span>fo<span class="p1_change13">r</span>ms
+  <span class="p1_change12">p</span>re<span class="p1_change11">c</span>i<span class="p1_change13">s</span>el<span class="p1_change11">y</span> 
+  <span class="p1_change12">t</span>h<span class="p1_change11">e</span> s<span class="p1_change13">a</span>m<span class="p1_change11">e</span> 
+  <span class="p1_change12">f</span>un<span class="p1_change11">c</span>ti<span class="p1_change13">o</span>n
+  <span class="p1_change12">a</span>s <span class="p1_change11">t</span>h<span class="p1_change13">e</span> 
+  <span class="p1_change12">s</span>an<span class="p1_change11">d</span>-t<span class="p1_change13">e</span>xt<span class="p1_change11">u</span>re<span class="p1_change13">d</span> 
+  w<span class="p1_change12">a</span>ll. <span class="p1_change11">T</span>hi<span class="p1_change13">s</span> i<span class="p1_change11">s</span> 
+w<span class="p1_change12">h</span>y <span class="p1_change11">w</span>e <span class="p1_change13">a</span>tt<span class="p1_change11">a</span>ch 
+<span class="p1_change12">s</span>u<span class="p1_change11">c</span>h 
+<span class="p1_change12">i</span>mp<span class="p1_change11">o</span>rt<span class="p1_change13">a</span>nc<span class="p1_change11">e</span> 
+to <span class="p1_change12">p</span>ag<span class="p1_change11">e</span> a<span class="p1_change13">n</span>d 
+<span class="p1_change12">p</span>at<span class="p1_change11">i</span>n<span class="p1_change13">a</span>. A 
+<span class="p1_change12">n</span>e<span class="p1_change11">w</span> p<span class="p1_change13">a</span>int<span class="p1_change11">i</span>ng,
+<span class="p1_change12">e</span>v<span class="p1_change11">e</span>n <span class="p1_change13">o</span>n<span class="p1_change11">e</span> d<span class="p1_change12">o</span>ne 
+<span class="p1_change12">i</span>n <span class="p1_change11">i</span>nk 
+<span class="p1_change12">m</span>on<span class="p1_change11">o</span>ch<span class="p1_change13">r</span>om<span class="p1_change11">e</span> 
+o<span class="p1_change12">r</span> s<span class="p1_change11">u</span>bt<span class="p1_change13">l</span>e <span class="p1_change11">p</span>as<span class="p1_change12">t</span>el<span class="p1_change11">s</span>, 
+c<span class="p1_change12">a</span>n <span class="p1_change11">q</span>ui<span class="p1_change13">t</span>e 
+<span class="p1_change12">d</span>es<span class="p1_change11">t</span>ro<span class="p1_change13">y</span> 
+t<span class="p1_change12">h</span>e <span class="p1_change11">s</span>ha<span class="p1_change13">d</span>ow<span class="p1_change11">s</span> o<span class="p1_change13">f</span> a<span class="p1_change11">n</span> a<span class="p1_change11">l</span>c<span class="p1_change11">o</span>ve, 
+<span class="p1_change12">u</span>n<span class="p1_change11">l</span>es<span class="p1_change13">s</span> i<span class="p1_change11">t</span> 
+i<span class="p1_change12">s</span> s<span class="p1_change11">e</span>lec<span class="p1_change13">t</span>ed 
+<span class="p1_change12">w</span>it<span class="p1_change11">h</span> t<span class="p1_change13">h</span>e <span class="p1_change11">g</span>re<span class="p1_change11">a</span>te<span class="p1_change11">s</span>t 
+c<span class="p1_change12">a</span>re.
+</p></center>
+<br/><br/>
+
+<!--p7 area-->
+<center><p class="paragraph_7">
+  <span class="p1_change13">A</span>Ja<span class="p1_change11">p</span>an<span class="p1_change12">e</span>se 
+  <span class="p1_change13">r</span>oo<span class="p1_change11">m</span> 
+mi<span class="p1_change13">g</span>ht <span class="p1_change11">b</span>e l<span class="p1_change12">i</span>ke<span class="p1_change11">n</span>ed 
+<span class="p1_change13">t</span>o a<span class="p1_change11">n</span> in<span class="p1_change12">k</span>wa<span class="p1_change11">s</span>h 
+p<span class="p1_change13">a</span>in<span class="p1_change11">t</span>in<span class="p1_change12">g</span>, 
+<span class="p1_change13">t</span>he <span class="p1_change11">p</span>ap<span class="p1_change12">e</span>r-p<span class="p1_change11">a</span>ne<span class="p1_change11">l</span>ed
+<span class="p1_change13">s</span>ho<span class="p1_change11">j</span>i b<span class="p1_change12">e</span>in<span class="p1_change11">g</span> 
+ th<span class="p1_change13">e</span> ex<span class="p1_change11">p</span>an<span class="p1_change12">s</span>e 
+ w<span class="p1_change13">h</span>er<span class="p1_change11">e</span> th<span class="p1_change12">e</span> 
+ in<span class="p1_change13">k</span> is 
+ <span class="p1_change13">t</span>hi<span class="p1_change11">n</span>ne<span class="p1_change12">s</span>t, 
+a<span class="p1_change13">n</span>d t<span class="p1_change11">h</span>e 
+a<span class="p1_change13">l</span>co<span class="p1_change11">v</span>e 
+w<span class="p1_change13">h</span>er<span class="p1_change11">e</span> it 
+<span class="p1_change13">i</span>s d<span class="p1_change11">a</span>rk<span class="p1_change12">e</span>st. 
+<span class="p1_change13">W</span>he<span class="p1_change11">n</span>ev<span class="p1_change12">e</span>r I <span class="p1_change11">s</span>ee 
+<span class="p1_change13">t</span>he <span class="p1_change11">a</span>lc<span class="p1_change12">o</span>ve <span class="p1_change11">o</span>f 
+<span class="p1_change13">a</span> ta<span class="p1_change11">s</span>te<span class="p1_change12">f</span>ul<span class="p1_change11">l</span>y 
+<span class="p1_change13">b</span>ui<span class="p1_change11">l</span>t J<span class="p1_change12">a</span>pa<span class="p1_change11">n</span>es<span class="p1_change11">e</span> 
+ro<span class="p1_change13">o</span>m, I <span class="p1_change11">m</span>ar<span class="p1_change12">v</span>el <span class="p1_change11">a</span>t 
+o<span class="p1_change13">u</span>r c<span class="p1_change11">o</span>mp<span class="p1_change12">r</span>eh<span class="p1_change11">e</span>ns<span class="p1_change11">i</span>on 
+o<span class="p1_change13">f</span> th<span class="p1_change11">e</span> se<span class="p1_change12">c</span>re<span class="p1_change11">t</span>s o<span class="p1_change11">f</span> 
+sh<span class="p1_change13">a</span>dow<span class="p1_change11">s</span>, ou<span class="p1_change12">r</span> 
+se<span class="p1_change13">n</span>si<span class="p1_change11">t</span>iv<span class="p1_change12">e</span> 
+us<span class="p1_change13">e</span> of <span class="p1_change11">s</span>ha<span class="p1_change12">d</span>ow <span class="p1_change11">a</span>nd <span class="p1_change11">l</span>ig<span class="p1_change11">h</span>t. F<span class="p1_change11">o</span>r 
+th<span class="p1_change13">e</span> be<span class="p1_change11">a</span>ut<span class="p1_change12">y</span> 
+of <span class="p1_change13">t</span>he <span class="p1_change11">a</span>lc<span class="p1_change12">o</span>ve <span class="p1_change11">i</span>s 
+no<span class="p1_change13">t</span>
+ th<span class="p1_change13">e</span> wo<span class="p1_change11">r</span>k 
+ o<span class="p1_change13">f</span> so<span class="p1_change11">m</span>e 
+ c<span class="p1_change13">l</span>ev<span class="p1_change11">e</span>r 
+ d<span class="p1_change13">e</span>vi<span class="p1_change11">c</span>e. 
+ A<span class="p1_change13">n</span> e<span class="p1_change11">m</span>p<span class="p1_change12">t</span>y 
+ <span class="p1_change13">s</span>p<span class="p1_change11">a</span>ce <span class="p1_change12">i</span>s 
+ m<span class="p1_change13">a</span>r<span class="p1_change11">k</span>ed <span class="p1_change12">o</span><span class="p1_change11">f</span>f 
+ w<span class="p1_change13">i</span>th <span class="p1_change11">p</span>la<span class="p1_change12">i</span>n 
+ w<span class="p1_change13">o</span>od <span class="p1_change11">a</span>n<span class="p1_change12">d</span> 
+ p<span class="p1_change13">l</span>ai<span class="p1_change11">n</span> 
+ w<span class="p1_change13">a</span>ll<span class="p1_change11">s</span>, 
+ s<span class="p1_change13">o</span> th<span class="p1_change11">a</span>t 
+ th<span class="p1_change13">e</span> li<span class="p1_change11">g</span>ht 
+ <span class="p1_change13">d</span>ra<span class="p1_change11">w</span>n 
+ i<span class="p1_change13">n</span>to 
+ <span class="p1_change13">i</span>t f<span class="p1_change11">o</span>rm<span class="p1_change12">s</span> 
+ d<span class="p1_change13">i</span>m s<span class="p1_change11">h</span>ad<span class="p1_change12">o</span>ws
+  w<span class="p1_change13">i</span>th<span class="p1_change11">i</span>n <span class="p1_change12">e</span>mp<span class="p1_change11">t</span>in<span class="p1_change11">e</span>ss. 
+  T<span class="p1_change13">h</span>er<span class="p1_change11">e</span> is <span class="p1_change12">n</span>ot<span class="p1_change11">i</span>ng 
+  <span class="p1_change13">m</span>o<span class="p1_change11">r</span>e. 
+  <span class="p1_change13">A</span>n<span class="p1_change11">d</span> ye<span class="p1_change12">t</span>, 
+ w<span class="p1_change13">h</span>en <span class="p1_change11">w</span>e 
+ <span class="p1_change13">g</span>az<span class="p1_change11">e</span> i<span class="p1_change12">n</span>to 
+ <span class="p1_change13">t</span>h<span class="p1_change11">e</span> 
+ d<span class="p1_change13">a</span>rk<span class="p1_change11">n</span>es<span class="p1_change12">s</span> 
+ t<span class="p1_change13">h</span>a<span class="p1_change11">t</span> 
+ g<span class="p1_change13">a</span>th<span class="p1_change11">e</span>rs 
+ <span class="p1_change13">b</span>eh<span class="p1_change11">i</span>nd <span class="p1_change12">t</span>he 
+ <span class="p1_change13">c</span>ro<span class="p1_change11">s</span>sb<span class="p1_change12">e</span>a<span class="p1_change11">m</span>, 
+ a<span class="p1_change13">r</span>ou<span class="p1_change11">n</span>d 
+ t<span class="p1_change13">h</span>e <span class="p1_change11">f</span>lo<span class="p1_change12">w</span>er 
+ <span class="p1_change13">v</span>as<span class="p1_change11">e</span>, b<span class="p1_change12">e</span>ne<span class="p1_change11">a</span>th
+ <span class="p1_change13">t</span>he <span class="p1_change11">s</span>he<span class="p1_change12">l</span>ve<span class="p1_change11">s</span>,
+ <span class="p1_change13">t</span>ho<span class="p1_change11">u</span>g<span class="p1_change12">h</span> 
+ w<span class="p1_change13">e</span> kn<span class="p1_change11">o</span>w 
+ <span class="p1_change13">p</span>er<span class="p1_change11">f</span>ec<span class="p1_change12">t</span>ly 
+ <span class="p1_change13">w</span>el<span class="p1_change11">l</span> it <span class="p1_change12">i</span>s 
+ <span class="p1_change13">m</span>er<span class="p1_change11">e</span> sh<span class="p1_change12">a</span>do<span class="p1_change11">w</span>,
+  w<span class="p1_change13">e</span> ar<span class="p1_change11">e</span> 
+  ov<span class="p1_change13">e</span>rco<span class="p1_change11">m</span>e 
+  <span class="p1_change13">w</span>it<span class="p1_change11">h</span> 
+ th<span class="p1_change13">e</span> fe<span class="p1_change11">e</span>li<span class="p1_change12">n</span>g 
+ t<span class="p1_change13">h</span>at <span class="p1_change11">i</span>n
+  t<span class="p1_change13">h</span>is <span class="p1_change11">s</span>ma<span class="p1_change12">l</span>l 
+  c<span class="p1_change13">o</span>rn<span class="p1_change11">e</span>r o<span class="p1_change12">f</span>
+t<span class="p1_change13">h</span>e <span class="p1_change11">a</span>tm<span class="p1_change12">o</span>sp<span class="p1_change11">h</span>er<span class="p1_change11">e</span> 
+t<span class="p1_change13">h</span>er<span class="p1_change11">e</span> 
+ r<span class="p1_change13">e</span>ig<span class="p1_change11">n</span>s c<span class="p1_change12">o</span>mp<span class="p1_change11">l</span>le<span class="p1_change11">t</span>e a<span class="p1_change11">n</span>d
+ <span class="p1_change13">u</span>tt<span class="p1_change11">e</span>r s<span class="p1_change12">i</span>le<span class="p1_change11">n</span>ce; 
+ <span class="p1_change13">t</span>ha<span class="p1_change11">t</span> 
+ <span class="p1_change13">h</span>er<span class="p1_change11">e</span> in 
+ <span class="p1_change13">t</span>he dar<span class="p1_change11">k</span>ne<span class="p1_change12">s</span>s 
+ i<span class="p1_change13">m</span>mu<span class="p1_change11">t</span>ab<span class="p1_change12">l</span>e 
+ t<span class="p1_change13">r</span>an<span class="p1_change11">q</span>ui<span class="p1_change12">l</span>it<span class="p1_change11">y</span> 
+ h<span class="p1_change13">o</span>ld<span class="p1_change11">s</span>wa<span class="p1_change12">y</span>. 
+ T<span class="p1_change13">h</span>e 
+ "m<span class="p1_change13">y</span>st<span class="p1_change11">e</span>ri<span class="p1_change12">o</span>us 
+ O<span class="p1_change13">r</span>ie<span class="p1_change11">n</span>t" o<span class="p1_change12">f</span> 
+ w<span class="p1_change13">h</span>ic<span class="p1_change11">h</span> 
+ W<span class="p1_change13">e</span>st<span class="p1_change11">e</span>rn<span class="p1_change12">e</span>rs 
+ <span class="p1_change13">s</span>pe<span class="p1_change11">a</span>k 
+ <span class="p1_change13">p</span>ro<span class="p1_change11">b</span>ab<span class="p1_change12">l</span>y
+ <span class="p1_change13">r</span>ef<span class="p1_change11">e</span>rs 
+ <span class="p1_change13">t</span>o <span class="p1_change11">t</span>he 
+ <span class="p1_change13">u</span>nc<span class="p1_change11">a</span>nn<span class="p1_change12">y</span>
+ <span class="p1_change13">s</span>il<span class="p1_change11">e</span>nc<span class="p1_change12">e</span> 
+ o<span class="p1_change13">f</span> th<span class="p1_change11">e</span>se 
+ <span class="p1_change13">d</span>ar<span class="p1_change11">k</span> pl<span class="p1_change12">a</span>ces.
+ <span class="p1_change13">A</span>nd <span class="p1_change11">e</span>ve<span class="p1_change12">n</span>
+we <span class="p1_change13">a</span>s 
+<span class="p1_change13">c</span>hi<span class="p1_change11">l</span>dr<span class="p1_change12">e</span>n 
+<span class="p1_change13">w</span>ou<span class="p1_change11">l</span>d f<span class="p1_change12">e</span>el
+<span class="p1_change13">a</span>n 
+ i<span class="p1_change13">n</span>ex<span class="p1_change11">p</span>re<span class="p1_change12">s</span>si<span class="p1_change11">b</span>le 
+ <span class="p1_change13">c</span>hi<span class="p1_change11">l</span>l a<span class="p1_change12">s</span> 
+ w<span class="p1_change13">e</span> pe<span class="p1_change11">e</span>re<span class="p1_change12">d</span> 
+ i<span class="p1_change13">n</span>to
+ <span class="p1_change13">t</span>he <span class="p1_change11">d</span>ep<span class="p1_change12">t</span>hs 
+ <span class="p1_change13">o</span>f a<span class="p1_change11">n</span> al<span class="p1_change12">c</span>ov<span class="p1_change11">e</span> 
+ t<span class="p1_change13">o</span> wh<span class="p1_change11">i</span>ch 
+ <span class="p1_change13">t</span>he <span class="p1_change11">s</span>un<span class="p1_change12">l</span>ig<span class="p1_change11">h</span>t 
+ <span class="p1_change13">h</span>ad <span class="p1_change11">n</span>ev<span class="p1_change12">e</span>r 
+ p<span class="p1_change13">e</span>ne<span class="p1_change11">t</span>ra<span class="p1_change12">t</span>ed. 
+ W<span class="p1_change13">h</span>er<span class="p1_change11">e</span> li<span class="p1_change12">e</span>s 
+ <span class="p1_change13">t</span>he <span class="p1_change11">k</span>ey 
+ <span class="p1_change13">t</span>o t<span class="p1_change11">h</span>is 
+ <span class="p1_change13">m</span>ys<span class="p1_change11">t</span>er<span class="p1_change12">y</span>?
+i<span class="p1_change13">l</span>lt<span class="p1_change11">i</span>ma<span class="p1_change12">t</span>el<span class="p1_change11">y</span> 
+it <span class="p1_change13">i</span>s t<span class="p1_change11">h</span>e 
+m<span class="p1_change13">a</span>gi<span class="p1_change11">c</span> of 
+<span class="p1_change13">s</span>ha<span class="p1_change11">d</span>ow<span class="p1_change12">s</span>. 
+W<span class="p1_change13">e</span>re t<span class="p1_change11">h</span>e 
+s<span class="p1_change13">h</span>ad<span class="p1_change11">o</span>ws 
+<span class="p1_change13">t</span>o b<span class="p1_change11">e</span> ba<span class="p1_change12">n</span>is<span class="p1_change11">h</span>ed 
+<span class="p1_change13">f</span>ro<span class="p1_change11">m</span> it<span class="p1_change12">s</span> 
+c<span class="p1_change13">o</span>me<span class="p1_change11">r</span>s, t<span class="p1_change12">h</span>e 
+a<span class="p1_change13">l</span>co<span class="p1_change11">v</span>e w<span class="p1_change12">o</span>ul<span class="p1_change11">d</span> in 
+<span class="p1_change13">t</span>ha<span class="p1_change11">t</span> in<span class="p1_change12">s</span>ta<span class="p1_change11">n</span>t 
+r<span class="p1_change13">e</span>ve<span class="p1_change11">r</span>t 
+t<span class="p1_change13">o</span> me<span class="p1_change11">r</span>e v<span class="p1_change12">o</span>id.
+</p></center>
+<br/><br/>
+
+<!--p8 area-->
+<center><p class="paragraph_8">
+<span class="p1_change14">T</span>hi<span class="p1_change12">s</span> w<span class="p1_change11">a</span>s 
+<span class="p1_change14">t</span>h<span class="p1_change12">e</span> g<span class="p1_change11">e</span>ni<span class="p1_change11">u</span>s
+<span class="p1_change14">o</span>f o<span class="p1_change12">u</span>r <span class="p1_change11">a</span>nc<span class="p1_change11">e</span>st<span class="p1_change11">o</span>rs, 
+<span class="p1_change14">t</span>h<span class="p1_change12">a</span>t b<span class="p1_change11">y</span> c<span class="p1_change11">u</span>t<span class="p1_change11">t</span>i<span class="p1_change11">n</span>g 
+o<span class="p1_change14">f</span>f t<span class="p1_change12">h</span>e l<span class="p1_change11">i</span>gh<span class="p1_change11">t</span> 
+f<span class="p1_change14">r</span>o<span class="p1_change12">m</span> t<span class="p1_change11">h</span>i<span class="p1_change11">s</span> 
+e<span class="p1_change14">m</span>p<span class="p1_change12">t</span>y <span class="p1_change11">s</span>p<span class="p1_change11">a</span>ce 
+<span class="p1_change14">t</span>h<span class="p1_change12">e</span>y <span class="p1_change11">i</span>m<span class="p1_change11">p</span>ar<span class="p1_change11">t</span>ed 
+<span class="p1_change14">t</span>o <span class="p1_change12">t</span>h<span class="p1_change11">e</span> 
+w<span class="p1_change14">o</span>r<span class="p1_change12">l</span>d <span class="p1_change11">o</span>f 
+<span class="p1_change14">s</span>h<span class="p1_change12">a</span>do<span class="p1_change11">w</span>s
+<span class="p1_change14">t</span>h<span class="p1_change12">a</span>t <span class="p1_change11">f</span>or<span class="p1_change11">m</span>ed 
+<span class="p1_change14">t</span>h<span class="p1_change12">e</span>re <span class="p1_change11">a</span> 
+q<span class="p1_change14">u</span>al<span class="p1_change12">i</span>t<span class="p1_change11">y</span> 
+o<span class="p1_change14">f</span> m<span class="p1_change12">y</span>st<span class="p1_change11">e</span>ry 
+<span class="p1_change14">a</span>nd <span class="p1_change12">d</span>ep<span class="p1_change11">t</span>h 
+s<span class="p1_change14">u</span>pe<span class="p1_change12">r</span>ior <span class="p1_change11">t</span>o 
+t<span class="p1_change14">h</span>at <span class="p1_change12">o</span>f a<span class="p1_change11">n</span>y 
+w<span class="p1_change14">a</span>ll <span class="p1_change12">p</span>ai<span class="p1_change11">n</span>ti<span class="p1_change11">n</span>g 
+o<span class="p1_change14">r</span> or<span class="p1_change12">n</span>am<span class="p1_change11">e</span>nt. 
+<span class="p1_change14">T</span>he <span class="p1_change12">t</span>ec<span class="p1_change11">h</span>ni<span class="p1_change11">q</span>ue 
+<span class="p1_change14">s</span>ee<span class="p1_change12">m</span>s si<span class="p1_change11">m</span>pl<span class="p1_change11">e</span>, 
+<span class="p1_change14">b</span>ut <span class="p1_change12">w</span>as <span class="p1_change11">b</span>y 
+<span class="p1_change14">n</span>o m<span class="p1_change12">e</span>an<span class="p1_change11">s</span> 
+s<span class="p1_change14">o</span> s<span class="p1_change12">i</span>mp<span class="p1_change11">l</span>y 
+<span class="p1_change14">a</span>ch<span class="p1_change12">i</span>ev<span class="p1_change11">e</span>d. 
+<span class="p1_change14">W</span>e c<span class="p1_change12">a</span>n 
+i<span class="p1_change14">m</span>ag<span class="p1_change12">i</span>ne <span class="p1_change11">w</span>ith 
+<span class="p1_change14">l</span>itt<span class="p1_change12">l</span>e d<span class="p1_change11">i</span>ffi<span class="p1_change11">c</span>ulty 
+<span class="p1_change14">w</span>ha<span class="p1_change12">t</span> e<span class="p1_change11">x</span>tr<span class="p1_change11">a</span>
+o<span class="p1_change14">r</span>di<span class="p1_change12">n</span>ar<span class="p1_change11">y</span> p<span class="p1_change11">a</span>in<span class="p1_change11">s</span> 
+w<span class="p1_change14">e</span>re <span class="p1_change12">t</span>ak<span class="p1_change11">e</span>n w<span class="p1_change11">i</span>th 
+<span class="p1_change14">e</span>ac<span class="p1_change12">h</span> 
+i<span class="p1_change14">n</span>vi<span class="p1_change12">s</span>ib<span class="p1_change11">l</span>e 
+d<span class="p1_change14">e</span>ta<span class="p1_change12">i</span>l-<span class="p1_change11">t</span>he 
+<span class="p1_change14">p</span>la<span class="p1_change12">c</span>em<span class="p1_change11">e</span>nt 
+<span class="p1_change14">o</span>f t<span class="p1_change12">h</span>e 
+<span class="p1_change14">w</span>in<span class="p1_change12">d</span>ow <span class="p1_change11">i</span>n 
+t<span class="p1_change14">h</span>e s<span class="p1_change12">h</span>el<span class="p1_change11">v</span>ing 
+<span class="p1_change14">r</span>e<span class="p1_change12">c</span>ess, 
+<span class="p1_change14">t</span>he <span class="p1_change12">d</span>ep<span class="p1_change11">t</span>h 
+o<span class="p1_change14">f</span> th<span class="p1_change12">e</span> 
+c<span class="p1_change14">r</span>os<span class="p1_change12">s</span>be<span class="p1_change11">a</span>m, 
+<span class="p1_change14">t</span>h<span class="p1_change12">e</span> h<span class="p1_change11">e</span>i<span class="p1_change11">g</span>
+h<span class="p1_change14">t</span> o<span class="p1_change12">f</span> t<span class="p1_change11">h</span>e 
+<span class="p1_change14">t</span>h<span class="p1_change12">r</span>es<span class="p1_change11">h</span>o<span class="p1_change11">l</span>d. 
+<span class="p1_change14">u</span>t <span class="p1_change12">f</span>o<span class="p1_change11">r</span> 
+m<span class="p1_change14">e</span> t<span class="p1_change12">h</span>e <span class="p1_change11">m</span>o<span class="p1_change11">s</span>t 
+e<span class="p1_change14">x</span>q<span class="p1_change12">u</span>i<span class="p1_change11">s</span>i<span class="p1_change11">t</span>e 
+t<span class="p1_change14">o</span>u<span class="p1_change12">c</span>h <span class="p1_change11">i</span>s-
+<span class="p1_change14">t</span>h<span class="p1_change12">e</span> p<span class="p1_change11">a</span>l<span class="p1_change11">e</span> 
+w<span class="p1_change14">h</span>i<span class="p1_change12">t</span>e <span class="p1_change11">g</span>lo<span class="p1_change11">o</span>w 
+<span class="p1_change14">o</span>f <span class="p1_change12">t</span>h<span class="p1_change11">e</span> 
+s<span class="p1_change14">h</span>o<span class="p1_change12">j</span>i <span class="p1_change11">i</span>n <span class="p1_change11">t</span>h<span class="p1_change11">e</span> 
+s<span class="p1_change14">t</span>u<span class="p1_change12">d</span>y <span class="p1_change11">b</span>a<span class="p1_change11">y</span>; 
+<span class="p1_change14">I</span> n<span class="p1_change12">e</span>e<span class="p1_change11">d</span> 
+o<span class="p1_change14">n</span>l<span class="p1_change12">y</span> p<span class="p1_change11">a</span>u<span class="p1_change11">s</span>e 
+<span class="p1_change14">b</span>e<span class="p1_change12">f</span>or<span class="p1_change11">e</span> i<span class="p1_change11">t</span> 
+a<span class="p1_change14">n</span>d <span class="p1_change12">I</span> f<span class="p1_change11">o</span>r<span class="p1_change11">g</span>e<span class="p1_change11">t</span> 
+t<span class="p1_change14">h</span>e <span class="p1_change12">p</span>a<span class="p1_change11">s</span>s<span class="p1_change11">a</span>g<span class="p1_change11">e</span> o<span class="p1_change11">f</span>
+<span class="p1_change14">t</span>i<span class="p1_change12">m</span>e.
+</p></center>
+<br/><br/>
+
+<!--p9 area-->
+<center><p class="paragraph_9">
+<span class="p1_change15">T</span>h<span class="p1_change16">e</span> s<span class="p1_change16">t</span>u<span class="p1_change15">d</span>y 
+<span class="p1_change16">b</span><span class="p1_change15">a</span>y, <span class="p1_change16">a</span>s 
+<span class="p1_change16">t</span><span class="p1_change15">h</span>e 
+<span class="p1_change16">n</span>a<span class="p1_change15">m</span>e 
+<span class="p1_change16">s</span>u<span class="p1_change15">g</span><span class="p1_change16">g</span>e<span class="p1_change17">s</span>ts, 
+<span class="p1_change16">w</span><span class="p1_change15">a</span>s 
+<span class="p1_change16">o</span>r<span class="p1_change15">i</span>g<span class="p1_change16">i</span><span class="p1_change17">n</span>a
+<span class="p1_change16">l</span>ly 
+<span class="p1_change16">a</span> <span class="p1_change15">p</span>ro<span class="p1_change16">j</span><span class="p1_change17">e</span>ct<span class="p1_change16">i</span>ng 
+<span class="p1_change16">w</span>i<span class="p1_change15">n</span>d<span class="p1_change16">o</span><span class="p1_change17">w</span> 
+
+b<span class="p1_change16">u</span><span class="p1_change15">i</span>l<span class="p1_change16">t</span> 
+t<span class="p1_change16">o</span> p<span class="p1_change15">r</span>o<span class="p1_change16">v</span><span class="p1_change17">i</span>de
+<span class="p1_change16">a</span> p<span class="p1_change15">l</span><span class="p1_change16">a</span>c<span class="p1_change17">e</span> 
+<span class="p1_change16">f</span>o<span class="p1_change15">r</span> <span class="p1_change16">r</span>ea<span class="p1_change17">d</span><span class="p1_change15">i</span>ng. 
+<span class="p1_change16">O</span><span class="p1_change15">v</span>e<span class="p1_change16">r</span> 
+
+t<span class="p1_change16">h</span>e <span class="p1_change15">y</span><span class="p1_change17">e</span>a<span class="p1_change15">r</span>s 
+<span class="p1_change16">i</span>t <span class="p1_change15">c</span><span class="p1_change17">a</span>m<span class="p1_change15">e</span> 
+<span class="p1_change16">t</span>o <span class="p1_change15">b</span>e <span class="p1_change17">r</span>e<span class="p1_change15">g</span>a<span class="p1_change17">r</span><span class="p1_change16">d</span>ed 
+<span class="p1_change16">a</span>s <span class="p1_change15">n</span><span class="p1_change17">o</span> 
+m<span class="p1_change16">o</span><span class="p1_change15">r</span>e <span class="p1_change17">t</span><span class="p1_change15">h</span>a
+<span class="p1_change16">n</span> <span class="p1_change15">a</span> 
+s<span class="p1_change16">o</span>u<span class="p1_change15">r</span><span class="p1_change17">c</span>e 
+<span class="p1_change16">o</span>f <span class="p1_change15">l</span>i<span class="p1_change17">g</span><span class="p1_change15">h</span>t 
+<span class="p1_change16">f</span><span class="p1_change15">o</span>r 
+<span class="p1_change16">t</span>h<span class="p1_change15">e</span> 
+<span class="p1_change16">a</span>l<span class="p1_change15">c</span><span class="p1_change17">o</span>ve; 
+<span class="p1_change16">b</span><span class="p1_change15">u</span>t <span class="p1_change17">m</span><span class="p1_change15">o</span>s<span class="p1_change17">t</span> 
+<span class="p1_change16">o</span>f<span class="p1_change15">t</span><span class="p1_change17">e</span>n 
+<span class="p1_change16">i</span>t <span class="p1_change15">s</span>er<span class="p1_change17">v</span><span class="p1_change15">e</span>s 
+<span class="p1_change16">n</span>o<span class="p1_change15">t</span> <span class="p1_change17">s</span><span class="p1_change15">o</span> 
+m<span class="p1_change16">u</span>c<span class="p1_change15">h</span> <span class="p1_change17">t</span><span class="p1_change15">o</span>
+<span class="p1_change16">i</span>ll<span class="p1_change15">u</span><span class="p1_change17">m</span>i<span class="p1_change15">n</span>ate 
+<span class="p1_change16">t</span><span class="p1_change15">h</span>e 
+<span class="p1_change16">a</span>l<span class="p1_change15">c</span><span class="p1_change17">o</span>ve 
+<span class="p1_change16">a</span>s <span class="p1_change15">t</span><span class="p1_change17">o</span> s<span class="p1_change15">o</span>ft<span class="p1_change17">e</span>n 
+<span class="p1_change16">t</span>h<span class="p1_change15">e</span> 
+<span class="p1_change16">s</span>id<span class="p1_change15">e</span>lo<span class="p1_change17">n</span><span class="p1_change15">g</span> 
+
+<span class="p1_change16">r</span><span class="p1_change15">a</span>y<span class="p1_change17">s</span> 
+<span class="p1_change16">f</span>r<span class="p1_change15">o</span><span class="p1_change17">m</span> 
+<span class="p1_change16">w</span>i<span class="p1_change15">t</span>h<span class="p1_change17">o</span><span class="p1_change15">u</span>t, 
+<span class="p1_change16">t</span>o <span class="p1_change15">f</span>i<span class="p1_change17">l</span><span class="p1_change15">t</span>er 
+<span class="p1_change16">t</span><span class="p1_change15">h</span>e<span class="p1_change17">m</span> 
+<span class="p1_change16">t</span>hr<span class="p1_change15">o</span><span class="p1_change17">u</span>gh 
+<span class="p1_change16">p</span>ap<span class="p1_change15">e</span><span class="p1_change17">r</span> 
+p<span class="p1_change16">a</span><span class="p1_change15">n</span>el<span class="p1_change17">s</span>. 
+<span class="p1_change16">T</span>h<span class="p1_change15">e</span><span class="p1_change17">r</span>e 
+<span class="p1_change16">i</span>s <span class="p1_change15">a</span> c<span class="p1_change17">o</span><span class="p1_change15">l</span>d 
+<span class="p1_change16">a</span>n<span class="p1_change15">d</span> de<span class="p1_change17">s</span><span class="p1_change15">o</span>
+l<span class="p1_change16">a</span>te <span class="p1_change15">t</span>in<span class="p1_change17">g</span>e 
+<span class="p1_change16">t</span>o <span class="p1_change15">t</span>h<span class="p1_change17">e</span> 
+<span class="p1_change16">l</span>i<span class="p1_change15">g</span><span class="p1_change17">h</span>t 
+<span class="p1_change16">b</span><span class="p1_change15">y</span> t<span class="p1_change17">h</span>e 
+<span class="p1_change16">t</span><span class="p1_change15">i</span>m<span class="p1_change17">e</span> 
+i<span class="p1_change16">t</span> r<span class="p1_change15">e</span><span class="p1_change17">a</span>ch<span class="p1_change15">e</span>s 
+th<span class="p1_change16">e</span>s<span class="p1_change15">e</span> 
+p<span class="p1_change16">a</span><span class="p1_change15">n</span>el<span class="p1_change17">s</span>. 
+T<span class="p1_change16">h</span>e li<span class="p1_change15">t</span><span class="p1_change17">t</span>le 
+<span class="p1_change16">s</span>u<span class="p1_change15">n</span>l<span class="p1_change17">i</span>gh<span class="p1_change15">t</span>
+ f<span class="p1_change16">r</span><span class="p1_change15">o</span>m <span class="p1_change17">t</span><span class="p1_change15">h</span>e 
+ g<span class="p1_change16">a</span>r<span class="p1_change15">d</span><span class="p1_change17">e</span>n 
+ <span class="p1_change16">t</span><span class="p1_change15">h</span>at 
+ <span class="p1_change16">m</span>a<span class="p1_change15">n</span>ag<span class="p1_change17">e</span><span class="p1_change15">s</span> 
+ t<span class="p1_change16">o</span> m<span class="p1_change15">a</span>k<span class="p1_change17">e</span> i<span class="p1_change15">t</span><span class="p1_change15">s</span> 
+ w<span class="p1_change16">a</span>y b<span class="p1_change15">e</span>n<span class="p1_change17">e</span>at<span class="p1_change15">h</span> 
+ t<span class="p1_change16">h</span>e <span class="p1_change15">e</span><span class="p1_change17">a</span>ve<span class="p1_change15">s</span> 
+ a<span class="p1_change16">n</span>d thr<span class="p1_change15">o</span><span class="p1_change17">u</span>gh 
+ <span class="p1_change16">t</span>he 
+ <span class="p1_change16">c</span>or<span class="p1_change15">r</span><span class="p1_change17">i</span>do<span class="p1_change15">r</span>s 
+ h<span class="p1_change16">a</span>s <span class="p1_change15">b</span>y 
+ <span class="p1_change16">t</span><span class="p1_change15">h</span>en 
+ <span class="p1_change16">l</span>os<span class="p1_change15">t</span> i<span class="p1_change17">t</span>s 
+ <span class="p1_change16">p</span>ow<span class="p1_change15">e</span><span class="p1_change17">r</span> 
+ t<span class="p1_change16">o</span> <span class="p1_change15">i</span>ll<span class="p1_change17">u</span><span class="p1_change15">m</span>ina<span class="p1_change15">t</span>e, 
+ <span class="p1_change16">s</span>ee<span class="p1_change15">m</span>s 
+ <span class="p1_change16">d</span>ra<span class="p1_change15">i</span><span class="p1_change17">n</span>ed 
+ <span class="p1_change16">o</span>f <span class="p1_change15">t</span><span class="p1_change17">h</span>e 
+ <span class="p1_change16">c</span>om<span class="p1_change15">p</span>le<span class="p1_change17">x</span><span class="p1_change15">i</span>on 
+ <span class="p1_change16">o</span>f <span class="p1_change15">l</span>if<span class="p1_change17">e</span>. I<span class="p1_change15">t</span> 
+ ca<span class="p1_change16">n</span> d<span class="p1_change15">o</span> n<span class="p1_change17">o</span> <span class="p1_change15">m</span>or<span class="p1_change15">e</span> 
+ t<span class="p1_change16">h</span>a<span class="p1_change15">n</span> 
+
+a<span class="p1_change15">c</span>c<span class="p1_change16">e</span><span class="p1_change17">n</span>tu<span class="p1_change16">a</span>te 
+<span class="p1_change15">t</span><span class="p1_change16">h</span>e 
+<span class="p1_change15">w</span>h<span class="p1_change16">i</span>te<span class="p1_change17">n</span><span class="p1_change16">e</span>ss 
+<span class="p1_change15">o</span>f <span class="p1_change16">t</span>h<span class="p1_change17">e</span> <span class="p1_change16">p</span>
+a<span class="p1_change15">p</span><span class="p1_change16">e</span>r. <span class="p1_change17">I</span> 
+<span class="p1_change15">s</span>om<span class="p1_change16">e</span>t<span class="p1_change17">i</span>me<span class="p1_change16">s</span> 
+l<span class="p1_change15">i</span><span class="p1_change16">n</span>g<span class="p1_change17">e</span>r 
+<span class="p1_change15">b</span>e<span class="p1_change16">f</span><span class="p1_change17">o</span>r<span class="p1_change16">e</span> 
+t<span class="p1_change15">h</span>e<span class="p1_change16">s</span><span class="p1_change17">e</span> p<span class="p1_change16">a</span>n<span class="p1_change15">e</span>l<span class="p1_change16">s</span> an<span class="p1_change17">d</span> 
+<span class="p1_change15">s</span>t<span class="p1_change16">u</span><span class="p1_change17">d</span>y 
+<span class="p1_change15">t</span><span class="p1_change16">h</span>e 
+<span class="p1_change15">s</span>u<span class="p1_change16">r</span>f<span class="p1_change17">a</span><span class="p1_change16">c</span>e 
+o<span class="p1_change15">f</span> t<span class="p1_change16">h</span>e 
+<span class="p1_change15">p</span>a<span class="p1_change16">p</span><span class="p1_change17">e</span>r, 
+<span class="p1_change15">b</span>ri<span class="p1_change16">g</span><span class="p1_change17">h</span>t, 
+<span class="p1_change15">b</span>u<span class="p1_change16">t</span> g<span class="p1_change17">i</span>v<span class="p1_change16">i</span><span class="p1_change15">n</span>g <span class="p1_change16">n</span>o 
+<span class="p1_change15">i</span>mp<span class="p1_change16">r</span><span class="p1_change17">e</span>ss<span class="p1_change16">i</span>on 
+<span class="p1_change15">o</span>f <span class="p1_change16">b</span>r<span class="p1_change17">i</span>ll<span class="p1_change16">i</span>an<span class="p1_change15">c</span>e.
+</p></center>
+<br/><br/>
+
+<!--p10 area-->
+<center><p class="paragraph_10">
+I<span class="p1_change16">n</span> <span class="p1_change15">t</span><span class="p1_change17">e</span>m<span class="p1_change15">p</span>l<span class="p1_change16">e</span> 
+<span class="p1_change16">a</span>r<span class="p1_change15">c</span><span class="p1_change17">h</span>it<span class="p1_change15">e</span><span class="p1_change16">c</span>
+t<span class="p1_change16">u</span>r<span class="p1_change15">e</span> <span class="p1_change17">t</span><span class="p1_change15">h</span>e 
+<span class="p1_change16">m</span><span class="p1_change15">a</span>i<span class="p1_change17">n</span> 
+r<span class="p1_change16">o</span><span class="p1_change15">o</span><span class="p1_change17">m</span> 
+<span class="p1_change16">s</span>t<span class="p1_change15">a</span><span class="p1_change17">n</span>d<span class="p1_change15">s</span> 
+<span class="p1_change16">a</span>t <span class="p1_change15">a</span> 
+c<span class="p1_change16">o</span>n<span class="p1_change15">s</span><span class="p1_change17">i</span>de<span class="p1_change15">r</span>
+<span class="p1_change16">a</span>bl<span class="p1_change15">e</span> 
+<span class="p1_change16">d</span>i<span class="p1_change15">s</span>t<span class="p1_change17">a</span><span class="p1_change15">n</span>ce 
+
+<span class="p1_change17">f</span>r<span class="p1_change15">o</span><span class="p1_change17">m</span> t<span class="p1_change15">h</span><span class="p1_change16">e</span>
+<span class="p1_change17">g</span>a<span class="p1_change16">r</span><span class="p1_change16">d</span>e<span class="p1_change16">n</span>; 
+
+s<span class="p1_change15">o</span> d<span class="p1_change17">i</span>l<span class="p1_change16">u</span><span class="p1_change17">t</span>e 
+<span class="p1_change16">i</span>s <span class="p1_change17">t</span><span class="p1_change15">h</span>e 
+<span class="p1_change15">l</span>i<span class="p1_change17">g</span><span class="p1_change16">h</span>t 
+<span class="p1_change16">t</span>h<span class="p1_change17">e</span><span class="p1_change16">r</span>e 
+<span class="p1_change15">t</span>h<span class="p1_change17">a</span>t <span class="p1_change16">n</span>o 
+<span class="p1_change16">m</span>a<span class="p1_change17">t</span><span class="p1_change15">t</span>er 
+<span class="p1_change15">w</span><span class="p1_change17">h</span>at <span class="p1_change15">t</span>h<span class="p1_change17">e</span> 
+<span class="p1_change16">s</span>ea<span class="p1_change17">s</span><span class="p1_change16">o</span>n, 
+<span class="p1_change15">o</span>n <span class="p1_change17">f</span>a<span class="p1_change15">i</span><span class="p1_change17">r</span> 
+<span class="p1_change16">d</span>a<span class="p1_change17">y</span><span class="p1_change15">s</span> 
+o<span class="p1_change15">r</span> cl<span class="p1_change17">o</span><span class="p1_change16">u</span>dy, 
+<span class="p1_change15">m</span>or<span class="p1_change17">n</span><span class="p1_change16">i</span>ng, 
+<span class="p1_change16">m</span><span class="p1_change17">i</span>dd<span class="p1_change16">a</span>y, 
+<span class="p1_change16">o</span>r <span class="p1_change17">e</span>v<span class="p1_change15">e</span>ni<span class="p1_change17">n</span>g, 
+<span class="p1_change15">t</span>h<span class="p1_change17">e</span> p<span class="p1_change17">a</span><span class="p1_change17">l</span>e, 
+<span class="p1_change16">w</span>h<span class="p1_change17">i</span><span class="p1_change15">t</span>e 
+<span class="p1_change15">g</span><span class="p1_change17">l</span>ow 
+<span class="p1_change16">s</span>ca<span class="p1_change17">r</span><span class="p1_change15">c</span>el<span class="p1_change17">y</span> 
+va<span class="p1_change15">r</span><span class="p1_change17">i</span>e<span class="p1_change16">s</span>. 
+<span class="p1_change15">A</span>n<span class="p1_change17">d</span> <span class="p1_change14">t</span><span class="p1_change17">h</span>e 
+<span class="p1_change16">s</span>h<span class="p1_change17">a</span><span class="p1_change15">d</span>ow<span class="p1_change17">s</span> 
+<span class="p1_change15">a</span>t <span class="p1_change17">t</span><span class="p1_change16">h</span>e 
+<span class="p1_change16">i</span>nt<span class="p1_change17">e</span>r<span class="p1_change16">s</span>t<span class="p1_change17">i</span>
+<span class="p1_change15">c</span><span class="p1_change17">e</span>s <span class="p1_change15">o</span>f 
+<span class="p1_change15">t</span>h<span class="p1_change17">e</span> 
+<span class="p1_change16">r</span>ib<span class="p1_change17">s</span> s<span class="p1_change16">e</span><span class="p1_change17">e</span>m 
+<span class="p1_change16">s</span>tr<span class="p1_change17">a</span><span class="p1_change15">n</span>g<span class="p1_change17">e</span>ly 
+<span class="p1_change15">i</span>mm<span class="p1_change17">o</span>b<span class="p1_change16">i</span><span class="p1_change17">l</span>e, 
+<span class="p1_change16">a</span>s <span class="p1_change17">i</span>f <span class="p1_change16">d</span><span class="p1_change17">u</span>st 
+<span class="p1_change15">c</span>o<span class="p1_change17">l</span><span class="p1_change15">l</span>ec<span class="p1_change17">t</span>ed 
+<span class="p1_change16">i</span>n <span class="p1_change17">t</span><span class="p1_change16">h</span>e 
+<span class="p1_change15">c</span>o<span class="p1_change17">r</span><span class="p1_change15">n</span>er<span class="p1_change17">s</span> 
+h<span class="p1_change16">a</span>d 
+<span class="p1_change15">b</span>e<span class="p1_change17">c</span><span class="p1_change16">o</span>me 
+<span class="p1_change16">a</span> p<span class="p1_change17">a</span><span class="p1_change15">r</span>t 
+<span class="p1_change16">o</span>f 
+<span class="p1_change15">t</span>he <span class="p1_change17">p</span>ap<span class="p1_change16">e</span><span class="p1_change17">r</span> 
+it<span class="p1_change16">s</span>e<span class="p1_change17">l</span><span class="p1_change16">f</span>. 
+<span class="p1_change15">I</span> b<span class="p1_change17">l</span><span class="p1_change15">i</span>nk 
+<span class="p1_change15">i</span>n <span class="p1_change17">u</span><span class="p1_change16">n</span>ce<span class="p1_change17">r</span>
+t<span class="p1_change16">a</span><span class="p1_change17">i</span>nt<span class="p1_change15">y</span> 
+<span class="p1_change16">a</span>t <span class="p1_change17">t</span>hi<span class="p1_change16">s</span> 
+<span class="p1_change15">d</span>r<span class="p1_change17">e</span><span class="p1_change16">a</span>ml<span class="p1_change17">i</span>ke 
+<span class="p1_change15">l</span>um<span class="p1_change17">i</span><span class="p1_change16">n</span>
+es<span class="p1_change16">c</span><span class="p1_change17">e</span>n<span class="p1_change16">c</span>e, 
+<span class="p1_change15">f</span>ee<span class="p1_change17">l</span><span class="p1_change16">i</span>ng 
+<span class="p1_change15">a</span>s <span class="p1_change17">t</span><span class="p1_change15">h</span>ou<span class="p1_change17">g</span>h 
+s<span class="p1_change16">o</span><span class="p1_change17">m</span>e 
+<span class="p1_change15">m</span>is<span class="p1_change17">t</span><span class="p1_change16">y</span> 
+<span class="p1_change16">f</span><span class="p1_change17">i</span>l<span class="p1_change16">m</span> 
+<span class="p1_change15">w</span>e<span class="p1_change17">r</span><span class="p1_change16">e</span> 
+<span class="p1_change16">b</span>l<span class="p1_change17">u</span><span class="p1_change15">n</span>t
+<span class="p1_change15">i</span><span class="p1_change17">n</span><span class="p1_change16">g</span> 
+m<span class="p1_change16">y</span> <span class="p1_change17">v</span>i<span class="p1_change15">s</span><span class="p1_change17">i</span>
+o<span class="p1_change15">n</span>. 
+<span class="p1_change16">T</span>h<span class="p1_change17">e</span> 
+<span class="p1_change15">l</span>i<span class="p1_change17">g</span><span class="p1_change16">h</span>t 
+<span class="p1_change16">f</span>r<span class="p1_change17">o</span>m <span class="p1_change16">t</span><span class="p1_change17">h</span>e 
+<span class="p1_change15">p</span><span class="p1_change17">a</span>le <span class="p1_change16">w</span>h<span class="p1_change17">i</span>te 
+<span class="p1_change16">p</span>a<span class="p1_change17">p</span><span class="p1_change15">e</span>r, 
+<span class="p1_change15">p</span>ow<span class="p1_change17">e</span><span class="p1_change16">r</span>l<span class="p1_change17">e</span>ss 
+<span class="p1_change16">t</span><span class="p1_change17">o</span> 
+d<span class="p1_change15">i</span><span class="p1_change17">s</span>pe<span class="p1_change16">l</span> 
+<span class="p1_change16">t</span><span class="p1_change17">h</span>e <span class="p1_change16">h</span>ea<span class="p1_change17">v</span>y 
+<span class="p1_change15">d</span>ar<span class="p1_change17">k</span>ne<span class="p1_change16">s</span><span class="p1_change17">s</span> 
+o<span class="p1_change15">f</span> t<span class="p1_change17">h</span>e <span class="p1_change15">a</span><span class="p1_change17">l</span>co<span class="p1_change17">v</span>e,
+<span class="p1_change16">i</span>s <span class="p1_change17">i</span>nst<span class="p1_change15">e</span><span class="p1_change17">a</span>d 
+<span class="p1_change15">r</span>e<span class="p1_change17">p</span>e<span class="p1_change15">l</span><span class="p1_change17">l</span>ed
+<span class="p1_change16">b</span>y <span class="p1_change17">t</span>he <span class="p1_change15">d</span><span class="p1_change17">a</span>rk<span class="p1_change17">n</span>es<span class="p1_change17">s</span>, 
+<span class="p1_change15">c</span>r<span class="p1_change17">e</span><span class="p1_change15">a</span>t<span class="p1_change17">i</span>ng 
+<span class="p1_change16">a</span> w<span class="p1_change17">o</span><span class="p1_change15">r</span>l<span class="p1_change17">d</span> 
+<span class="p1_change16">o</span>f <span class="p1_change17">c</span><span class="p1_change15">o</span>n<span class="p1_change17">f</span>us<span class="p1_change17">i</span>on 
+<span class="p1_change16">w</span>he<span class="p1_change17">r</span><span class="p1_change15">e</span> <span class="p1_change17">d</span>a<span class="p1_change17">r</span><span class="p1_change17">k</span> 
+<span class="p1_change16">a</span><span class="p1_change17">n</span><span class="p1_change16">d</span> 
+<span class="p1_change15">l</span>i<span class="p1_change17">g</span><span class="p1_change16">h</span><span class="p1_change17">t</span> 
+a<span class="p1_change15">r</span><span class="p1_change17">e</span> i<span class="p1_change16">n</span><span class="p1_change17">d</span>
+<span class="p1_change15">i</span><span class="p1_change17">s</span>ti<span class="p1_change16">n</span>
+<span class="p1_change15">g</span>u<span class="p1_change17">i</span>s<span class="p1_change16">h</span><span class="p1_change17">a</span>b<span class="p1_change17">l</span>e. 
+<span class="p1_change15">H</span><span class="p1_change17">a</span>v<span class="p1_change15">e</span> 
+<span class="p1_change16">n</span>o<span class="p1_change17">t</span> <span class="p1_change15">y</span><span class="p1_change17">o</span>u 
+<span class="p1_change16">y</span><span class="p1_change17">o</span>u<span class="p1_change15">r</span>s<span class="p1_change17">e</span><span class="p1_change17">l</span>ve<span class="p1_change17">s</span> 
+<span class="p1_change16">s</span><span class="p1_change17">e</span>n<span class="p1_change15">s</span>ed 
+<span class="p1_change15">a</span> 
+<span class="p1_change16">d</span>i<span class="p1_change17">f</span><span class="p1_change16">f</span>e
+<span class="p1_change15">r</span><span class="p1_change17">e</span>n<span class="p1_change16">c</span>e 
+<span class="p1_change15">i</span>n <span class="p1_change17">t</span><span class="p1_change16">h</span>e 
+<span class="p1_change15">l</span><span class="p1_change17">i</span>g<span class="p1_change15">h</span>t 
+<span class="p1_change16">t</span><span class="p1_change17">h</span>a<span class="p1_change15">t</span> 
+<span class="p1_change16">s</span>u<span class="p1_change17">f</span><span class="p1_change15">f</span>u<span class="p1_change15">s</span>es 
+<span class="p1_change16">s</span>u<span class="p1_change17">c</span><span class="p1_change15">h</span> 
+<span class="p1_change16">a</span> r<span class="p1_change17">o</span><span class="p1_change16">o</span>m, 
+
+<span class="p1_change16">a</span> <span class="p1_change17">r</span>a<span class="p1_change16">r</span><span class="p1_change15">e</span> 
+<span class="p1_change16">t</span>r<span class="p1_change17">a</span><span class="p1_change16">n</span>q<span class="p1_change15">u</span><span class="p1_change17">i</span>
+l<span class="p1_change16">i</span>t<span class="p1_change17">y</span> n<span class="p1_change16">o</span><span class="p1_change15">t</span> f<span class="p1_change17">o</span><span class="p1_change16">u</span>
+<span class="p1_change16">n</span>d <span class="p1_change17">i</span>n <span class="p1_change16">o</span>rd<span class="p1_change15">i</span><span class="p1_change17">n</span>ar<span class="p1_change16">y</span> 
+l<span class="p1_change16">i</span><span class="p1_change17">g</span>h<span class="p1_change16">t</span>? <span class="p1_change15">H</span>a<span class="p1_change17">v</span><span class="p1_change16">e</span> 
+y<span class="p1_change16">o</span><span class="p1_change17">u</span> n<span class="p1_change16">e</span>v<span class="p1_change15">e</span><span class="p1_change17">r</span> 
+
+<span class="p1_change17">f</span>e<span class="p1_change15">l</span><span class="p1_change17">t</span> <span class="p1_change16">a</span> 
+<span class="p1_change17">s</span>o<span class="p1_change16">r</span><span class="p1_change16">t</span> <span class="p1_change17">o</span>f 
+<span class="p1_change17">f</span>e<span class="p1_change15">a</span><span class="p1_change16">r</span> i<span class="p1_change17">n</span> 
+<span class="p1_change17">t</span><span class="p1_change15">h</span><span class="p1_change17">e</span> f<span class="p1_change16">a</span><span class="p1_change15">c</span><span class="p1_change16">e</span> 
+o<span class="p1_change15">f</span> t<span class="p1_change16">h</span>e <span class="p1_change16">a</span><span class="p1_change17">g</span>e<span class="p1_change16">l</span><span class="p1_change16">e</span>ss, 
+<span class="p1_change15">a</span> <span class="p1_change16">f</span>e<span class="p1_change16">a</span><span class="p1_change17">r</span> 
+<span class="p1_change15">t</span>h<span class="p1_change15">a</span><span class="p1_change17">t</span> <span class="p1_change16">i</span>n 
+<span class="p1_change15">t</span>h<span class="p1_change16">a</span><span class="p1_change16">t</span> <span class="p1_change16">r</span>o<span class="p1_change15">o</span><span class="p1_change16">m</span> 
+<span class="p1_change15">y</span>o<span class="p1_change15">u</span> <span class="p1_change16">m</span>i<span class="p1_change17">g</span><span class="p1_change16">h</span>t 
+<span class="p1_change17">l</span>o<span class="p1_change16">s</span><span class="p1_change17">e</span> <span class="p1_change16">a</span><span class="p1_change15">l</span>l 
+<span class="p1_change17">c</span>on<span class="p1_change15">s</span>c<span class="p1_change16">i</span><span class="p1_change17">o</span><span class="p1_change16">u</span><span class="p1_change16">s</span>
+n<span class="p1_change17">e</span><span class="p1_change16">s</span><span class="p1_change17">s</span> o<span class="p1_change16">f</span> 
+<span class="p1_change17">t</span>h<span class="p1_change15">e</span> <span class="p1_change16">p</span>a<span class="p1_change17">s</span><span class="p1_change15">s</span>a<span class="p1_change16">g</span>e 
+<span class="p1_change17">o</span>f <span class="p1_change16">t</span>i<span class="p1_change17">m</span><span class="p1_change16">e</span>, 
+<span class="p1_change15">t</span>h<span class="p1_change15">a</span><span class="p1_change16">t</span> <span class="p1_change17">u</span>nt<span class="p1_change16">o</span><span class="p1_change16">l</span>d 
+<span class="p1_change15">y</span>e<span class="p1_change16">a</span><span class="p1_change16">r</span><span class="p1_change17">s</span> 
+<span class="p1_change15">m</span>i<span class="p1_change15">g</span><span class="p1_change17">h</span>t <span class="p1_change16">p</span>a<span class="p1_change15">s</span><span class="p1_change16">s</span> 
+<span class="p1_change15">a</span><span class="p1_change16">n</span>d <span class="p1_change16">u</span>p<span class="p1_change16">o</span><span class="p1_change16">n</span> 
+em<span class="p1_change15">e</span>r<span class="p1_change15">g</span><span class="p1_change16">i</span>ng <span class="p1_change17">y</span><span class="p1_change15">o</span><span class="p1_change16">u</span> 
+sh<span class="p1_change17">o</span><span class="p1_change16">u</span>ld <span class="p1_change17">f</span><span class="p1_change16">i</span>n<span class="p1_change16">d</span> 
+<span class="p1_change17">y</span>o<span class="p1_change15">u</span> <span class="p1_change16">h</span><span class="p1_change17">a</span><span class="p1_change15">d</span> 
+g<span class="p1_change17">r</span><span class="p1_change16">o</span>w<span class="p1_change17">n</span> o<span class="p1_change16">l</span><span class="p1_change16">d</span> 
+<span class="p1_change15">a</span><span class="p1_change15">n</span>d <span class="p1_change16">g</span><span class="p1_change17">r</span><span class="p1_change15">a</span>y<span class="p1_change16">?</span>
+</p></center>
+<br/><br/>
+
+<!--p11 area-->
+<center><p class="paragraph_11">
+<span class="p1_change18">A</span><span class="p1_change19">n</span><span class="p1_change20">d</span> 
+<span class="p1_change18">s</span><span class="p1_change19">u</span>r<span class="p1_change20">e</span><span class="p1_change19">l</span><span class="p1_change20">y</span> 
+<span class="p1_change18">y</span><span class="p1_change19">o</span><span class="p1_change20">u</span> 
+<span class="p1_change18">h</span>a<span class="p1_change19">v</span><span class="p1_change20">e</span> 
+<span class="p1_change18">s</span><span class="p1_change19">e</span><span class="p1_change20">e</span><span class="p1_change19">n</span>, 
+<span class="p1_change18">i</span><span class="p1_change19">n</span> <span class="p1_change20">t</span>h<span class="p1_change19">e</span> 
+<span class="p1_change18">d</span><span class="p1_change19">a</span><span class="p1_change20">r</span><span class="p1_change19">k</span>n<span class="p1_change18">e</span><span class="p1_change19">s</span><span class="p1_change20">s</span> 
+<span class="p1_change19">o</span>f <span class="p1_change18">t</span><span class="p1_change19">h</span><span class="p1_change20">e</span> 
+i<span class="p1_change19">n</span><span class="p1_change20">n</span>e<span class="p1_change18">r</span><span class="p1_change19">m</span><span class="p1_change20">o</span><span class="p1_change19">s</span><span class="p1_change20">t</span> 
+<span class="p1_change18">r</span>o<span class="p1_change19">o</span><span class="p1_change20">m</span><span class="p1_change19">s</span> <span class="p1_change20">o</span>f 
+<span class="p1_change19">t</span><span class="p1_change20">h</span><span class="p1_change18">e</span><span class="p1_change19">s</span><span class="p1_change20">e</span> 
+<span class="p1_change19">h</span><span class="p1_change20">u</span><span class="p1_change18">g</span><span class="p1_change19">e</span> 
+<span class="p1_change19">b</span><span class="p1_change20">u</span><span class="p1_change18">i</span><span class="p1_change19">l</span><span class="p1_change20">d</span><span class="p1_change19">i</span><span class="p1_change20">n</span><span class="p1_change18">g</span><span class="p1_change19">s</span>, 
+<span class="p1_change19">t</span>o <span class="p1_change20">w</span><span class="p1_change18">h</span><span class="p1_change19">i</span><span class="p1_change20">c</span><span class="p1_change19">h</span> <span class="p1_change20">s</span><span class="p1_change18">u</span><span class="p1_change19">n</span><span class="p1_change20">l</span><span class="p1_change19">i</span><span class="p1_change20">g</span><span class="p1_change18">h</span>t <span class="p1_change19">n</span><span class="p1_change20">e</span><span class="p1_change19">v</span>e<span class="p1_change20">r</span> <span class="p1_change18">p</span><span class="p1_change19">e</span><span class="p1_change20">n</span><span class="p1_change19">e</span><span class="p1_change20">t</span><span class="p1_change18">r</span>a<span class="p1_change19">t</span><span class="p1_change20">e</span><span class="p1_change19">s</span>, <span class="p1_change20">h</span><span class="p1_change18">o</span><span class="p1_change19">w</span> 
+<span class="p1_change19">t</span><span class="p1_change20">h</span><span class="p1_change18">e</span> <span class="p1_change19">g</span><span class="p1_change20">o</span><span class="p1_change19">l</span><span class="p1_change20">d</span> <span class="p1_change18">l</span>e<span class="p1_change19">a</span><span class="p1_change20">f</span> 
+<span class="p1_change19">o</span><span class="p1_change20">f</span><span class="p1_change20">a</span> <span class="p1_change19">s</span><span class="p1_change18">l</span><span class="p1_change20">i</span><span class="p1_change20">d</span><span class="p1_change19">i</span><span class="p1_change18">n</span><span class="p1_change20">g</span><span class="p1_change20">d</span><span class="p1_change19">o</span><span class="p1_change18">o</span><span class="p1_change20">r</span> 
+<span class="p1_change20">o</span><span class="p1_change19">r</span> <span class="p1_change18">s</span><span class="p1_change20">c</span><span class="p1_change20">r</span><span class="p1_change19">e</span><span class="p1_change18">e</span><span class="p1_change20">n</span> 
+w<span class="p1_change20">i</span><span class="p1_change19">l</span><span class="p1_change18">l</span> <span class="p1_change20">p</span><span class="p1_change19">i</span>c<span class="p1_change20">k</span> <span class="p1_change19">u</span><span class="p1_change18">p</span> <span class="p1_change20">a</span> 
+<span class="p1_change20">d</span><span class="p1_change19">i</span>s<span class="p1_change18">t</span><span class="p1_change20">a</span><span class="p1_change20">n</span><span class="p1_change19">t</span> <span class="p1_change18">g</span><span class="p1_change20">l</span>i<span class="p1_change20">m</span><span class="p1_change19">m</span><span class="p1_change18">e</span><span class="p1_change20">r</span> <span class="p1_change20">f</span><span class="p1_change19">r</span><span class="p1_change18">o</span><span class="p1_change20">m</span> 
+<span class="p1_change20">t</span><span class="p1_change19">h</span><span class="p1_change18">e</span> <span class="p1_change20">g</span>ar<span class="p1_change20">d</span><span class="p1_change19">e</span><span class="p1_change18">n</span>,
+
+
+<span class="p1_change20">t</span><span class="p1_change19">h</span><span class="p1_change18">e</span><span class="p1_change20">n</span> <span class="p1_change20">s</span><span class="p1_change19">u</span><span class="p1_change18">d</span>de<span class="p1_change20">n</span><span class="p1_change19">l</span><span class="p1_change18">y</span> <span class="p1_change20">s</span><span class="p1_change20">e</span><span class="p1_change19">n</span><span class="p1_change18">d</span> <span class="p1_change20">f</span>or
+<span class="p1_change20">t</span><span class="p1_change19">h</span><span class="p1_change18">a</span>n <span class="p1_change20">e</span><span class="p1_change19">t</span><span class="p1_change18">h</span>er<span class="p1_change20">e</span><span class="p1_change20">a</span>l <span class="p1_change19">g</span><span class="p1_change18">l</span><span class="p1_change20">o</span>w, <span class="p1_change20">a</span> <span class="p1_change19">f</span><span class="p1_change18">a</span><span class="p1_change20">i</span><span class="p1_change20">n</span><span class="p1_change19">t</span> 
+<span class="p1_change20">g</span><span class="p1_change19">o</span>l<span class="p1_change18">d</span><span class="p1_change20">e</span><span class="p1_change19">n</span> 
+li<span class="p1_change20">g</span><span class="p1_change19">h</span>t <span class="p1_change18">c</span><span class="p1_change20">a</span>s<span class="p1_change19">t</span> <span class="p1_change20">i</span>n<span class="p1_change19">t</span>o 
+<span class="p1_change19">t</span><span class="p1_change18">h</span><span class="p1_change20">e</span> <span class="p1_change19">e</span>n<span class="p1_change18">v</span><span class="p1_change20">e</span><span class="p1_change19">l</span><span class="p1_change19">o</span><span class="p1_change18">p</span>i<span class="p1_change20">n</span><span class="p1_change19">g</span> 
+<span class="p1_change19">d</span>a<span class="p1_change18">r</span><span class="p1_change20">k</span><span class="p1_change19">n</span><span class="p1_change19">e</span><span class="p1_change18">s</span><span class="p1_change20">s</span>, <span class="p1_change19">l</span><span class="p1_change19">i</span>k<span class="p1_change18">e</span> <span class="p1_change20">t</span><span class="p1_change19">h</span><span class="p1_change18">e</span> 
+<span class="p1_change19">g</span><span class="p1_change18">l</span><span class="p1_change20">o</span>w <span class="p1_change19">u</span><span class="p1_change18">p</span><span class="p1_change20">o</span>n 
+<span class="p1_change19">t</span><span class="p1_change18">h</span><span class="p1_change20">e</span> <span class="p1_change19">h</span><span class="p1_change18">o</span><span class="p1_change20">r</span><span class="p1_change19">i</span><span class="p1_change19">z</span><span class="p1_change18">o</span>n <span class="p1_change20">a</span><span class="p1_change19">t</span> <span class="p1_change19">s</span><span class="p1_change18">u</span><span class="p1_change20">n</span><span class="p1_change19">s</span><span class="p1_change19">e</span><span class="p1_change18">t</span>. <span class="p1_change19">I</span>n <span class="p1_change18">n</span>o <span class="p1_change19">o</span>t<span class="p1_change18">h</span><span class="p1_change20">e</span><span class="p1_change19">r</span> <span class="p1_change19">s</span><span class="p1_change18">e</span><span class="p1_change20">t</span><span class="p1_change19">t</span>
+<span class="p1_change19">i</span>n<span class="p1_change18">g</span> <span class="p1_change20">i</span>s <span class="p1_change19">g</span><span class="p1_change19">o</span><span class="p1_change18">l</span>d <span class="p1_change20">q</span><span class="p1_change19">u</span>i<span class="p1_change18">t</span><span class="p1_change19">e</span> <span class="p1_change18">s</span><span class="p1_change20">o</span> 
+<span class="p1_change19">e</span><span class="p1_change18">x</span>q<span class="p1_change20">u</span><span class="p1_change19">i</span><span class="p1_change19">s</span><span class="p1_change18">i</span><span class="p1_change20">t</span><span class="p1_change19">e</span>l<span class="p1_change18">y</span> <span class="p1_change19">b</span>e<span class="p1_change18">a</span><span class="p1_change20">u</span><span class="p1_change19">t</span><span class="p1_change18">i</span>f<span class="p1_change19">u</span>l. 
+
+
+
+<span class="p1_change18">Y</span><span class="p1_change20">o</span>u <span class="p1_change19">w</span><span class="p1_change18">a</span>l<span class="p1_change19">k</span> <span class="p1_change18">p</span>a<span class="p1_change20">s</span><span class="p1_change19">t</span>, <span class="p1_change20">t</span><span class="p1_change19">u</span><span class="p1_change18">r</span>ni<span class="p1_change19">n</span>g 
+<span class="p1_change20">t</span>o <span class="p1_change19">l</span>oo<span class="p1_change18">k</span> ag<span class="p1_change19">a</span><span class="p1_change20">i</span>n, <span class="p1_change20">a</span>n<span class="p1_change19">d</span> <span class="p1_change18">y</span><span class="p1_change19">e</span>t 
+<span class="p1_change20">a</span>g<span class="p1_change19">a</span><span class="p1_change18">i</span>n; <span class="p1_change20">a</span><span class="p1_change19">n</span>d <span class="p1_change18">a</span>s <span class="p1_change19">y</span><span class="p1_change20">o</span>u <span class="p1_change20">m</span>o<span class="p1_change19">v</span>e <span class="p1_change18">a</span>w<span class="p1_change19">a</span>y 
+<span class="p1_change20">t</span>h<span class="p1_change19">e</span> <span class="p1_change18">g</span>o<span class="p1_change19">l</span>d<span class="p1_change20">e</span>n 
+<span class="p1_change20">s</span><span class="p1_change19">u</span>rf<span class="p1_change18">a</span><span class="p1_change19">c</span>e <span class="p1_change20">o</span>f 
+<span class="p1_change20">t</span>he <span class="p1_change19">p</span><span class="p1_change18">a</span>p<span class="p1_change19">e</span>r <span class="p1_change20">g</span>l<span class="p1_change19">o</span><span class="p1_change18">w</span>s <span class="p1_change19">e</span><span class="p1_change20">v</span>er <span class="p1_change19">m</span>o<span class="p1_change18">r</span>e <span class="p1_change19">d</span><span class="p1_change20">e</span><span class="p1_change20">e</span><span class="p1_change19">p</span>ly, <span class="p1_change20">c</span><span class="p1_change19">h</span><span class="p1_change18">a</span>ng<span class="p1_change19">i</span>n<span class="p1_change20">g</span> 
+n<span class="p1_change20">o</span>t <span class="p1_change19">i</span>n <span class="p1_change18">a</span> <span class="p1_change19">f</span>l<span class="p1_change20">a</span>sh, <span class="p1_change20">b</span><span class="p1_change19">u</span>t <span class="p1_change18">g</span>ro<span class="p1_change19">w</span>in<span class="p1_change20">g</span> 
+<span class="p1_change20">s</span>l<span class="p1_change19">o</span>w<span class="p1_change18">l</span><span class="p1_change19">y</span>, <span class="p1_change20">s</span>t<span class="p1_change19">e</span><span class="p1_change18">a</span>di<span class="p1_change19">l</span><span class="p1_change20">y</span> 
+<span class="p1_change20">b</span>ri<span class="p1_change19">g</span><span class="p1_change18">h</span>te<span class="p1_change19">r</span>, 
+
+<!--perfect part-->
+<span class="p1_change19">l</span>i<span class="p1_change18">k</span><span class="p1_change20">e</span> c<span class="p1_change19">o</span><span class="p1_change18">l</span>or 
+<span class="p1_change19">r</span><span class="p1_change18">i</span>s<span class="p1_change20">i</span>n<span class="p1_change19">g</span> <span class="p1_change19">i</span>n <span class="p1_change18">t</span><span class="p1_change20">h</span>e f<span class="p1_change19">a</span>c<span class="p1_change18">e</span> of 
+<span class="p1_change19">a</span> <span class="p1_change18">g</span>i<span class="p1_change20">a</span><span class="p1_change19">n</span><span class="p1_change18">t</span>. 
+O<span class="p1_change19">r</span> <span class="p1_change18">a</span>ga<span class="p1_change20">i</span>n <span class="p1_change19">y</span>o<span class="p1_change18">u</span> 
+<span class="p1_change19">m</span><span class="p1_change18">a</span><span class="p1_change20">y</span> <span class="p1_change19">f</span>i<span class="p1_change18">n</span>d 
+<span class="p1_change19">t</span>h<span class="p1_change18">a</span>t <span class="p1_change20">t</span><span class="p1_change19">h</span>e 
+<span class="p1_change19">g</span>o<span class="p1_change18">l</span><span class="p1_change20">d</span> <span class="p1_change19">d</span><span class="p1_change18">u</span><span class="p1_change19">s</span>t <span class="p1_change18">o</span>f <span class="p1_change20">t</span><span class="p1_change19">h</span><span class="p1_change18">e</span> 
+
+<!--perfect part -->
+<span class="p1_change19">b</span>a<span class="p1_change18">c</span><span class="p1_change20">k</span><span class="p1_change19">g</span>r<span class="p1_change18">o</span><span class="p1_change20">u</span>nd, <span class="p1_change19">w</span>h<span class="p1_change18">i</span><span class="p1_change20">c</span><span class="p1_change19">h</span> 
+<span class="p1_change19">u</span>n<span class="p1_change18">t</span><span class="p1_change20">i</span>l <span class="p1_change19">t</span><span class="p1_change18">h</span>a<span class="p1_change20">t</span> 
+<span class="p1_change19">m</span>o<span class="p1_change18">m</span><span class="p1_change20">e</span><span class="p1_change19">n</span>t 
+<span class="p1_change19">h</span><span class="p1_change18">a</span>d <span class="p1_change20">o</span>n<span class="p1_change19">l</span>y <span class="p1_change18">a</span> 
+<span class="p1_change19">d</span><span class="p1_change18">u</span>l<span class="p1_change20">l</span>, 
+<span class="p1_change19">s</span><span class="p1_change18">l</span>e<span class="p1_change20">e</span><span class="p1_change19">p</span>y 
+<span class="p1_change19">l</span>u<span class="p1_change18">s</span>t<span class="p1_change20">e</span><span class="p1_change19">r</span>, 
+<span class="p1_change18">w</span><span class="p1_change20">i</span><span class="p1_change19">l</span>l, <span class="p1_change18">a</span>s y<span class="p1_change20">o</span><span class="p1_change19">u</span> 
+<span class="p1_change18">m</span><span class="p1_change20">o</span>v<span class="p1_change19">e</span> <span class="p1_change18">p</span>a<span class="p1_change20">s</span><span class="p1_change19">t</span>, 
+<span class="p1_change19">s</span>u<span class="p1_change18">d</span><span class="p1_change20">d</span>e<span class="p1_change19">n</span><span class="p1_change18">l</span><span class="p1_change20">y</span> <span class="p1_change19">g</span>l<span class="p1_change18">e</span><span class="p1_change20">a</span><span class="p1_change19">m</span> <span class="p1_change19">f</span><span class="p1_change18">o</span>r<span class="p1_change20">t</span><span class="p1_change19">h</span> <span class="p1_change19">a</span>s <span class="p1_change18">i</span>f <span class="p1_change20">i</span>t h<span class="p1_change19">a</span>d <span class="p1_change18">b</span>u<span class="p1_change20">r</span><span class="p1_change19">s</span>t <span class="p1_change19">i</span>n<span class="p1_change19">t</span><span class="p1_change19">o</span> <span class="p1_change19">f</span><span class="p1_change19">l</span><span class="p1_change19">a</span>me.
+</p></center>
+<br/><br/>
+
+<!--p12 area-->
+<center><p class="paragraph_12">
+H<span class="p1_change21">o</span>w, <span class="p1_change21">i</span><span class="p1_change21">n</span> 
+s<span class="p1_change23">u</span><span class="p1_change22">c</span>h <span class="p1_change24">a</span> 
+<span class="p1_change24">d</span>a<span class="p1_change23">r</span><span class="p1_change23">k</span> 
+<span class="p1_change21">p</span>l<span class="p1_change24">a</span><span class="p1_change22">c</span><span class="p1_change24">e</span>, 
+<span class="p1_change23">g</span>o<span class="p1_change21">l</span><span class="p1_change21">d</span> <span class="p1_change24">d</span>
+<span class="p1_change24">r</span>a<span class="p1_change22">w</span>s <span class="p1_change22">s</span>o <span class="p1_change24">m</span>u<span class="p1_change21">c</span>h 
+<span class="p1_change21">l</span>i<span class="p1_change23">g</span><span class="p1_change23">h</span>t <span class="p1_change24">t</span>o 
+<span class="p1_change23">i</span>t<span class="p1_change24">s</span><span class="p1_change22">e</span>l<span class="p1_change24">f</span> 
+<span class="p1_change24">i</span>s <span class="p1_change21">a</span> m<span class="p1_change22">y</span>s
+<span class="p1_change21">t</span>e<span class="p1_change22">r</span><span class="p1_change23">y</span> <span class="p1_change24">t</span><span class="p1_change21">o</span> 
+<span class="p1_change23">m</span><span class="p1_change23">e</span>. <span class="p1_change24">B</span>u<span class="p1_change22">t</span> 
+<span class="p1_change24">I</span> <span class="p1_change24">s</span><span class="p1_change23">e</span><span class="p1_change24">e</span> 
+<span class="p1_change21">w</span>h<span class="p1_change21">y</span> <span class="p1_change24">i</span>n <span class="p1_change22">a</span>
+n<span class="p1_change23">c</span><span class="p1_change22">i</span><span class="p1_change24">e</span>nt <span class="p1_change22">t</span>
+<span class="p1_change24">i</span>m<span class="p1_change23">e</span><span class="p1_change21">s</span> 
+<span class="p1_change21">s</span>t<span class="p1_change24">a</span>t<span class="p1_change23">u</span><span class="p1_change22">e</span><span class="p1_change21">s</span> 
+<span class="p1_change23">o</span>f <span class="p1_change21">t</span><span class="p1_change24">h</span>e 
+<span class="p1_change24">B</span>u<span class="p1_change22">d</span><span class="p1_change23">d</span>h<span class="p1_change22">a</span> 
+<span class="p1_change21">w</span>e<span class="p1_change23">r</span><span class="p1_change24">e</span> <span class="p1_change23">g</span>i<span class="p1_change21">l</span><span class="p1_change22">t</span> 
+<span class="p1_change23">w</span>i<span class="p1_change24">t</span><span class="p1_change23">h</span> 
+<span class="p1_change24">g</span>o<span class="p1_change21">l</span><span class="p1_change24">d</span> 
+<span class="p1_change21">a</span>n<span class="p1_change22">d</span> <span class="p1_change23">w</span><span class="p1_change24">h</span><span class="p1_change21"></span> 
+<span class="p1_change23">g</span><span class="p1_change23">o</span>l<span class="p1_change21">d</span> <span class="p1_change24">l</span>e<span class="p1_change21">a</span><span class="p1_change22">f</span> 
+<span class="p1_change24">c</span>o<span class="p1_change24">v</span><span class="p1_change22">e</span><span class="p1_change22">r</span>ed <span class="p1_change21">t</span><span class="p1_change23">h</span>e 
+<span class="p1_change21">w</span>a<span class="p1_change21">l</span><span class="p1_change23">l</span>s <span class="p1_change24">o</span>f 
+<span class="p1_change23">t</span>h<span class="p1_change22">e</span> <span class="p1_change24">h</span><span class="p1_change22">o</span>m<span class="p1_change21">e</span>s 
+<span class="p1_change24">o</span>f <span class="p1_change23">t</span><span class="p1_change22">h</span><span class="p1_change21">e</span> 
+n<span class="p1_change23">o</span>b<span class="p1_change23">i</span><span class="p1_change22">l</span>i<span class="p1_change23">t</span>y. 
+<span class="p1_change24">M</span>o<span class="p1_change22">e</span><span class="p1_change23">m</span> <span class="p1_change24">m</span><span class="p1_change23">a</span>n, 
+<span class="p1_change23">i</span>n <span class="p1_change21">h</span><span class="p1_change24">i</span>s 
+<span class="p1_change22">w</span>e<span class="p1_change24">l</span><span class="p1_change21">l</span>-<span class="p1_change23">l</span>i<span class="p1_change22">t</span> 
+<span class="p1_change21">h</span>o<span class="p1_change23">u</span><span class="p1_change22">s</span>e, 
+<span class="p1_change22">k</span>n<span class="p1_change22">o</span><span class="p1_change24">w</span><span class="p1_change23">s</span> 
+<span class="p1_change23">n</span>o<span class="p1_change21">t</span><span class="p1_change22">h</span>i<span class="p1_change23">n</span><span class="p1_change22">g</span>
+<span class="p1_change24">o</span>f <span class="p1_change24">t</span>h<span class="p1_change23">e</span> <span class="p1_change23">b</span>e<span class="p1_change22">a</span>u<span class="p1_change21">t</span>y 
+<span class="p1_change23">o</span>f <span class="p1_change23">g</span><span class="p1_change21">o</span>l<span class="p1_change23">d</span>; 
+<span class="p1_change22">b</span>u<span class="p1_change22">t</span> 
+<span class="p1_change21">t</span>h<span class="p1_change21">o</span><span class="p1_change22">s</span>e 
+<span class="p1_change22">w</span><span class="p1_change24">h</span>o 
+<span class="p1_change23">l</span><span class="p1_change23">i</span>v<span class="p1_change24">e</span>d 
+<span class="p1_change24">i</span><span class="p1_change22">n</span> 
+<span class="p1_change21">t</span><span class="p1_change21">h</span>e <span class="p1_change22">d</span><span class="p1_change25">a</span>r<span class="p1_change22">k</span> 
+<span class="p1_change22">h</span>o<span class="p1_change24">u</span><span class="p1_change21">s</span><span class="p1_change25">e</span>s 
+<span class="p1_change23">o</span>f <span class="p1_change23">t</span><span class="p1_change22">h</span>e 
+<span class="p1_change24">p</span><span class="p1_change22">a</span>s<span class="p1_change23">t</span> 
+<span class="p1_change23">w</span><span class="p1_change21">e</span>r<span class="p1_change24">e</span> 
+<span class="p1_change25">n</span><span class="p1_change24">o</span><span class="p1_change21">t</span> 
+<span class="p1_change21">m</span>e<span class="p1_change23">r</span><span class="p1_change22">e</span>l<span class="p1_change25">y</span>
+<span class="p1_change24">c</span>a<span class="p1_change22">p</span>t<span class="p1_change23">i</span><span class="p1_change25">v</span><span class="p1_change21">a</span>te<span class="p1_change22">d</span> 
+<span class="p1_change25">b</span>y <span class="p1_change21">i</span><span class="p1_change24">t</span>s 
+<span class="p1_change22">b</span><span class="p1_change24">e</span>a<span class="p1_change23">u</span>ty, 
+<span class="p1_change21">t</span><span class="p1_change23">h</span>e<span class="p1_change22">y</span> 
+<span class="p1_change23">a</span><span class="p1_change22">l</span><span class="p1_change21">s</span><span class="p1_change25">o</span> 
+<span class="p1_change22">k</span>n<span class="p1_change21">e</span><span class="p1_change24">w</span> 
+<span class="p1_change24">i</span>ts 
+<span class="p1_change21">p</span><span class="p1_change24">r</span>a<span class="p1_change23">c</span>t<span class="p1_change24">i</span>ca<span class="p1_change21">l</span> 
+    <span class="p1_change22">v</span>a<span class="p1_change23">l</span><span class="p1_change22">u</span>e; 
+    <span class="p1_change23">f</span>or <span class="p1_change22">g</span><span class="p1_change21">o</span>l<span class="p1_change22">d</span>, 
+<span class="p1_change21">i</span>n <span class="p1_change24">t</span>h<span class="p1_change23">e</span><span class="p1_change25">s</span><span class="p1_change22">e</span> 
+<span class="p1_change22">d</span><span class="p1_change21">i</span><span class="p1_change22">m</span> 
+<span class="p1_change23">r</span><span class="p1_change22">o</span><span class="p1_change23">o</span>ms, 
+<span class="p1_change24">m</span>u<span class="p1_change21">s</span><span class="p1_change24">t</span> 
+<span class="p1_change21">h</span>a<span class="p1_change22">v</span><span class="p1_change22">e</span> 
+<span class="p1_change22">s</span>e<span class="p1_change23">r</span><span class="p1_change21">v</span>e<span class="p1_change24">d</span> 
+<span class="p1_change23">t</span>h<span class="p1_change24">e</span> 
+<span class="p1_change24">f</span><span class="p1_change22">u</span>n<span class="p1_change21">c</span>t<span class="p1_change24">i</span><span class="p1_change22">o</span>n 
+o<span class="p1_change22">f</span> <span class="p1_change22">a</span> 
+<span class="p1_change22">r</span>e<span class="p1_change22">f</span><span class="p1_change22">l</span>e<span class="p1_change22">c</span>t<span class="p1_change22">o</span>r. 
+
+<span class="p1_change22">T</span>h<span class="p1_change21">e</span><span class="p1_change24">i</span>r <span class="p1_change21">u</span><span class="p1_change22">s</span><span class="p1_change23">e</span> 
+<span class="p1_change21">o</span><span class="p1_change22">f</span> <span class="p1_change23">g</span><span class="p1_change24">o</span><span class="p1_change22">l</span><span class="p1_change23">d</span> 
+<span class="p1_change23">l</span><span class="p1_change21">e</span><span class="p1_change22">a</span><span class="p1_change23">f</span> 
+<span class="p1_change24">a</span><span class="p1_change22">n</span><span class="p1_change21">d</span> 
+<span class="p1_change23">g</span><span class="p1_change21">o</span><span class="p1_change22">l</span><span class="p1_change21">d</span> 
+<span class="p1_change22">d</span><span class="p1_change23">u</span><span class="p1_change23">s</span><span class="p1_change24">t</span> 
+<span class="p1_change21">w</span><span class="p1_change24">a</span><span class="p1_change24">s</span> 
+<span class="p1_change22">n</span><span class="p1_change23">o</span><span class="p1_change23">t</span> 
+<span class="p1_change23">m</span><span class="p1_change22">e</span><span class="p1_change22">r</span><span class="p1_change23">e</span> 
+<span class="p1_change24">e</span><span class="p1_change21">x</span><span class="p1_change21">t</span><span class="p1_change22">r</span><span class="p1_change23">a</span><span class="p1_change22">v</span><span class="p1_change23">a</span><span class="p1_change22">g</span><span class="p1_change24">a</span><span class="p1_change21">n</span><span class="p1_change22">c</span><span class="p1_change23">e</span><span class="p1_change21">.</span> 
+<span class="p1_change23">I</span><span class="p1_change22">t</span><span class="p1_change22">s</span> 
+<span class="p1_change22">r</span><span class="p1_change23">e</span><span class="p1_change23">f</span><span class="p1_change24">l</span><span class="p1_change21">e</span><span class="p1_change22">c</span><span class="p1_change22">t</span><span class="p1_change23">i</span><span class="p1_change24">v</span><span class="p1_change21">e</span> 
+<span class="p1_change21">p</span><span class="p1_change24">r</span><span class="p1_change24">o</span><span class="p1_change22">p</span><span class="p1_change23">e</span><span class="p1_change22">r</span><span class="p1_change22">t</span<span class="p1_change23">i</span><span class="p1_change24">e</span><span class="p1_change21">s</span> 
+<span class="p1_change22">w</span><span class="p1_change23">e</span><span class="p1_change23">r</span><span class="p1_change21">e</span> <span class="p1_change22">p</span><span class="p1_change22">u</span><span class="p1_change22">t</span> 
+<span class="p1_change23">t</span><span class="p1_change22">o</span> <span class="p1_change22">u</span><span class="p1_change24">s</span><span class="p1_change21">e</span> 
+<span class="p1_change24">a</span><span class="p1_change21">s</span> <span class="p1_change21">a</span> 
+<span class="p1_change23">s</span><span class="p1_change22">o</span><span class="p1_change24">u</span><span class="p1_change23">r</span><span class="p1_change22">c</span><span class="p1_change22">e</span> 
+<span class="p1_change22">o</span><span class="p1_change21">f</span> 
+<span class="p1_change21">i</span><span class="p1_change23">l</span><span class="p1_change23">l</span><span class="p1_change22">u</span><span class="p1_change24">m</span><span class="p1_change22">i</span><span class="p1_change23">n</span><span class="p1_change24">a</span><span class="p1_change23">t</span><span class="p1_change22">i</span><span class="p1_change21">o</span><span class="p1_change24">n</span>. 
+<span class="p1_change22">S</span><span class="p1_change24">i</span><span class="p1_change24">l</span><span class="p1_change21">v</span><span class="p1_change22">e</span><span class="p1_change21">r</span> 
+<span class="p1_change23">a</span><span class="p1_change21">n</span><span class="p1_change22">d</span> 
+<span class="p1_change24">o</span><span class="p1_change22">t</span><span class="p1_change21">h</span><span class="p1_change23">e</span><span class="p1_change22">r</span> 
+<span class="p1_change24">m</span><span class="p1_change23">e</span><span class="p1_change22">t</span><span class="p1_change21">a</span><span class="p1_change24">l</span><span class="p1_change23">s</span> 
+<span class="p1_change24">q</span><span class="p1_change23">u</span><span class="p1_change22">i</span><span class="p1_change21">c</span><span class="p1_change24">k</span><span class="p1_change243">l</span><span class="p1_change24">y</span> 
+<span class="p1_change24">l</span><span class="p1_change23">o</span><span class="p1_change22">s</span><span class="p1_change21">e</span> 
+
+
+<span class="p1_change24">t</span><span class="p1_change23">h</span><span class="p1_change22">e</span><span class="p1_change21">i</span><span class="p1_change24">r</span> 
+<span class="p1_change24">g</span><span class="p1_change23">l</span><span class="p1_change22">o</span><span class="p1_change21">s</span><span class="p1_change24">s</span>, 
+<span class="p1_change24">b</span><span class="p1_change23">u</span><span class="p1_change22">t</span> 
+<span class="p1_change24">g</span><span class="p1_change23">o</span><span class="p1_change22">l</span><span class="p1_change21">d</span> 
+<span class="p1_change24">r</span><span class="p1_change23">e</span><span class="p1_change22">t</span><span class="p1_change21">a</span><span class="p1_change24">i</span><span class="p1_change23">n</span><span class="p1_change22">s</span> 
+<span class="p1_change24">i</span><span class="p1_change23">t</span><span class="p1_change22">s</span> 
+<span class="p1_change24">b</span><span class="p1_change23">r</span><span class="p1_change22">i</span><span class="p1_change21">l</span><span class="p1_change24">l</span><span class="p1_change23">i</span><span class="p1_change22">a</span><span class="p1_change21">n</span><span class="p1_change24">c</span><span class="p1_change23">e</span> 
+<span class="p1_change24">i</span><span class="p1_change23">n</span><span class="p1_change22">d</span><span class="p1_change21">e</span><span class="p1_change24">f</span><span class="p1_change23">i</span><span class="p1_change22">n</span><span class="p1_change21">i</span><span class="p1_change24">t</span><span class="p1_change23">e</span><span class="p1_change22">l</span><span class="p1_change24">y</span> 
+<span class="p1_change24">t</span><span class="p1_change23">o</span> 
+<span class="p1_change24">l</span><span class="p1_change23">i</span><span class="p1_change22">g</span><span class="p1_change21">h</span><span class="p1_change24">t</span> 
+<span class="p1_change24">t</span><span class="p1_change23">h</span><span class="p1_change22">e</span> 
+<span class="p1_change24">d</span><span class="p1_change23">a</span><span class="p1_change22">r</span><span class="p1_change21">k</span><span class="p1_change24">n</span><span class="p1_change23">e</span><span class="p1_change22">s</span><span class="p1_change21">s</span> 
+<span class="p1_change24">o</span><span class="p1_change23">f</span> <span class="p1_change22">t</span><span class="p1_change21">h</span><span class="p1_change24">e</span> 
+<span class="p1_change24">r</span><span class="p1_change23">o</span><span class="p1_change22">o</span><span class="p1_change21">m</span>. 
+<span class="p1_change24">T</span><span class="p1_change23">h</span><span class="p1_change22">i</span><span class="p1_change21">s</span> <span class="p1_change24">i</span><span class="p1_change23">s</span> 
+<span class="p1_change24">w</span><span class="p1_change23">h</span><span class="p1_change22">y</span> 
+<span class="p1_change24">g</span><span class="p1_change23">o</span><span class="p1_change22">l</span><span class="p1_change21">d</span> 
+<span class="p1_change24">w</span><span class="p1_change23">a</span><span class="p1_change22">s</span> 
+<span class="p1_change24">h</span><span class="p1_change23">e</span><span class="p1_change22">l</span><span class="p1_change21">d</span> 
+<span class="p1_change24">i</span><span class="p1_change23">n</span> <span class="p1_change22">s</span><span class="p1_change21">u</span><span class="p1_change24">c</span><span class="p1_change23">h</span> 
+<span class="p1_change24">i</span><span class="p1_change23">n</span><span class="p1_change22">c</span><span class="p1_change21">r</span><span class="p1_change24">e</span><span class="p1_change23">d</span><span class="p1_change22">i</span><span class="p1_change21">b</span><span class="p1_change24">l</span><span class="p1_change23">y</span> 
+<span class="p1_change24">h</span><span class="p1_change23">i</span><span class="p1_change22">g</span><span class="p1_change21">h</span> 
+<span class="p1_change24">e</span><span class="p1_change23">s</span><span class="p1_change22">t</span><span class="p1_change21">e</span><span class="p1_change24">e</span><span class="p1_change23">m</span>.
+</p></center>
+<br/>
+
+
+<!--designed by shiyaoWu-->
+<div class="design">Designed by Shiyao Wu</div>
+
+
+
+
+
+
+
+
+</div>
+<!--back to top area-->
+<div class="container-top">
+    <a href="P2_Part6_2.html" class="top"></a>
+  </div>
+
+</body>
+</html>
