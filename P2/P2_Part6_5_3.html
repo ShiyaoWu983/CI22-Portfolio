@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<title>P2 Part6 Interaction3</title>
+<style>
+/*--------------------------------------new typeface--------------------------------------------------*/
+@font-face {
+    font-family: 'CosiAzure-Bold';
+    src: url('CosiAzure-Bold.ttf') format('truetype')
+    }
+@font-face {
+    font-family: 'CosiAzure-Ultra';
+    src: url('CosiAzure-Ultra.ttf') format('truetype')
+    }
+
+body{
+background-color: #252621;
+}
+
+.container1{
+height:98vh;
+display: flex;
+position: relative;
+}
+
+/*------------------------------------------------letter animation area--------------------------------------------------------*/
+
+.letter1{
+    position: absolute;
+    display:flex;
+    top:20px;
+    left:100px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter2{
+    position: absolute;
+    display:flex;
+    top:40px;
+    left:400px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.3;
+}
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter3{
+    position: absolute;
+    display:flex;
+    top:200px;
+    left:50px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter4{
+    position: absolute;
+    top:400px;
+    left:200px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.1;
+}
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter5{
+    position: absolute;
+    top:500px;
+    left:80px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter6{
+    position: absolute;
+    display:flex;
+    top:420px;
+    left:480px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.1;
+}
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter7{
+    position: absolute;
+    display:flex;
+    top:80px;
+    left:700px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter8{
+    position: absolute;
+    display:flex;
+    top:400px;
+    left:800px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 5s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:80px;
+    }
+}
+.letter9{
+    display:flex;
+    position: absolute;
+    top:30px;
+    left:1000px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter10{
+    position: absolute;
+    display:flex;
+    top:550px;
+    left:20px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter11{
+    position: absolute;
+    display:flex;
+    top:10px;
+    left:1200px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:70px;
+    }
+}
+
+.letter12{
+    position: absolute;
+    top:80px;
+    left:1350px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter13{
+    position: absolute;
+    top:480px;
+    left:1250px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:70px;
+    }
+}
+
+.letter14{
+    position: absolute;
+    top:480px;
+    left:1360px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 8s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter16{
+    position: absolute;
+    top:520px;
+    left:280px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 7s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter17{
+    position: absolute;
+    top:520px;
+    left:780px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 3s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+.letter18{
+    position: absolute;
+    top:550px;
+    left:980px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter19{
+    position: absolute;
+    top:600px;
+    left:1080px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 4s ease-in infinite alternate;
+    opacity: 0.1;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+.letter20{
+    position: absolute;
+    top:650px;
+    left:1300px;
+    font-family: 'Noto Serif Display', serif;
+    color:#d5c5aa;
+    font-size: 1px;
+    animation: textzoom 6s ease-in infinite alternate;
+    opacity: 0.3;
+}
+
+@keyframes textzoom{
+    0% {
+        font-size:5px;
+    }
+    100%{
+        font-size:50px;
+    }
+}
+
+
+
+
+
+
+/*-----------------------------menu bar----------------------------------*/
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6e7160;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #f8f8f89a;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #3f4137;
+  font-family: 'CosiAzure-Ultra';
+  font-size: 24px;
+  font-weight:600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color:  #d5c5aac7;
+}
+
+/*--------------------prargraph area--------------------*/
+.text{
+  position:absolute;
+  width: 810px;
+  text-align: justify;
+  align-items: center;
+  top:16%;
+  left:22.2%;
+  font-family: 'Noto Serif Display', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color:#dbd0bda8;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+}
+.next{
+  position:absolute;
+  text-align: justify;
+  align-items: center;
+  font-family: 'Noto Serif Display', serif;
+  margin-top: 1300px;
+  margin-left: 1070px;
+  font-weight: 900;
+  font-size: 18px;
+  color:#dbd0bda8;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+<div class="container1">
+
+<!--menu bar-->
+<div class="hamburger-menu">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+      <span></span>
+    </label>
+
+    <ul class="menu__box">
+      <li><a class="menu__item" href="P2_Part6_5.html">Home</a></li>
+			<li><a class="menu__item" href="P2_Part6_5_1.html">Roof</a></li>
+			<li><a class="menu__item" href="P2_Part6_5_2.html">Shadow</a></li>
+			<li><a class="menu__item" href="P2_Part6_5_3.html">Light</a></li>
+			
+    </ul>
+  </div>
+
+<!--animation letters area-->    
+ <div class="animation">
+    <p class="letter1">I</p>
+    <p class="letter2">n</p>
+    <p class="letter3">P</p>
+    <p class="letter4">r</p>
+    <p class="letter5">a</p>
+    <p class="letter6">i</p>
+    <p class="letter7">s</p>
+    <p class="letter8">e</p>
+    <p class="letter9">o</p>
+    <p class="letter10">f</p>
+    <p class="letter11">S</p>
+    <p class="letter12">h</p>
+    <p class="letter13">a</p>
+    <p class="letter14">d</p>
+    <p class="letter16">w</p>
+    <p class="letter17">s</p>
+    <p class="letter18">I</p>
+    <p class="letter19">n</p>
+    <p class="letter20">p</p>
+ </div>
+
+<!--paragraph area-->
+ <p class="text">
+    In temple architecture the main room stands at a considerable distance from the garden; so dilute is the light there that no matter what the season, on fair days or cloudy, morning, midday, or evening, the pale, white glow scarcely varies. And the shadows at the interstices of the ribs seem strangely immobile, as if dust collected in the corners had become a part of the paper itself. I blink in uncertainty at this dreamlike luminescence, feeling as though some misty film were blunting my vision. The light from the pale white paper, powerless to dispel the heavy darkness of the alcove, is instead repelled by the darkness, creating a world of confusion where dark and light are indistinguishable. Have not you yourselves sensed a difference in the light that suffuses such a room, a rare tranquility not found in ordinary light? Have you never felt a sort of fear in the face of the ageless, a fear that in that room you might lose all consciousness of the passage of time, that untold years might pass and upon emerging you should find you had grown old and gray?
+       <br/> <br/>
+     <span class="moretext">
+        And surely you have seen, in the darkness of the innermost rooms of these huge buildings, to which sunlight never penetrates, how the gold leaf of a sliding door or screen will pick up a distant glimmer from the garden, then suddenly send forth an ethereal glow, a faint golden light cast into the enveloping darkness, like the glow upon the horizon at sunset. In no other setting is gold quite so exquisitely beautiful. You walk past, turning to look again, and yet again; and as you move away the golden surface of the paper glows ever more deeply, changing not in a flash, but growing slowly, steadily brighter, like color rising in the face of a giant. Or again you may find that the gold dust of the background, which until that moment had only a dull, sleepy luster, will, as you move past, suddenly gleam forth as if it had burst into flame.
+<br/><br/>
+How, in such a dark place, gold draws so much light to itself is a mystery to me. But I see why in ancient times statues of the Buddha were gilt with gold and why gold leaf covered the walls of the homes of the nobility. Modem man, in his well-lit house, knows nothing of the beauty of gold; but those who lived in the dark houses of the past were not merely captivated by its beauty, they also knew its practical value; for gold, in these dim rooms, must have served the function of a reflector. Their use of gold leaf and gold dust was not mere extravagance. Its reflective properties were put to use as a source of illumination. Silver and other metals quickly lose their gloss, but gold retains its brilliance indefinitely to light the darkness of the room. This is why gold was held in such incredibly high esteem.
+    </span>
+<br/><br/><br/><br/><br/>
+</p>
+
+<!--next area-->
+
+<a href="P2_Part6_5_3.html" class="next">Next</a>
+
+
+
+</div>
+
+</body>
+</html>
