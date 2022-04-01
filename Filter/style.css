@@ -1,0 +1,63 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+html,body{
+	background:rgb(197, 0, 0);
+}
+
+img{
+	position: relative;
+	float:center;
+	left:110px;
+	object-fit: cover;
+	width:350px;
+	height:350px;
+	margin:10px;
+	border: 15px solid #000;
+	filter: grayscale(100%) brightness(50%) sepia(190%) hue-rotate(-50deg) saturate(600%) contrast(0.8);
+}
+
+img:hover{
+	filter: none;
+}
+
+h1{
+	width: 90%;
+	text-align: center;
+	margin:20px auto;
+	padding:1px;
+	color:black;
+	font-family: helvetica;
+	font-weight: bold;
+	font-size:100px;
+	text-transform: uppercase;
+}
+
+select{
+	display:block;
+	font-size:20px;
+	margin:50px;
+	height:40px;
+	margin-left:110px;
+	background-color: rgba(0, 0, 0, 0.349);
+	color:red;
+	border-radius: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
