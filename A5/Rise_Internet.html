@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Transition.css">
+    <title>Raise/Fall/Collapse</title>
+
+    <style>
+        @font-face {
+            font-family: 'DxSitrus-Expanded';
+            src: url('DxSitrus-Expanded.otf') format('truetype')
+        }
+
+
+        body {
+            /* background-image: url("Star_night.jpeg"); */
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0), transparent 70%), url('Star_night.jpeg');
+            background-size: cover;
+            place-items: center;
+            height: 3500px;
+
+            animation: page-fade 4s ease-in-out;
+        }
+
+
+        .maintext {
+            font-family: Arial, Helvetica, sans-serif;
+            position: absolute;
+            top: 2245px;
+            width: 780px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 18px;
+            text-align: justify;
+            align-items: center;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 100;
+            line-height: 30px;
+        }
+
+        .text1 {
+            font-family: 'DxSitrus-Expanded';
+            font-size: 72px;
+            width: 850px;
+            text-align: left;
+            color: white;
+            line-height: normal;
+        }
+
+
+        .text5 {
+            position: absolute;
+            width: 550px;
+            left: 100px;
+            font-style: italic;
+        }
+
+        .text5_5 {
+            font-weight: 900;
+            color: white;
+            font-style: italic;
+            font-family: 'DxSitrus-Expanded';
+            font-size: 24px;
+        }
+
+
+
+        .container {
+            margin: 0;
+        }
+
+        .circle {
+            position: absolute;
+            top: 3700px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            border-radius: 50%;
+            box-shadow: 0 0 25px 25px white;
+            animation: size 15s ease-in-out infinite;
+            cursor: pointer;
+        }
+
+        .sunlight {
+            position: absolute;
+            top: 700px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            opacity: 0;
+        }
+
+        .phone {
+            position: absolute;
+            top: 800px;
+            left: 10%;
+            width:7%;
+            filter:blur(2px) brightness(50%);
+        }
+
+        .computer {
+            position: absolute;
+            top: 900px;
+            left: 80%;
+            width:7%;
+            filter:blur(2px) brightness(50%);
+            transform: rotate(-15deg);
+        }
+
+        .cd {
+            position: absolute;
+            top: 1100px;
+            left: 16%;
+            width:5%;
+            filter:blur(2px) brightness(50%);
+            transform: rotate(15deg);
+        }
+
+
+        .internet {
+            position: absolute;
+            top: 1650px;
+            left: 80%;
+            width:5%;
+            filter:blur(2px) brightness(50%);
+            transform: rotate(15deg);
+        }
+
+        .telephone {
+            position: absolute;
+            top: 1550px;
+            left: 10%;
+            width:5%;
+            filter:blur(1px) brightness(50%);
+            transform: rotate(-15deg);
+        }
+
+        .iphone {
+            position: absolute;
+            top: 1750px;
+            left: 25%;
+            width:5%;
+            filter:blur(1px) brightness(50%);
+            transform: rotate(25deg);
+        }
+
+
+        .mp3 {
+            position: absolute;
+            top: 1950px;
+            left: 85%;
+            width:3%;
+            filter:blur(1px) brightness(50%);
+            transform: rotate(25deg);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+<!--page transition area-->
+<div class="container">
+
+<!--scroll show Sunlight.png -->
+<img src="Sunlight.png" class="sunlight">
+
+<!--text area-->
+<p class="maintext">
+            <span class="text1"></span>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+            <span class="text2"></span>
+            <br />
+            <br />
+
+            <span class="text3"></span>
+            <br />
+            <br />
+
+            <span class="text4"></span>
+            <br />
+            <br />
+            <br />
+            <br />
+
+            <span class="text5"></span>
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+            <span class="text6"></span>
+            <br /><br />
+
+
+            <span class="text7"></span>
+</p>
+<!-------------extra images area-------------->
+<img src="images/Phone.png" class="phone">
+<img src="images/Computer.png" class="computer">
+<img src="images/cd.png" class="cd">
+<img src="images/Internet.png" class="internet">
+<img src="images/Telephone.png" class="telephone">
+<img src="images/iPhone.png" class="iphone">
+<img src="images/mp3.png" class="mp3">
+
+ <!--黑洞区域-->
+<div class="circle" onclick="onCircleClick()">
+<br/>
+<br/>
+</div>
+     
+
+    </div>
+
+
+    <script>
+        const config = [
+            {
+                className: '.text1',
+                content: `"The golden age of the Web is coming to an end. Prepare for the Splinternet."`,
+                total: 15,
+                finishWordIdx: {},
+                distance: 2300
+            },
+            {
+                className: '.text2',
+                content: 'Thus announces <span>Josh Bernoff</span> in an interesting post about how new gadgets designed for surfing the Web -- our smartphones, e-readers, tablets and even TVs -- are fighting with each other to redefine how we access information online. But what is the <span>"Splinternet"</span> and why should the answer even matter to you?',
+                total: 51,
+                finishWordIdx: {},
+                distance: 2400
+            },
+            {
+                className: '.text3',
+                content: `Let's take a step back and think about some of the new gadgets on the market. <span>Smartphones</span> and e-readers are not like laptops, where each computer lets you interact the same Web. For example, <span>Apple iPad</span> won't support Flash software, which supports most online videos. Ben Kunz of BusinessWeek suggests this is a blatant move to force iPad users to satisfy all their video cravings through <span>Apple stores.</span> Similarly, in the e-reader arms race, Apple, Sony and Amazon are competing with different libraries of books and products.`,
+                total: 85,
+                finishWordIdx: {},
+                distance: 2400
+            },
+            {
+                className: '.text4',
+                content: `If the last 10 years were a heyday for open content on the <span>Web,</span> the next ten years could be the age of platforms. Today to reach the universe of new mobile browsers, you can't assume that your audience is using only a laptop to access the same version of your content. So it won't be enough to have just a magazine website. Instead you'll need a website and a <span>Kindle App</span> and an iPhone/iPad app and another app for another device that has a distinct audience and requires a specific template. <span>Kunz</span> sums up the problem for content providers like this:`,
+                total: 101,
+                finishWordIdx: {},
+                distance: 2400
+            },
+            {
+                className: '.text5',
+                content: `The device-portal tie-up isn't necessarily bad for consumers, who have plenty of choices for media consumption. But it creates a thorny puzzle for businesses striving to build audiences. <span>How do you compete when your potential customers are using devices and content systems that lock one another out?</span>`,
+                total: 29,
+                finishWordIdx: {},
+                distance: 1250
+            },
+            {
+                className: '.text6',
+                content: `Let's bring this back to advertising, because money is at the heart of this <span>platform</span> battle. The first wave of the ad war was fought on a couple fronts, dominated by display ads on content pages and search ads on search pages. <span>Google's</span> great revenue revelation was that you could make a bazillion dollars selling online ads next to search results, because you're putting ads through an obvious filter: what the user wants to find. Google has parlayed that discovery into <span>$23</span> billion business. It is the success story in advertising in the last five years.`,
+                total: 96,
+                finishWordIdx: {},
+                distance: 2400
+            },
+            {
+                className: '.text7',
+                content: `But in the <span>Splinternet</span> age, ads are more tightly controlled by platform. My old Blackberry defaulted to Bing search because Verizon has a deal with Mircosoft. But my new phone that runs Google <span>Android</span> software serves Google ads under apps for programs like <span>Pandora. </span> Meanwhile Apple has banned any apps that use location-based software to serve up targeted ads, presumably because it wants to corner that market on its own device. This is a new age, where gadgets have a <span>"hidden agenda"</span> to hold you in their ecosystem of content display and advertising. There are walls are going up just as the walls to mobile <span>Internet</span> access are falling down.`,
+                total: 109,
+                finishWordIdx: {},
+                distance: 2400
+            }
+        ]
+
+        config.forEach(o => {
+            fillText(o.className, o.content)
+        })
+
+
+        function fillText(className, text) {
+            document.querySelector(className).innerHTML = text.split(" ").map(w => {
+                if (w.includes("<span>")) {
+                    return w.replace('<span>', '<span class="text5_5">')
+                } else {
+                    return `<span>${w} </span>`
+                }
+            }).join("")
+        }
+
+        function move() {
+
+            for (let currentIdx = 0; currentIdx < config.length; currentIdx++) {
+                let words = document.querySelector(config[currentIdx].className).children
+                for (let i = 0; i < words.length; i++) {
+                    let word = words[i]
+                    word.style.position = 'absolute'
+
+                    if (word.style.top == '') {
+                        word.style.top = '0px'
+                    }
+
+                    let speed = i < 10 ? 10 : i / 2;
+
+                    let t = parseInt(word.style.top.replace('px', '')) + speed
+
+                    if (t < config[currentIdx].distance - 200) {
+                        word.style.top = t + 'px'
+                        word.style.left = 40 + (Math.random() - 0.3) * 15 + '%'
+                    } else if (!config[currentIdx].finishWordIdx[i]) {
+                        word.style.display = 'none'
+                        config[currentIdx].finishWordIdx[i] = "Y"
+                    }
+
+                }
+
+            }
+
+            if (isFinished()) return;
+
+
+            requestAnimationFrame(move)
+        }
+
+        function isFinished() {
+            let allFinish = true
+
+            config.forEach(o => {
+                if (o.total == Object.keys(o.finishWordIdx).length) {
+                    allFinish = true
+                } else {
+                    allFinish = false
+                }
+            })
+
+            return allFinish
+        }
+
+        const sunlightDom = document.querySelector('.sunlight')
+        window.addEventListener('scroll', function (e) {
+            sunlightDom.style.opacity = document.documentElement.scrollTop / 500
+        })
+
+        function onCircleClick() {
+            move()
+        }
+
+    </script>
+
+
+</body>
+
+
+
+
+
+
+
+
+
+</html>
