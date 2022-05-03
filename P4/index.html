@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="bill">
+      <div class="title">Today's Recepit</div>
+      <div class="list"></div>
+      <div class="total">Total: $ <span id="totalId">0.00</span></div>
+      <!-- <div class="download">下载账单</div> -->
+    </div>
+
+    <div class="calculator">
+      <div class="title">How much did you spend today？</div>
+      <div class="input-detail">
+        <input id="nameId" class="input" type="text" placeholder="Type details">
+        <div class="value">
+          $ <span id="integerValue">0</span>.<span id="decimalValue">00</span></div>
+      </div>
+      <div class="keyboard">
+        <div data-type="num">7</div>
+        <div data-type="num">8</div>
+        <div data-type="num">9</div>
+        <div data-type="del">←</div>
+        <div data-type="num">4</div>
+        <div data-type="num">5</div>
+        <div data-type="num">6</div>
+        <div data-type="add">＋</div>
+        <div data-type="num">1</div>
+        <div data-type="num">2</div>
+        <div data-type="num">3</div>
+        <div data-type="sub">－</div>
+        <div data-type="num" class="zero">0</div>
+        <div data-type="point">.</div>
+        <div data-type="eq" style="background:rgb(247,156,158);">=</div>
+        <div data-type="ok" class="ok">Submit</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>

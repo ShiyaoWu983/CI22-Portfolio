@@ -1,0 +1,244 @@
+.container {
+    border: solid;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 200px;
+
+    background-color: rgb(255, 238, 207);
+}
+
+.bill {
+    width: 38%;
+    border: solid;
+    background-color: #fff;
+    box-shadow: 3px 3px 5px 0px #888;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+.bill .title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bill .item {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-top: solid;
+}
+
+.bill .total {
+    color: rgb(248, 170, 172);
+    font-size: 18px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bill .download {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(206, 206, 206);
+    cursor: pointer;
+}
+
+.bill .download:hover {
+    color: #000;
+}
+
+/* ******************************* */
+
+.calculator {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.calculator .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 30px;
+}
+
+.calculator .input-detail {
+    width: 265px;
+    border: solid;
+    border-radius: 8px;
+    padding: 0 10px;
+    background: #fff;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 5px 0px #888;
+}
+
+.calculator .input-detail .input {
+    line-height: 36px;
+    border: none;
+    font-size: 14px;
+    /* font-weight: 600; */
+    outline: none;
+}
+
+.calculator .input-detail .value {
+    font-size: 14px;
+    float: right;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.calculator .keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.calculator .keyboard>div {
+    border: solid;
+    background-color: #fff;
+    width: 58px;
+    text-align: center;
+    margin: 10px 10px 10px 0;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: inset -2px -2px 4px 0px #888;
+}
+
+.zero {
+    width: 135px;
+}
+
+.ok {
+    width: 285px;
+}
+
+.key-pressed {
+    background-color: rgb(218, 214, 214) !important;
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(206, 206, 206);
+}
+
+@media screen and (max-width: 980px) {
+    .container {
+        flex-direction: column;
+        margin: 10px;
+        align-items: center;
+    }
+
+    .bill {
+        width: 70%;
+        border: solid 4px;
+    }
+
+    .bill .title {
+        font-size: 24px;
+    }
+
+    .bill .total {
+        font-size: 20px;
+    }
+
+    .bill .item {
+        font-size: 16px;
+        margin-top: 4px;
+    }
+
+    /* ****************** */
+    .zero {
+        width: 135px !important;
+    }
+
+    .ok {
+        width: 285px !important;
+    }
+
+}
+
+/* phone */
+@media screen and (max-width: 300px) {
+    .container {
+        flex-direction: column;
+        margin: 40px;
+    }
+
+    .bill {
+        width: 94%;
+        border: solid 8px;
+    }
+
+    .bill .title {
+        font-size: 2.5rem;
+    }
+
+    .bill .total {
+        font-size: 2rem;
+    }
+
+    .bill .item {
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+    /* ****************** */
+    .calculator {
+        width: 960px;
+    }
+
+    .calculator .title {
+        font-size: 4rem;
+        margin: 200px 100px 100px 100px;
+    }
+
+    .calculator .input-detail {
+        width: 77%;
+        border: solid 8px;
+        border-radius: 25px;
+        padding: 0 40px;
+        margin-bottom: 60px;
+    }
+
+    .calculator .input-detail .input {
+        font-size: 2.5rem;
+        line-height: 6rem;
+        width: 75%;
+    }
+
+    .calculator .input-detail .value {
+        line-height: 6rem;
+        font-size: 2.5rem;
+    }
+
+    .calculator .keyboard {
+        justify-content: flex-start;
+    }
+
+    .calculator .keyboard>div {
+        height: 5rem;
+        line-height: 5rem;
+        width: 8rem;
+        border: solid 8px;
+        font-size: 2.5rem;
+        border-radius: 25px;
+        margin: 10px 42px 26px 0;
+    }
+
+    .zero {
+        width: 19rem !important;
+    }
+
+    .ok {
+        width: 85% !important;
+    }
+}
