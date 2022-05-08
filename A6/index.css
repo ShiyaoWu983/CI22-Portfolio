@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1244px;
+    height: 700px;
+    position: relative;
+    border: solid rgb(101, 165, 52);
+    margin: 15px auto;
+}
+
+.sky {
+    position: absolute;
+    height: 100%;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.plant {
+    position: absolute;
+    bottom: 135px;
+    left: 44%;
+    transform: scale(0.7);
+}
+
+.btn-sunshine {
+    position: absolute;
+    bottom: 195px;
+    right: 16px;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.btn-kettle {
+    position: absolute;
+    bottom: 57px;
+    right: 16px;
+    cursor: pointer;
+    transform: scale(0.7);
+}
+
+.watering {
+    position: absolute;
+    top: 232px;
+    left: 52%;
+    display: none;
+    transform: scale(0.7);
+}
+
+.sunshine {
+    position: absolute;
+    top: 43px;
+    left: 20%;
+    display: none;
+    transform: scale(0.7);
+}
+
+.time {
+    position: absolute;
+    font-size: 60px;
+    right: 34px;
+    top: 34px;
+    color: #fff;
+    font-family: 'Digital';
+}
+
+.text {
+    position: absolute;
+    bottom: 102px;
+    left: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(77, 74, 56);
+}
+
+.text span {
+    border-bottom: solid;
+}
