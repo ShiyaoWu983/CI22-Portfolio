@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="index.css">
+  <title>Input Output | Shiyao Wu</title>
+  <style>
+
+    body{
+      background-color: rgb(255, 238, 207);
+    }
+
+@font-face {
+        font-family: 'Arial';
+        src: url('Arial Rounded Bold.ttf') format('truetype')
+        }
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+.information{
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 4px;
+    width:40px;
+    height:40px;
+align-items: center;
+    text-align: center;    
+    background-color: none;
+}
+
+a{
+     color:black;
+      text-decoration: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+
+
+    <div class="bill">
+      <div class="title">Today's Receipt</div>
+      <br/>
+      <div class="list"></div>
+      <div class="total">Total: $ <span id="totalId">0.00</span></div>
+    </div>
+
+    <div class="calculator">
+  
+      <div class="title">How much did you spend today?</div>
+      
+      <div class="input-detail">
+        
+
+        <input id="nameId" class="input" type="text" placeholder="Type details">
+        <div class="value">
+          $ <span id="integerValue">0</span>.<span id="decimalValue">00</span></div>
+      </div>
+      
+      <div class="keyboard">
+        <div data-type="num">7</div>
+        <div data-type="num">8</div>
+        <div data-type="num">9</div>
+        <div data-type="del">←</div>
+        <div data-type="num">4</div>
+        <div data-type="num">5</div>
+        <div data-type="num">6</div>
+        <div data-type="add">+</div>
+        <div data-type="num">1</div>
+        <div data-type="num">2</div>
+        <div data-type="num">3</div>
+        <div data-type="sub">-</div>
+        <div data-type="num" class="zero">0</div>
+        <div data-type="point">.</div>
+        <div data-type="eq" style="background:rgb(247,156,158);">=</div>
+        <div data-type="ok" class="ok" style="font-size:20px;">Submit</div>
+       <!--information area-->
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+       <div class="information" style="background-color:rgba(255, 255, 255, 0.315); border:none; 
+           box-shadow: 2px 2px 4px 0px rgba(136, 136, 136, 0.344);
+       width:30px;height:30px;">
+        <a href="information.html">i</a></div>  
+        
+      </div>
+     
+    </div>
+
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
