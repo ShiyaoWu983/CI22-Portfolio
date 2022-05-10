@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>83 | Red Exhibiton</title>
+    <link rel="shortcut icon" href="Red.ico" type="image/x-icon">
+    <link rel="icon" href="Red.ico" type="image/x-icon">
+</head>
+
+<style>
+    *,
+    *::after,
+    *::before {
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+            font-family: 'Ayer';
+            src: url('Ayer-Bold.otf') format('truetype')
+        }
+
+    body{
+        background-color: #B90000;
+        font-family: Ayer;
+        /* background-color: #fafafa; */
+    }
+
+
+
+.split {
+  height: 90%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 25px;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+  /* margin:20px; */
+}
+
+/*left picture*/
+.item1 {
+width:350px;
+height:490px;
+border:10px solid black;
+position: absolute;
+top: 48%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+
+/* figure {
+  position: relative;
+} */
+
+figcaption {
+    opacity: 1;
+position: absolute;
+top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 67px;
+  width:400px;
+  height:284px;
+  text-align: center;
+  color:#000; 
+
+}
+
+.item {
+     margin: 12px;
+     width:100px;
+     height:140px;
+     border:8px solid black;
+     justify-content: space-evenly;
+     float: left;
+     display: none;
+}
+
+
+.show {
+  display: block;
+}
+
+/* #myBtnContainer{
+  position: absolute;
+  justify-content:flex-start;
+  width: auto;
+  position:fixed;
+} */
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin:5px;
+  background-color: #000;
+  color:#f1f1f1;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: rgb(173, 173, 173);
+}
+
+.btn.active {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+
+
+
+
+<body>
+
+  <!--split screen left side-->
+<div class="split left">
+  <figure> 
+    <a href="RedExhibition.html"><img class="item1" src="83.jpeg" alt="image83">
+       <figcaption><br/><br/><br/><br/><br/>Soba Noodles</figcaption></a>
+  </figure>
+</div>
+
+  <!--split screen right side-->
+<div class="split right">
+
+<center>
+    <br/>
+<!--filter area -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> All</button>
+  <button class="btn" onclick="filterSelection('hands')"> Hand with __________ </button>
+  <button class="btn" onclick="filterSelection('food')"> Food and Ingredients</button>
+  <button class="btn" onclick="filterSelection('furniture')"> Furniture</button>
+  <button class="btn" onclick="filterSelection('clothing')"> Clothing</button>
+  <button class="btn" onclick="filterSelection('sign')"> Sign</button>
+  <button class="btn" onclick="filterSelection('dinnerware')"> Dinnerware</button>
+  <button class="btn" onclick="filterSelection('stores')"> Stores</button>
+  <button class="btn" onclick="filterSelection('medicine')"> Medicine</button>
+  <button class="btn" onclick="filterSelection('books')"> Books</button>
+  <button class="btn" onclick="filterSelection('artworks')"> Artworks</button>
+  <button class="btn" onclick="filterSelection('other')"> Other</button>
+
+</div>
+
+<br/><br/>
+<!--picture area-->
+    <a href="01.html"><img class="item hands" src="01.jpeg" alt="image1"></a>    
+    <a href="02.html"><img class="item hands" src="02.jpeg" alt="image2"></a>    
+    <a href="03.html"><img class="item hands" src="03.jpeg" alt="image3"></a>    
+    <a href="04.html"><img class="item other" src="04.jpeg" alt="image4"></a>  
+    <a href="05.html"><img class="item artworks" src="05.jpeg" alt="image5"></a>
+    <a href="06.html"><img class="item furniture" src="06.jpeg" alt="image6"></a>
+    <a href="07.html"><img class="item artworks" src="07.jpeg" alt="image7"></a>
+    <a href="08.html"><img class="item books" src="08.jpeg" alt="image8"></a>
+    <a href="09.html"><img class="item other" src="09.jpeg" alt="image9"></a>
+    <a href="10.html"><img class="item books" src="10.jpeg" alt="image10"></a>
+    <a href="11.html"><img class="item hands" src="11.jpeg" alt="image11"></a>
+    <a href="12.html"><img class="item hands" src="12.jpeg" alt="image12"></a>
+    <a href="13.html"><img class="item other" src="13.jpeg" alt="image13"></a>
+    <a href="14.html"><img class="item hands medicine" src="14.jpeg" alt="image14"></a>
+    <a href="15.html"><img class="item food" src="15.jpeg" alt="image15"></a>
+    <a href="16.html"><img class="item food" src="16.jpeg" alt="image16"></a> 
+    <a href="17.html"><img class="item hands dinnerware" src="17.jpeg" alt="image17"></a>
+    <a href="18.html"><img class="item other" src="18.jpeg" alt="image18"></a>
+    <a href="19.html"><img class="item hands food" src="19.jpeg" alt="image19"></a>
+    <a href="20.html"><img class="item dinnerware" src="20.jpeg" alt="image20"></a>
+    <a href="21.html"><img class="item hands food" src="21.jpeg" alt="image21"></a>
+    <a href="22.html"><img class="item other medicine" src="22.jpeg" alt="image22"></a>
+    <a href="23.html"><img class="item dinnerware" src="23.jpeg" alt="image23"></a>
+    <a href="24.html"><img class="item food" src="24.jpeg" alt="image24"></a>
+    <a href="25.html"><img class="item hands food" src="25.jpeg" alt="image25"></a>
+    <a href="26.html"><img class="item other dinnerware" src="26.jpeg" alt="image26"></a>
+    <a href="27.html"><img class="item dinnerware" src="27.jpeg" alt="image27"></a>
+    <a href="28.html"><img class="item hands dinnerware" src="28.jpeg" alt="image28"></a>
+    <a href="29.html"><img class="item clothing" src="29.jpeg" alt="image29"></a>
+    <a href="30.html"><img class="item food" src="30.jpeg" alt="image30"></a>
+    <a href="31.html"><img class="item hands food" src="31.jpeg" alt="image31"></a>
+    <a href="32.html"><img class="item clothing" src="32.jpeg" alt="image32"></a>
+    <a href="33.html"><img class="item hands" src="33.jpeg" alt="image33"></a>
+    <a href="34.html"><img class="item clothing" src="34.jpeg" alt="image34"></a>
+    <a href="35.html"><img class="item other" src="35.jpeg" alt="image35"></a>
+    <a href="36.html"><img class="item hands clothing" src="36.jpeg" alt="image36"></a>
+    <a href="37.html"><img class="item other" src="37.jpeg" alt="image37"></a>
+    <a href="38.html"><img class="item clothing" src="38.jpeg" alt="image38"></a>
+    <a href="39.html"><img class="item clothing" src="39.jpeg" alt="image39"></a>
+    <a href="40.html"><img class="item hands" src="40.jpeg" alt="image40"></a>
+    <a href="41.html"><img class="item other furniture" src="41.jpeg" alt="image41"></a>
+    <a href="42.html"><img class="item other" src="42.jpeg" alt="image42"></a>
+    <a href="43.html"><img class="item hands clothing" src="43.jpeg" alt="image43"></a>
+    <a href="44.html"><img class="item hands clothing" src="44.jpeg" alt="image44"></a>
+    <a href="45.html"><img class="item clothing" src="45.jpeg" alt="image45"></a>
+    <a href="46.html"><img class="item hands" src="46.jpeg" alt="image46"></a>
+    <a href="47.html"><img class="item clothing" src="47.jpeg" alt="image47"></a>
+    <a href="48.html"><img class="item clothing" src="48.jpeg" alt="image48"></a>
+    <a href="49.html"><img class="item furniture" src="49.jpeg" alt="image49"></a>
+    <a href="50.html"><img class="item hands other" src="50.jpeg" alt="image50"></a>
+    <a href="51.html"><img class="item furniture other" src="51.jpeg" alt="image51"></a>
+    <a href="52.html"><img class="item furniture other" src="52.jpeg" alt="image52"></a>
+    <a href="53.html"><img class="item other" src="53.jpeg" alt="image53"></a>
+    <a href="54.html"><img class="item food" src="54.jpeg" alt="image54"></a>
+    <a href="55.html"><img class="item food" src="55.jpeg" alt="image55"></a>
+    <a href="56.html"><img class="item other" src="56.jpeg" alt="image56"></a>
+    <a href="57.html"><img class="item hands food" src="57.jpeg" alt="image57"></a>
+    <a href="58.html"><img class="item other" src="58.jpeg" alt="image58"></a>
+    <a href="59.html"><img class="item hands food" src="59.jpeg" alt="image59"></a>
+    <a href="60.html"><img class="item hands food" src="60.jpeg" alt="image60"></a>
+    <a href="61.html"><img class="item hands medicine" src="61.jpeg" alt="image61"></a>
+    <a href="62.html"><img class="item hands medicine" src="62.jpeg" alt="image62"></a>
+    <a href="63.html"><img class="item hands food" src="63.jpeg" alt="image63"></a>
+    <a href="64.html"><img class="item hands food" src="64.jpeg" alt="image64"></a>
+    <a href="65.html"><img class="item hands other" src="65.jpeg" alt="image65"></a>
+    <a href="66.html"><img class="item other sign" src="66.jpeg" alt="image66"></a>
+    <a href="67.html"><img class="item sign food" src="67.jpeg" alt="image67"></a>
+    <a href="68.html"><img class="item furniture" src="68.jpeg" alt="image68"></a>
+    <a href="69.html"><img class="item sign" src="69.jpeg" alt="image69"></a>
+    <a href="70.html"><img class="item sign" src="70.jpeg" alt="image70"></a>
+    <a href="71.html"><img class="item food" src="71.jpeg" alt="image71"></a>
+    <a href="72.html"><img class="item furniture" src="72.jpeg" alt="image72"></a>
+    <a href="73.html"><img class="item food sign" src="73.jpeg" alt="image73"></a>
+    <a href="74.html"><img class="item clothing" src="74.jpeg" alt="image74"></a>
+    <a href="75.html"><img class="item other" src="75.jpeg" alt="image75"></a>
+    <a href="76.html"><img class="item stores" src="76.jpeg" alt="image76"></a>
+    <a href="77.html"><img class="item sign" src="77.jpeg" alt="image77"></a>
+    <a href="78.html"><img class="item stores" src="78.jpeg" alt="image78"></a>
+    <a href="79.html"><img class="item food" src="79.jpeg" alt="image79"></a>
+    <a href="80.html"><img class="item sign food" src="80.jpeg" alt="image80"></a>
+    <a href="81.html"><img class="item food" src="81.jpeg" alt="image81"></a>
+    <a href="82.html"><img class="item other" src="82.jpeg" alt="image82"></a>
+    <a href="83.html"><img class="item food" src="83.jpeg" alt="image83"></a>
+    <a href="84.html"><img class="item hands books" src="84.jpeg" alt="image84"></a>
+    <a href="85.html"><img class="item books" src="85.jpeg" alt="image85"></a>
+    <a href="86.html"><img class="item other" src="86.jpeg" alt="image86"></a>
+    <a href="87.html"><img class="item stores" src="87.jpeg" alt="image87"></a>
+    <a href="88.html"><img class="item food" src="88.jpeg" alt="image88"></a>
+    <a href="89.html"><img class="item other artworks" src="89.jpeg" alt="image89"></a>
+    <a href="90.html"><img class="item other" src="90.png" alt="image90"></a>
+    <a href="91.html"><img class="item other" src="91.jpeg" alt="image91"></a>
+    <a href="92.html"><img class="item food" src="92.jpeg" alt="image92"></a>
+    <a href="93.html"><img class="item hands food" src="93.jpeg" alt="image93"></a>
+    <a href="94.html"><img class="item other" src="94.jpeg" alt="image94"></a>
+    <a href="95.html"><img class="item food" src="95.jpeg" alt="image95"></a>
+    <a href="96.html"><img class="item hands" src="96.jpeg" alt="image96"></a>
+    <a href="97.html"><img class="item hands books" src="97.jpeg" alt="image97"></a>
+    <a href="98.html"><img class="item food" src="98.jpeg" alt="image98"></a>
+    <a href="99.html"><img class="item food" src="99.jpeg" alt="image99"></a>
+    <a href="100.html"><img class="item sign" src="100.jpeg" alt="image100"></a>
+
+
+</center> 
+</div>
+</div>
+
+
+<!--filter button area-->
+<script>
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("item");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+  
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+  
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+  
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+</body>
+</html>
